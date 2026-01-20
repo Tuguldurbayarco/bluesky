@@ -4,9 +4,7 @@ import "./globals.css";
 export function generateStaticParams() {
   return [
     { locale: 'en' },
-    { locale: 'ko' },
-    { locale: 'hb' },
-    { locale: 'de' }
+    { locale: 'ko' }
   ];
 }
 

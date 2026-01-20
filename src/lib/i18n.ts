@@ -1,19 +1,15 @@
 // Static i18n solution for static export
 import enMessages from '../../messages/en.json';
 import koMessages from '../../messages/ko.json';
-import hbMessages from '../../messages/hb.json';
-import deMessages from '../../messages/de.json';
 
-export type Locale = 'en' | 'ko' | 'hb' | 'de';
+export type Locale = 'en' | 'ko';
 
-export const locales: Locale[] = ['en', 'ko', 'hb', 'de'];
+export const locales: Locale[] = ['en', 'ko'];
 export const defaultLocale: Locale = 'en';
 
 const messages = {
   en: enMessages,
   ko: koMessages,
-  hb: hbMessages,
-  de: deMessages,
 };
 
 export function getMessages(locale: Locale) {

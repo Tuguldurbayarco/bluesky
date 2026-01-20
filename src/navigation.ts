@@ -3,5 +3,5 @@
 export { redirect, usePathname, useRouter } from 'next/navigation';
 export { default as Link } from 'next/link';
 
-export const locales = ['en', 'ko', 'hb'] as const;
+export const locales = ['en', 'ko'] as const;
 export const localePrefix = 'as-needed'; // Default

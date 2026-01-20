@@ -14,9 +14,6 @@ const Navbar = () => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
   
-  // Check if we're on the main page
-  const isMainPage = pathname === `/${validLocale}` || pathname === `/${validLocale}/`;
-  
   // Function to add locale prefix to href
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
@@ -87,9 +84,9 @@ const Navbar = () => {
   
     return (
       <Link href={addLocaleToHref(link.href)} key={link.key} 
-        className={`${styles.navbar_menu_buttons} ${isMainPage ? styles.main_page_menu_button : ''}`}
-        onMouseEnter={({ currentTarget }) => currentTarget.style.color = isMainPage ? "#fff" : "#2f2399"}
-        onMouseLeave={({ currentTarget }) => currentTarget.style.color = isMainPage ? "#fff" : "#000"}
+        className={styles.navbar_menu_buttons}
+        onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
+        onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
         onClick={handleLinkClick}
       >
         {menuLabel(link)}
@@ -100,15 +97,15 @@ const Navbar = () => {
   return (
     <div >
       <div >
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.non_scrolled} ${isMainPage ? styles.main_page_nav : ''}`} 
+        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.non_scrolled}`} 
           style={{position: 'fixed', top: 0, width: '100%'}} 
         >
-          <div className={`${styles.navbar_content} ${isMainPage ? styles.main_page_content : ''}`}>
-            <Link href={`/${validLocale}/`} className={`${styles.logo} ${scrolled ? styles.scrolled : ''} ${isMainPage ? styles.main_page_logo : ''}`}>
+          <div className={styles.navbar_content}>
+            <Link href={`/${validLocale}/`} className={`${styles.logo} ${scrolled ? styles.scrolled : ''}`}>
               <img src="/logo.png" alt="logo" height='auto'/>
             </Link>
-            <div className={`${styles.header_menu} ${isMenuOpen ? styles.open : ''} ${isMainPage ? styles.main_page_menu : ''}`}>
-              <ul className={`${styles.navbar_menu_container} ${isMainPage ? styles.main_page_menu_container : ''}`}>
+            <div className={`${styles.header_menu} ${isMenuOpen ? styles.open : ''}`}>
+              <ul className={styles.navbar_menu_container}>
                 {NAV_LINKS.map((link) => (
                   <NavbarLink key={link.key} link={link}/>
                 ))} 
