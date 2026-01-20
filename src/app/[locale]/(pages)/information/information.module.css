@@ -1,0 +1,222 @@
+/* Information Page Styles */
+.information_margin {
+  margin-top: 13%;
+}
+
+.information_main_header {
+  font-size: 250%;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.information_second_header {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.information_desc {
+  font-size: 140%;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+.information_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information_option {
+  text-align: center;
+  font-size: 200%;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.options_title {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  font-size: 160%;
+  font-weight: 500;
+}
+
+.options_text {
+  margin-bottom: 1%;
+  margin-left: 2%;
+  font-size: 130%;
+}
+
+.information_text_container_left_margin {
+  margin-left: 1.5%;
+  text-align: justify;
+}
+
+.information_options_display {
+  display: Flex;
+  margin-bottom: 3%;
+}
+
+.information_option_width {
+  width: 50%;
+}
+
+.visa_title {
+  font-size: 160%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.visa_text {
+  font-size: 120%;
+  text-align: justify;
+}
+
+.visa_points {
+  list-style-type: disc;
+  margin-bottom: 3%;
+  text-align: justify;
+  font-size: 110%;
+}
+
+.visa_margin_top {
+  margin-top: 10%;
+}
+
+.phone_page_display {
+  display: flex;
+  gap: 10%;
+}
+
+.phone_page_png_size {
+  width: 400px;
+}
+
+.phone_titles {
+  font-size: 140%;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.phone_text {
+  margin-top: 3%;
+  font-size: 130%;
+  text-align: justify;
+}
+
+@media (max-width: 1250px) {
+  .information_main_header {
+    font-size: 220%;
+  }
+
+  .options_text {
+    font-size: 120%;
+    margin-left: 0;
+  }
+
+  .information_desc {
+    font-size: 130%;
+  }
+
+  .phone_titles,
+  .contact_plank {
+    font-size: 120%;
+  }
+
+  .visa_points {
+    font-size: 100%;
+  }
+
+  .visa_margin_top {
+    margin-top: 12%;
+  }
+
+  .phone_page_png_size {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .information_option,
+  .information_second_header,
+  .information_main_header {
+    font-size: 200%;
+  }
+
+  .information_desc {
+    font-size: 124%;
+  }
+
+  .visa_margin_top {
+    margin-top: 16%;
+  }
+
+  .phone_text {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 767px) {
+  .information_margin {
+    margin-top: 15%;
+  }
+
+  .visa_text {
+    font-size: 110%;
+  }
+
+  .visa_margin_top {
+    margin-top: 20%;
+  }
+
+  .phone_page_png_size {
+    width: 250px;
+  }
+
+  .information_text_container_left_margin {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 580px) {
+  .information_margin {
+    margin-top: 17%;
+  }
+
+  .visa_margin_top {
+    margin-top: 22%;
+  }
+
+  .information_options_display {
+    display: block;
+  }
+
+  .information_option_width {
+    width: 100%;
+  }
+
+  .information_text_container_left_margin {
+    margin-left: 0;
+  }
+
+  .phone_page_display {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .information_margin {
+    margin-top: 30%;
+  }
+
+  .visa_margin_top {
+    margin-top: 28%;
+  }
+
+  .phone_page_png_size {
+    width: 98%;
+  }
+}

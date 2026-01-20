@@ -1,0 +1,141 @@
+/* Main Page Styles */
+.mainpage_header_on_pictute {
+  font-size: 120%;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mainpage_link_on_pictute {
+  color: #fff;
+  font-size: 140%;
+  font-weight: 500;
+}
+
+.main_page_festivals_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_three_tours_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_two_tours_container {
+  width: calc(50% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_individual_tours_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+.mainpage_festivals_title {
+  margin: 4;
+  font-size: 130%;
+  font-weight: bolder;
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.seasons_title_on_picture {
+  font-size: 400%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.seasons_title_positioning {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seasons_slider_text {
+  font-size: 120%;
+  font-weight: 500;
+  text-align: justify;
+}
+
+@media (max-width: 1250px) {
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 110%;
+  }
+
+  .mainpage_festivals_title {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 100%;
+  }
+
+  .mainpage_festivals_title {
+    font-size: 90%;
+  }
+
+  .seasons_title_on_picture {
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_page_individual_tours_container,
+  .main_page_three_tours_container,
+  .main_page_two_tours_container,
+  .main_page_festivals_container {
+    width: 100%; 
+  }
+
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 90%;
+  }
+
+  .mainpage_festivals_title {
+    font-size: 120%;
+  }
+
+  .seasons_title_on_picture {
+    font-size: 200%;
+  }
+
+  .seasons_title_positioning {
+    display: none;
+  }
+
+  .seasons_slider_text {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 70%;
+  }
+
+  .seasons_title_on_picture {
+    font-size: 180%;
+  }
+
+  .seasons_title_positioning {
+    top: 50%;
+  }
+
+  .seasons_slider_text {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .seasons_title_positioning {
+    top: 50%;
+  }
+}

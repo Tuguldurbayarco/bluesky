@@ -1,0 +1,15 @@
+.nextButton {
+  padding: 5px 15px;
+  color: white;
+  background: linear-gradient(to right bottom, #513dcc, #2e1d99);
+  border: 1px solid #35249e;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  display: inline-block;
+}
+
+.nextButton:hover {
+  color: #ccd2ff; 
+  transition: color 0.3s ease;
+}

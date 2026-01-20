@@ -1,0 +1,136 @@
+/* Events Page Styles */
+.events_display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events_display_container {
+  display: flex;
+  margin-bottom: 3%;
+  padding-bottom: 5%;
+}
+
+.events_display_image_cont {
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.events_display_text_cont {
+  width: 50%;
+}
+
+.event_block_header {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.event_block_desc {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 120%;
+  text-align: justify;
+}
+
+.events_button {
+  padding: 5px 15px;
+  color: #000;
+  background: linear-gradient(to right bottom, #ffdb4d, #deb102);
+  border: 1px solid #a38305;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 44px;
+  width: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events_button_btn {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.events_button:hover {
+  color: #542906; 
+  transition: color 0.3s ease;
+}
+
+.events_margins {
+  margin-bottom: 3%;
+  margin-top: 72%;
+}
+
+@media (max-width: 1250px) {
+  .events_button {
+    font-size: 110%;
+    width: 80px;
+    height: 35px;
+  }
+
+  .event_block_header {
+    font-size: 130%;
+  }
+
+  .event_block_desc {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .events_button {
+    font-size: 90%;
+    width: 80px;
+    height: 34px;
+  }
+
+  .event_block_header {
+    font-size: 120%;
+  }
+
+  .events_margins {
+    margin-bottom: 3%;
+    margin-top: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .events_button {
+    width: 80px;
+    height: 34px;
+  }
+
+  .events_margins {
+    margin-bottom: 3%;
+    margin-top: 67%;
+  }
+
+  .event_block_desc {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .events_button {
+    width: 80px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 580px) {
+  .events_display {
+    display: block;
+  }
+
+  .events_display_container {
+    display: block;
+  }
+
+  .events_display_image_cont,
+  .events_display_text_cont {
+    width: 100%;
+  }
+}

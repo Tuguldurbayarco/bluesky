@@ -1,0 +1,131 @@
+/* About Page Styles */
+.about_titles {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+.about_text {
+  font-size: 140%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.about_chess_image_container {
+  background-color: #ffde4d;
+  width: 50%;
+  overflow: hidden;
+}
+
+.about_chess_text_container {
+  background-color: #ffde4d;
+  width: 50%;
+  padding: 3%;
+}
+
+.about_chess_header {
+  font-size: 140%;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.about_image_styles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_true_positioning {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_border_top_left_radius {
+  border-top-left-radius: 10px;
+}
+
+.about_border_top_right_radius {
+  border-top-right-radius: 10px;
+}
+
+.about_border_bottom_left_radius {
+  border-bottom-left-radius: 10px;
+}
+
+.about_border_bottom_right_radius {
+  border-bottom-right-radius: 10px;
+}
+
+.about_block_border_top_left_radius {
+  border-top-left-radius: 0px;
+}
+
+.cars_desciption {
+  margin-top: 3%;
+  font-size: 130%;
+}
+
+.about_mission_text {
+  font-size: 120%;
+}
+
+@media (max-width: 1250px) {
+  .about_titles {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about_chess_header {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_position_margin_between_block {
+    margin-bottom: 5%;
+  }
+
+  .about_true_positioning {
+    display: block;
+  }
+
+  .about_chess_image_container,
+  .about_chess_text_container {
+    width: 100%;
+  }
+
+  .about_border_top_right_radius {
+    border-top-right-radius: 0;
+  }
+
+  .about_block_border_top_right_radius {
+    border-top-right-radius: 10px;
+  }
+
+  .about_block_border_bottom_right_radius,
+  .about_block_border_bottom_left_radius {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .about_border_bottom_left_radius {
+    border-bottom-left-radius: 0;
+  }
+
+  .about_block_border_top_left_radius {
+    border-top-left-radius: 10px;
+  }
+
+  .about_text {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 360px) {
+  .about_mission_text {
+    font-size: 100%;
+  }
+}
