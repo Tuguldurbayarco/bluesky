@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Eternal Sky Tours",
   description: "Eternal Sky Tours is a tour operator in Mongolia that offers tours to the most popular destinations in the country.",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
   },
 };
 

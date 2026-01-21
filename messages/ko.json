@@ -533,37 +533,44 @@
     "reindeer_tour_text": "차탄은 세계에서 마지막으로 남은 유목 순록 목동 중 하나로, 몽골 북부의 후브스굴 호수 근처 외딴 타이가에 살고 있습니다. 자연과의 독특한 유대와 전통을 보존하는 그들의 삶은 희귀하고 잊지 못할 경험을 제공합니다."
   },
   "Footer": {
-    "title1": "사이바이 투어",
-    "address": "우편번호: 14253",
-    "phone": "전화번호:",
-    "telegram": "텔레그램:",
-    "mail": "이메일:",
-    "title2": "정보",
+    "title1": "Eternal Sky Tour",
+    "address_line1": "Ulaanbaatar, Mongolia,",
+    "address_line2": "Sukhbaatar District, 3rd Khoroo,",
+    "address_line3": "5th khoroolol 39th 3apt,",
+    "address": "Zip code: 14252",
+    "phone": "Phone Number:",
+    "phone1": "+976-99902202",
+    "phone2": "+976-80303997",
+    "kakao": "Kakao Talk ID:",
+    "kakao1": "1. Ankhaa8899.",
+    "kakao2": "2. narangarav",
+    "telegram": "Telegram:",
+    "mail": "E-mail:",
+    "email1": "eternalskytour@gmail.com",
+    "email2": "eternalskytour@naver.com",
+    "title2": "여행 키트",
     "links": [
       {
-        "title": "몽골의 계절"
-      },
-      {
-        "title": "비자 정보"
+        "title": "몽골 방문 최적 시기"
       },
       {
         "title": "보험"
       },
       {
-        "title": "몽골의 날씨"
+        "title": "비자 정보"
       },
       {
-        "title": "전화 연결"
+        "title": "날씨"
       },
       {
-        "title": "숙박"
+        "title": "SIM 카드"
       }
     ],
     "title3": "질문이 있으신가요?",
     "ntitle": "이름",
     "ntitle1": "이메일",
     "ntitle2": "메시지",
-    "button": "메시지 보내기",
+    "button": "제출",
     "placeholder1": "이름",
     "placeholder2": "성"
   },

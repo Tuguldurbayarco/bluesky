@@ -10,12 +10,11 @@ export const NAV_LINKS = [
 ];
 
 export const links = [
-  {href: '/information/visit', key: 'visit', label: 'Seasons of Mongolia'},
-  {href: '/information/visa', key: 'visa', label: 'Visa information'},
+  {href: '/information/visit', key: 'visit', label: 'Best time to visit Mongolia'},
   {href: '/information/insurance', key: 'insurance', label: 'Insurance'},
-  {href: '/information/weather', key: 'weather', label: 'Weather in Mongolia'},
-  {href: '/information/phone', key: 'phone', label: 'Phone connection'},
-  {href: '/information/hotels', key: 'hotel', label: 'Accomodation'},
+  {href: '/information/visa', key: 'visa', label: 'Visa information'},
+  {href: '/information/weather', key: 'weather', label: 'Weather'},
+  {href: '/information/phone', key: 'phone', label: 'SIM card'},
 ];
 
 export const FOOTER_CONTACT_INFO = {

@@ -36,22 +36,56 @@ const Footer = ({locale}: {locale: Locale}) => {
           <div className={styles.footer_second_column}>
             <div style={{color: "#fff"}} >
               <h2 className={styles.footer_containers_title}>{t('Footer.title1')}</h2>
-              <div className={styles.footer_containers_text}>
-                <p>
-                  Ulaanbaatar, Mongolia,<br />
-                  Bayangol District, 9th Khoroo,<br />
-                  3-2 building, {t('Footer.address')}
-                </p>
-                <div>
-                  <strong >{t('Footer.phone')} </strong>
-                  +976-88109099<br />
-                  <strong style={{opacity: "0"}}>{t('Footer.phone')} </strong>
-                  +976-72206810<br /> 
+              <div className={styles.footer_contact_grid}>
+                {/* Address - full width (2 columns) */}
+                <div className={styles.footer_contact_full_width}>
+                  <div className={styles.footer_contact_item}>
+                    <img src="/location.png" alt="Location" className={styles.footer_icon} />
+                    <div className={styles.footer_contact_text}>
+                      {t('Footer.address_line1')}<br />
+                      {t('Footer.address_line2')}<br />
+                      {t('Footer.address_line3')}<br />
+                      {t('Footer.address')}
+                    </div>
+                  </div>
                 </div>
-                <p>
-                  <strong>{t('Footer.mail')} </strong>
-                  info@saibaitour.mn<br />
-                </p>
+                {/* Phone - left column */}
+                <div className={styles.footer_contact_half_width}>
+                  <div className={`${styles.footer_contact_item} ${styles.footer_tooltip_item}`} title={t('Footer.phone')}>
+                    <img src="/phone.png" alt="Phone" className={styles.footer_icon} />
+                    <div className={styles.footer_contact_text_wrapper}>
+                      <div className={`${styles.footer_contact_text} ${styles.footer_contact_no_wrap}`}>
+                        {t('Footer.phone1')}
+                      </div>
+                      <div className={`${styles.footer_contact_text} ${styles.footer_contact_no_wrap}`}>
+                        {t('Footer.phone2')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Kakao Talk - right column */}
+                <div className={styles.footer_contact_half_width}>
+                  <div className={`${styles.footer_contact_item} ${styles.footer_kakao_item}`} title={t('Footer.kakao')}>
+                    <i className={`${styles.ii} ${styles.ii_kakaotalk}`}></i>
+                    <div className={styles.footer_contact_text}>
+                      {t('Footer.kakao1').replace(/^1\.\s*/, '').replace(/\.$/, '')}<br />
+                      {t('Footer.kakao2').replace(/^2\.\s*/, '')}
+                    </div>
+                  </div>
+                </div>
+                {/* Email - full width (2 columns) */}
+                <div className={styles.footer_contact_full_width}>
+                  <div className={`${styles.footer_contact_item} ${styles.footer_tooltip_item}`} title={t('Footer.mail')}>
+                    <svg className={styles.footer_icon} width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polyline points="22,6 12,13 2,6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <div className={styles.footer_contact_text}>
+                      <div>{t('Footer.email1')}</div>
+                      <div>{t('Footer.email2')}</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -77,13 +111,8 @@ const Footer = ({locale}: {locale: Locale}) => {
         </div>
       </div>
       <div style={{backgroundColor: "#282829", color: "#fff"}}>
-        <div className="visibility_area" style={{display: "flex", justifyContent: "space-between", paddingTop: "2%", paddingBottom: "1.3%"}}>
-          <div>
-            <p>©Eternal Sky Tours LLC. 2018 - 2025.</p>
-          </div>
-          <div>
-            <a href="/terms-conditions"></a>
-          </div>
+        <div className={`visibility_area ${styles.footer_bottom}`}>
+          <p className={styles.footer_copyright} style={{marginBottom: 0}}>©Eternal Sky Tours LLC. 2018 - 2025.</p>
         </div>
       </div>
     </footer>

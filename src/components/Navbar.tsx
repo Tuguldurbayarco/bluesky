@@ -78,7 +78,8 @@ const Navbar = () => {
   }
 
   function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {
-    const handleLinkClick = () => {
+    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault(); // Temporarily prevent navigation
       setMenuOpen(false);
     };
   

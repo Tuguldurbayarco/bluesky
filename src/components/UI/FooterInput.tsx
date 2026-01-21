@@ -102,34 +102,25 @@ export default function FooterInput({
   return (
     <form onSubmit={sendMail}>
       <div>
-        <div style={{ display: "flex", width: "48%" }}>
-          <label
-            style={{ color: "#fff" }}
-            className={footerStyles.footer_containers_text}
-            htmlFor="name"
-          >
-            {title}
-          </label>
-        </div>
-        <div style={{ display: "flex", gap: "3%" }}>
+        <label htmlFor="name">
+          {title}
+        </label>
+        <div className={footerStyles.input_row}>
           <div>
-            <div style={{ border: "1px solid #fff1b5" }}>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autoComplete="given-name"
-                placeholder={pl1}
-                required
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                className={footerStyles.footer_input_field}
-              />
-            </div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autoComplete="given-name"
+              placeholder={pl1}
+              required
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
           </div>
-          <div style={{ border: "1px solid #fff1b5" }}>
+          <div>
             <input
               type="text"
               id="last"
@@ -141,64 +132,48 @@ export default function FooterInput({
               onChange={(e) => {
                 setLast(e.target.value);
               }}
-              className={footerStyles.footer_input_field}
             />
           </div>
         </div>
       </div>
       <div>
-        <label
-          style={{ color: "#fff" }}
-          className={footerStyles.footer_containers_text}
-          htmlFor="email"
-        >
+        <label htmlFor="email">
           {mail}
         </label>
-        <div style={{ border: "1px solid #fff1b5" }}>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autoComplete="email"
-            required
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-            style={{ width: "100%" }}
-          />
-        </div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autoComplete="email"
+          required
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
       </div>
       <div>
-        <label
-          style={{ color: "#fff" }}
-          className={footerStyles.footer_containers_text}
-          htmlFor="message"
-        >
+        <label htmlFor="message">
           {messages}
         </label>
-        <div>
-          <textarea
-            rows={5}
-            id="message"
-            name="message"
-            autoComplete="off"
-            required
-            value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-            style={{ width: "100%" }}
-          />
-        </div>
+        <textarea
+          rows={5}
+          id="message"
+          name="message"
+          autoComplete="off"
+          required
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+        />
       </div>
       <div>
         <button
           type="submit"
           disabled={isLoading}
           style={{
-            marginTop: "5%",
-            marginBottom: "5%",
+            marginTop: "0.5rem",
             opacity: isLoading ? 0.6 : 1,
             cursor: isLoading ? "not-allowed" : "pointer",
           }}

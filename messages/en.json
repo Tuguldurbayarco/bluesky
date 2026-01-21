@@ -533,37 +533,44 @@
     "reindeer_tour_text": "The Tsaatan are among the last remaining nomadic reindeer herders in the world, living deep in the remote forests near Lake Khuvsgul in northern Mongolia. With their unique way of life and close bond with nature, they preserve traditions that have been passed down for centuries. This is a rare and unforgettable opportunity to meet the Tsaatan people, learn about their customs, and even ride a reindeer through Mongolia’s untouched wilderness. Surrounded by breathtaking landscapes, you’ll experience a way of life that few in the world ever see. Let us help you connect with this extraordinary culture and create a once-in-a-lifetime journey into the heart of Mongolia’s nomadic heritage. Contact us to make it happen!"
   },
   "Footer": {
-    "title1": "Saibai Tour",
-    "address": "Zip code:14253",
-    "phone": "Number:",
+    "title1": "Eternal Sky Tour",
+    "address_line1": "Ulaanbaatar, Mongolia,",
+    "address_line2": "Sukhbaatar District, 3rd Khoroo,",
+    "address_line3": "5th khoroolol 39th 3apt,",
+    "address": "Zip code: 14252",
+    "phone": "Phone Number:",
+    "phone1": "+976-99902202",
+    "phone2": "+976-80303997",
+    "kakao": "Kakao Talk ID:",
+    "kakao1": "1. Ankhaa8899.",
+    "kakao2": "2. narangarav",
     "telegram": "Telegram:",
-    "mail": "Email:",
-    "title2": "Information",
+    "mail": "E-mail:",
+    "email1": "eternalskytour@gmail.com",
+    "email2": "eternalskytour@naver.com",
+    "title2": "Travel Kit",
     "links": [
       {
-        "title": "Seasons of Mongolia"
-      },
-      {
-        "title": "Visa information"
+        "title": "Best time to visit Mongolia"
       },
       {
         "title": "Insurance"
       },
       {
-        "title": "Weather in Mongolia"
+        "title": "Visa information"
       },
       {
-        "title": "Phone connection"
+        "title": "Weather"
       },
       {
-        "title": "Accommodation"
+        "title": "SIM card"
       }
     ],
     "title3": "Have a question?",
     "ntitle": "Name",
     "ntitle1": "Email",
     "ntitle2": "Message",
-    "button": "Send message",
+    "button": "Submit",
     "placeholder1": "First",
     "placeholder2": "Last"
   },

@@ -21,7 +21,7 @@ const TourCards = ({ locale }: TourCardsProps) => {
     { name: "City", href: "/tours/city", imageSrc: "/tmcity.jpg" },
     { name: "Gobi", href: "/tours/gobi", imageSrc: "/ctmgobi.jpg" },
     { name: "Central", href: "/tours/central", imageSrc: "/ctmcentral.jpg" },
-    { name: "Gobi & Khangai", href: "/tours/khangai", imageSrc: "/ctmgobi.jpg" },
+    { name: "Gobi Khangai", href: "/tours/khangai", imageSrc: "/ctmgobi.jpg" },
     { name: "Khuvsgul", href: "/tours/khuvsgul1", imageSrc: "/ctmkhuvsgul1.jpg" },
   ];
 
