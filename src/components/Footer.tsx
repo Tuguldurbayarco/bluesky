@@ -79,7 +79,7 @@ const Footer = ({locale}: {locale: Locale}) => {
       <div style={{backgroundColor: "#282829", color: "#fff"}}>
         <div className="visibility_area" style={{display: "flex", justifyContent: "space-between", paddingTop: "2%", paddingBottom: "1.3%"}}>
           <div>
-            <p>©Saibai Tour LLC. 2024.</p>
+            <p>©Eternal Sky Tours LLC. 2018 - 2025.</p>
           </div>
           <div>
             <a href="/terms-conditions"></a>

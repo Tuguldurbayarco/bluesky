@@ -6,16 +6,16 @@
     "header": "축제",
     "menu": [
       {
-        "label": "회사 소개"
+        "label": "홈"
       },
       {
-        "label": "이벤트"
+        "label": "투어"
       },
       {
-        "label": "투어" 
+        "label": "이벤트" 
       },
       {
-        "label": "정보"
+        "label": "왜 우리인가?"
       },
       {
         "label": "연락처"

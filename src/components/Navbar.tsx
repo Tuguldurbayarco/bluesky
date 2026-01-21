@@ -62,15 +62,15 @@ const Navbar = () => {
 
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
-      case "about":
+      case "home":
         return t("Index.menu.0.label");
-      case "events":
-        return t("Index.menu.1.label");
       case "tours":
+        return t("Index.menu.1.label");
+      case "events":
         return t("Index.menu.2.label");
-      case "information":
+      case "why-we":
         return t("Index.menu.3.label");
-      case "contacts":
+      case "contact":
         return t("Index.menu.4.label");
       default:
         return "";
@@ -85,8 +85,6 @@ const Navbar = () => {
     return (
       <Link href={addLocaleToHref(link.href)} key={link.key} 
         className={styles.navbar_menu_buttons}
-        onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
-        onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
         onClick={handleLinkClick}
       >
         {menuLabel(link)}

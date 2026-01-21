@@ -16,10 +16,10 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Saibai Tour",
-  description: "Best tours in Mongolia",
+  title: "Eternal Sky Tours",
+  description: "Eternal Sky Tours is a tour operator in Mongolia that offers tours to the most popular destinations in the country.",
   icons: {
-    icon: "/icon.ico",
+    icon: "/logo.png",
   },
 };
 

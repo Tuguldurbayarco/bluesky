@@ -1,4 +1,26 @@
 /* Main Page Styles */
+.welcomeSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 120px auto 0;
+}
+
+.welcomeTitle {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.welcomeDescription {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .mainpage_header_on_pictute {
   font-size: 120%;
   font-weight: 500;
@@ -60,6 +82,14 @@
 }
 
 @media (max-width: 1250px) {
+  .welcomeTitle {
+    font-size: 2.2rem;
+  }
+
+  .welcomeDescription {
+    font-size: 1.1rem;
+  }
+
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
     font-size: 110%;
@@ -71,6 +101,18 @@
 }
 
 @media (max-width: 992px) {
+  .welcomeSection {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .welcomeTitle {
+    font-size: 2rem;
+  }
+
+  .welcomeDescription {
+    font-size: 1rem;
+  }
+
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
     font-size: 100%;
@@ -86,6 +128,18 @@
 }
 
 @media (max-width: 767px) {
+  .welcomeSection {
+    padding: 2rem 1rem;
+  }
+
+  .welcomeTitle {
+    font-size: 1.75rem;
+  }
+
+  .welcomeDescription {
+    font-size: 0.95rem;
+  }
+
   .main_page_individual_tours_container,
   .main_page_three_tours_container,
   .main_page_two_tours_container,
@@ -116,6 +170,18 @@
 }
 
 @media (max-width: 480px) {
+  .welcomeSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .welcomeTitle {
+    font-size: 1.5rem;
+  }
+
+  .welcomeDescription {
+    font-size: 0.9rem;
+  }
+
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
     font-size: 70%;

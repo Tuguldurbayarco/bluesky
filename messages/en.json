@@ -6,19 +6,19 @@
     "header": "FESTIVALS",
     "menu": [
       {
-        "label": "ABOUT US"
+        "label": "Home"
       },
       {
-        "label": "EVENTS"
+        "label": "Tours"
       },
       {
-        "label": "TOURS" 
+        "label": "Events" 
       },
       {
-        "label": "INFORMATION"
+        "label": "Why WE?"
       },
       {
-        "label": "CONTACT US"
+        "label": "Contact"
       }
     ],
     "language1": "ENGLISH",
