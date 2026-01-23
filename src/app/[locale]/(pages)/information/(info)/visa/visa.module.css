@@ -1,0 +1,23 @@
+/* Visa Page Styles */
+.visa_points {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+.visa_points li {
+  margin-bottom: 0.5rem;
+}
+
+/* Bullet list (unordered) */
+.visa_points_bullet {
+  list-style-type: disc;
+}
+
+/* Numbered list (ordered) */
+.visa_points_numbered {
+  list-style-type: decimal;
+}
+
+.visa_points_numbered li {
+  font-weight: bold;
+}

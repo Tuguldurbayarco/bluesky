@@ -11,14 +11,14 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
     return `/${validLocale}${href}`;
   }  return (
     <div >
-      <div style={{width: "100%"}}>
+      <div style={{width: "100%", position: "relative"}}>
         <img 
           src='/2-2.jpg'
           alt='Contacts'
           width='100%'
           height='auto'
         />
-        <div className='header_container_for_picture'>
+        <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
           <h1 className='header_on_picture'>{t('Contacts.title')}</h1>
         </div>
       </div>

@@ -5,13 +5,13 @@ import styles from "./about.module.css";
 const About = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);  return (
     <div>
-      <div>
+      <div style={{position: "relative"}}>
         <img
           src='/bt0.jpg'
           alt='Name'
           width='100%'
         />
-        <div className='header_container_for_picture'>
+        <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
           <h1 className='header_on_picture'>{t('About.title')}</h1>
         </div>
       </div>

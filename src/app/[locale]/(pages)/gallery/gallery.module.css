@@ -1,0 +1,26 @@
+/* Gallery Page Styles */
+.gallery_page_title {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 2%;
+}
+
+.gallery_description {
+  text-align: center;
+  font-size: 140%;
+  color: #666;
+  margin-bottom: 3%;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .gallery_page_title {
+    font-size: 160%;
+  }
+
+  .gallery_description {
+    font-size: 120%;
+  }
+}

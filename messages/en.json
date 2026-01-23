@@ -306,36 +306,64 @@
       "text5": "Your safety and well-being are our top priority."
     },
     "phone": {
+      "pageTitle": "SIM Card & Mobile Connection",
+      "pageDescription": "Stay connected during your journey in Mongolia. Choose from the country's leading mobile providers to get reliable coverage and data services throughout your travels.",
       "title": [
         {
-          "title": "G-Mobile"
+          "title": "Mobicom",
+          "description": "Mobicom is Mongolia's largest mobile operator with 95% network coverage and over 1.6 million users. They offer the widest coverage in the country, extending to remote areas. Mobicom provides both physical SIM cards and eSIM options for tourists, making it the most convenient choice for international travelers visiting Mongolia.",
+          "budget": "Recommended Budget: $8-15 USD per month for data packages"
         },
         {
-          "title": "Unitel"
+          "title": "Unitel",
+          "description": "Unitel is Mongolia's second-largest mobile operator with 88% population coverage. They were the first to launch 5G services in Mongolia and offer comprehensive 4G LTE coverage. With extensive network infrastructure and high-speed data services, Unitel is perfect for travelers who need reliable connectivity throughout their journey.",
+          "budget": "Recommended Budget: $10-20 USD per month for data packages"
         },
         {
-          "title": "Skytel"
+          "title": "G-Mobile",
+          "description": "G-Mobile is Mongolia's first 3G operator, focusing on affordable plans and rural connectivity. They offer extensive coverage in remote areas through CDMA technology and provide 4G LTE services with speeds up to 75 Mbps. Ideal for travelers seeking cost-effective mobile solutions with reliable coverage across Mongolia."
         },
         {
-          "title": "Mobicom"
+          "title": "Skytel",
+          "description": "Skytel provides comprehensive telecommunications services including mobile communications, IPTV, and broadband internet. With roaming coverage in over 240 countries and strong market presence, Skytel offers reliable connectivity and innovative services. Their fiber optic network ensures high-quality internet and streaming services."
+        },
+        {
+          "title": "Ondo",
+          "description": "Ondo is Mongolia's newest mobile operator, focusing on advanced 5G technology and IoT networks. They offer innovative satellite services for areas without network coverage, including real-time tracking and monitoring services. Ondo is ideal for tech-savvy travelers and those visiting remote locations."
         }
       ],
-      "text": "Unitel, G-Mobile, Mobicom, and Skytel are prominent mobile providers in Mongolia. Unitel boasts extensive coverage and high-speed data services. G-Mobile focuses on affordable plans and innovative offerings. Mobicom, a pioneer, offers diverse telecom solutions. Skytel, known for reliability, excels in communication services and cutting-edge technologies. Together, they shape Mongolia's dynamic mobile landscape."
+      "text": "Unitel, G-Mobile, Mobicom, Skytel, and Ondo are prominent mobile providers in Mongolia. Unitel boasts extensive coverage and high-speed data services. G-Mobile focuses on affordable plans and innovative offerings. Mobicom, a pioneer, offers diverse telecom solutions. Skytel, known for reliability, excels in communication services and cutting-edge technologies. Ondo provides modern mobile services and connectivity solutions. Together, they shape Mongolia's dynamic mobile landscape.",
+      "visitWebsite": "Visit Website",
+      "recommendedOperator": "Recommended Operator",
+      "recommendedText": "We recommend this operator for travelers due to its broad coverage throughout Mongolia."
     },
     "visa": {
       "title": "HOW TO GET MONGOLIAN VISA?",
       "text1": "Most visitors need a visa to enter Mongolia, but some countries are visa-exempt for short stays. You can apply for a visa at a Mongolian embassy before your trip. If there isn’t one in your country, you can get a 30-day visa on arrival at the airport or railway station for about $50. We’ll provide an official invitation letter to help with your visa application when you book with us.",
-      "subtitle1": "NO Visa Needed For:",
-	  "ul1": "Citizens of Belarus, Brazil, Canada, Kazakhstan, Macao, and the USA (up to 3 months)",
-      "ul2": "Citizens of Germany, Israel, Japan, Malaysia, Russia, and Turkey (up to 1 month)",
-      "ul3": "Citizens of the Philippines (up to 3 weeks)",
-      "ul4": "Citizens of Singapore and Hong Kong (up to 2 weeks)",
-      "ul5": "Citizens of Cuba (up to 1 month)",
-	  "subtitle2": "Diplomatic or Official Passport Holders:",
-	  "text": "Visa-free travel is allowed for holders from several countries, including China, Vietnam, Bulgaria, Thailand, Romania, Chile, Laos, Serbia, Czech Republic, Slovakia, Mexico, Hungary, North Korea, and South Korea (usually up to 3 months).",
-      "subtitle": "Other Notes:",
+      "subtitle1": "Visa-exempt countries:",
+      "ul1": "Belarus, Brazil, Canada, Kazakhstan, Macao, USA – no need a visa for a visit not exceeding three months",
+      "ul2": "German, Israel, Japan, Malaysia, Russia, Turkey - no need a visa for a visit not exceeding one month",
+      "ul3": "Philippines - no need a visa for a visit not exceeding three weeks",
+      "ul4": "Singapore, Hong Kong - no need a visa for a visit not exceeding two weeks",
+      "ul5": "People's Republic of China, Vietnam, Bulgaria, Thailand, Romania and Chile – who has diplomatic or official passport - no need a visa for a visit",
 	  "ul6": "Indian travelers need a visa but don’t have to pay the visa fee.",
-      "ul7": "Always check with the nearest Mongolian embassy or consulate for the latest info before your trip."
+      "ul7": "Hungary, Democratic People's Republic of Korea, Republic of Korea - who has diplomatic or official passport - no need a visa for a visit not exceeding three months",
+      "ul8": "India – needs Mongolian visa without visa fee",
+      "ul9": "Cuba – no need a visa for a visit not exceeding one month",
+      "text2": "Mongolian visas are issued by Mongolian Diplomatic Missions abroad or upon arrival at a special request. The Mongolian Embassies Abroad list",
+      "subtitle2": "THE FOLLOWING MATERIALS ARE REQUIRED TO OBTAIN MONGOLIAN VISA:",
+      "materials1": "VALID PASSPORT",
+      "materials2": "ONE PASSPORT SIZED PHOTO",
+      "materials3": "APPLICATION FORM PDF (VISA APPLICATION FORM) (VISA APPLICATION FORM FOR TOURIST)",
+      "materials4": "EITHER AN INVITATION OF THE RECEIVING ENTITY (STATE, GOVERNMENT, NON-GOVERNMENTAL ORGANIZATION, BUSINESS ENTITY) OR AN OFFICIAL REQUEST OF THE SENDING COUNTRY AND THE ORGANIZATION.",
+      "materials5": "Or, for tourists wishing to stay over 30 days up to 90 days, a letter of invitation from a travel agency of Mongolia. Please let us know if you need a letter of invitation.",
+      "materials6": "Or, if you are traveling on a personal invitation of a citizen of Mongolia, an invitation approved by the Office of Immigration, Naturalization and Foreign Citizens of Mongolia, and applicant's written statement concerning his/her financial credibility to cover his/her stay in Mongolia.",
+      "materials7": "Or, for those passing Mongolia in transit, onward ticket and visa for next destination are required.",
+      "subtitle3": "Visa Fees:",
+      "fees1": "Single entry-exit visa - US$25; for urgent service (within a working day) US$50; this kind of Visa is valid for three months from the date of issuing.",
+      "fees2": "Multiple entry-exit visa valid for six months - $65; for urgent service (within a working day) $130",
+      "fees3": "Multiple entry-exit visa valid for one year - $13 - $130; for urgent service (within a working day) $26",
+      "fees4": "Visa extension valid for one week - US$15; for urgent service (within a working day) US$30; US$2 per a day exceeding a week."
 	  },
     "visit": "Seasons in Mongolia",
     "seasons": {

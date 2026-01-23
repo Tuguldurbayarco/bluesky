@@ -64,9 +64,9 @@
 /* Global Header Styles (used across multiple pages) */
 .header_container_for_picture {
   position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important; 
+  transform: translate(-50%, -50%) !important;
   color: #fff;
   text-align: center;
 }
@@ -83,6 +83,22 @@
   font-size: 200%;
   font-weight: 500;
   text-align: center;
+}
+
+/* Global Page Title and Description Styles */
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.pageDescription {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
 }
 
 /* Global Table Styles */
@@ -121,9 +137,7 @@ tbody {
     font-size: 120%;
   }
 
-  .header_container_for_picture {
-    top: 31%;
-  }
+  /* .header_container_for_picture top position removed - keeping centered */
 
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
@@ -144,6 +158,14 @@ tbody {
   .header_for_divede {
     font-size: 180%;
   }
+
+  .pageTitle {
+    font-size: 2.2rem;
+  }
+
+  .pageDescription {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -151,9 +173,7 @@ tbody {
     font-size: 200%;
   }
 
-  .header_container_for_picture {
-    top: 32%;
-  }
+  /* .header_container_for_picture top position removed - keeping centered */
 
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
@@ -174,12 +194,18 @@ tbody {
   .header_for_divede {
     font-size: 160%;
   }
+
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .pageDescription {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 767px) {
-  .header_container_for_picture {
-    top: 27%;
-  }
+  /* .header_container_for_picture top position removed - keeping centered */
 
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
@@ -202,12 +228,18 @@ tbody {
   .header_for_divede {
     font-size: 140%;
   }
+
+  .pageTitle {
+    font-size: 1.75rem;
+  }
+
+  .pageDescription {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .header_container_for_picture {
-    top: 17%;
-  }
+  /* .header_container_for_picture top position removed - keeping centered */
 
   .mainpage_link_on_pictute,
   .mainpage_header_on_pictute {
@@ -222,5 +254,20 @@ tbody {
 
   .header_for_divede {
     font-size: 120%;
+  }
+
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+
+  .pageDescription {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .pageDescription {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }

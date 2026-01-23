@@ -14,7 +14,7 @@ const Footer = ({locale}: {locale: Locale}) => {
   }
 
   return (
-    <footer style={{ backgroundColor: "#3d3d3b" }}>
+    <footer style={{ backgroundColor: "#3d3d3b", marginTop: '7rem' }}>
       <div className="visibility_area">
         <div className={styles.footer_display}>
           <div className={styles.footer_first_column}>

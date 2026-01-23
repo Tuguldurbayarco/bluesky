@@ -180,8 +180,9 @@ export const KhangaiTour = [
 ]
 
 export const mobileCompanies = [
-  {id: 1, src: "/gmobile.png", title: 'G-Mobile', href: "https://gmobile.mn/"},
-  {id: 2, src: "/unitel.png", title: 'Unitel', href: "https://www.unitel.mn/unitel/"},
-  {id: 3, src: "/skytel.png", title: 'Skytel', href: "https://www.skytel.mn/"},
-  {id: 4, src: "/mobicom.png", title: 'Mobicom', href: "https://support.mobicom.mn/"},
+  {id: 4, src: "/travel-tools/mobicom.png", title: 'Mobicom', href: "https://support.mobicom.mn/", recommended: true},
+  {id: 2, src: "/travel-tools/unitel.png", title: 'Unitel', href: "https://www.unitel.mn/unitel/", recommended: true},
+  {id: 1, src: "/travel-tools/g-mobile.png", title: 'G-Mobile', href: "https://gmobile.mn/"},
+  {id: 3, src: "/travel-tools/skytel.png", title: 'Skytel', href: "https://www.skytel.mn/"},
+  {id: 5, src: "/travel-tools/ondo.png", title: 'Ondo', href: "https://ondo.mn/"},
 ]

@@ -87,24 +87,146 @@
 
 .phone_page_display {
   display: flex;
-  gap: 10%;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.phone_operator_card {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  padding: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.phone_operator_card:last-child {
+  border-bottom: none;
+}
+
+.phone_operator_image_container {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.phone_image_placeholder {
+  width: 225px;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .phone_page_png_size {
-  width: 400px;
+  width: 225px;
+  height: 225px;
+  object-fit: contain;
+}
+
+.phone_operator_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.phone_title_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .phone_titles {
-  font-size: 140%;
-  font-weight: bolder;
-  text-align: center;
-  margin-bottom: 8%;
+  font-size: 120%;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+  text-align: left;
+}
+
+.phone_recommended_badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background-color: #10b981;
+  color: #fff;
+  font-size: 70%;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.phone_recommended_text {
+  font-size: 90%;
+  font-weight: 500;
+  color: #059669;
+  margin: 0 0 0.75rem 0;
+  padding: 0.5rem 0.75rem;
+  background-color: #d1fae5;
+  border-left: 3px solid #10b981;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.phone_description {
+  font-size: 110%;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  margin: 0;
+}
+
+.phone_budget {
+  font-size: 105%;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0.5rem 0 0 0;
+  padding: 0.75rem 1rem;
+  background-color: #eff6ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 4px;
+}
+
+.phone_website_link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 105%;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.phone_website_link:hover {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 .phone_text {
   margin-top: 3%;
   font-size: 130%;
   text-align: justify;
+}
+
+.phone_page_hero_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1492 / 721.5;
+  background-image: url('/travel-tools/telecom.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1250px) {
@@ -135,7 +257,19 @@
   }
 
   .phone_page_png_size {
-    width: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .phone_image_placeholder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .phone_operator_card {
+    gap: 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -173,7 +307,33 @@
   }
 
   .phone_page_png_size {
-    width: 250px;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
+
+  .phone_image_placeholder {
+    width: 180px;
+    height: 180px;
+    font-size: 16px;
+  }
+
+  .phone_operator_card {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .phone_titles {
+    font-size: 110%;
+  }
+
+  .phone_description {
+    font-size: 105%;
+  }
+
+  .phone_budget {
+    font-size: 100%;
+    padding: 0.5rem 0.75rem;
   }
 
   .information_text_container_left_margin {
@@ -203,7 +363,51 @@
   }
 
   .phone_page_display {
-    display: block;
+    gap: 2rem;
+  }
+
+  .phone_operator_card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .phone_operator_image_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .phone_page_png_size {
+    width: 200px;
+    height: 200px;
+  }
+
+  .phone_title_container {
+    justify-content: center;
+  }
+
+  .phone_titles {
+    text-align: center;
+  }
+
+  .phone_recommended_badge {
+    font-size: 65%;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .phone_recommended_text {
+    text-align: center;
+    font-size: 85%;
+  }
+
+  .phone_description {
+    text-align: center;
+  }
+
+  .phone_budget {
+    text-align: center;
   }
 }
 
@@ -217,6 +421,26 @@
   }
 
   .phone_page_png_size {
-    width: 98%;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
+
+  .phone_image_placeholder {
+    width: 180px;
+    height: 180px;
+    font-size: 14px;
+  }
+
+  .phone_operator_card {
+    padding: 1rem;
+  }
+
+  .phone_titles {
+    font-size: 105%;
+  }
+
+  .phone_description {
+    font-size: 100%;
   }
 }

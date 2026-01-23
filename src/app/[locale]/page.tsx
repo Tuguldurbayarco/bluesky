@@ -17,8 +17,8 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
         </div>
       </div>
       <div className={styles.welcomeSection}>
-        <h1 className={styles.welcomeTitle}>Welcome to Eternal Sky Tour</h1>
-        <p className={styles.welcomeDescription}>
+        <h1 className="pageTitle">Welcome to Eternal Sky Tour</h1>
+        <p className="pageDescription">
           Discover the breathtaking beauty of Mongolia with unforgettable adventures and authentic experiences.
         </p>
       </div>

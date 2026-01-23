@@ -21,9 +21,13 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isSubmenuOpen, setSubmenuOpen] = useState(false);
 
   const handleBurgerClick = () => {
-    setMenuOpen(!isMenuOpen); 
+    setMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setSubmenuOpen(false);
+    }
   };
 
   useEffect(() => {
@@ -60,6 +64,24 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
+  // Close submenu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (isSubmenuOpen && !target.closest(`.${styles.navbar_menu_item}`)) {
+        setSubmenuOpen(false);
+      }
+    };
+
+    if (isSubmenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isSubmenuOpen]);
+
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
       case "home":
@@ -78,18 +100,73 @@ const Navbar = () => {
   }
 
   function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {
-    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      e.preventDefault(); // Temporarily prevent navigation
-      setMenuOpen(false);
+    const isWhyWe = link.key === 'why-we';
+    
+    const submenuItems = isWhyWe ? [
+      { href: '/about-us', label: 'About Us' },
+      { href: '/gallery', label: 'Gallery' },
+      { href: '/travel-tools', label: 'Travel Tools' }
+    ] : [];
+
+    const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      // Temporarily disable navigation for tours, events, and contact
+      const disabledLinks = ['tours', 'events', 'contact'];
+      if (disabledLinks.includes(link.key)) {
+        e.preventDefault();
+        return;
+      }
+      
+      if (isWhyWe) {
+        // Toggle submenu on click for "Why WE?" link
+        e.preventDefault();
+        setSubmenuOpen(!isSubmenuOpen);
+      } else {
+        // Close menu when clicking other links on mobile
+        if (isMenuOpen) {
+          setMenuOpen(false);
+        }
+      }
     };
-  
+
     return (
-      <Link href={addLocaleToHref(link.href)} key={link.key} 
-        className={styles.navbar_menu_buttons}
-        onClick={handleLinkClick}
+      <li 
+        className={styles.navbar_menu_item}
       >
-        {menuLabel(link)}
-      </Link>
+        <Link 
+          href={addLocaleToHref(link.href)} 
+          key={link.key} 
+          className={`${styles.navbar_menu_buttons} ${isWhyWe ? styles.has_submenu : ''}`}
+          onClick={handleWhyWeClick}
+        >
+          {menuLabel(link)}
+          {isWhyWe && (
+            <span className={`${styles.submenu_icon} ${isSubmenuOpen ? styles.submenu_icon_open : ''}`}>
+              ▼
+            </span>
+          )}
+        </Link>
+        {isWhyWe && submenuItems.length > 0 && (
+          <ul 
+            className={`${styles.submenu} ${isSubmenuOpen ? styles.submenu_open : ''}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {submenuItems.map((item) => (
+              <li key={item.href}>
+                <Link 
+                  href={addLocaleToHref(item.href)}
+                  className={styles.submenu_item}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setSubmenuOpen(false);
+                  }}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
     );
   }
   

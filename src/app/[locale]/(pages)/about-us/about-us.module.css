@@ -1,0 +1,52 @@
+/* About Us Page Styles */
+.about_us_hero_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1492 / 721.5;
+  background-image: url('/about-us/Horseback-Riding.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_us_title {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.about_us_content {
+  font-size: 140%;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+.about_us_paragraph {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 1250px) {
+  .about_us_title {
+    font-size: 180%;
+  }
+  
+  .about_us_content {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_us_title {
+    font-size: 160%;
+  }
+  
+  .about_us_content {
+    font-size: 120%;
+  }
+}

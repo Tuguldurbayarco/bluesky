@@ -81,6 +81,23 @@
   text-align: justify;
 }
 
+/* Carousel caption positioning to prevent text overlap with images */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  color: #fff;
+}
+
+.carousel-caption h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 1250px) {
   .welcomeTitle {
     font-size: 2.2rem;

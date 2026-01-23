@@ -1,0 +1,13 @@
+/* What to Bring Page Styles */
+.what_to_bring_hero_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1492 / 721.5;
+  background-image: url('/travel-tools/header-img.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
