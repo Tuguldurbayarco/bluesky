@@ -29,6 +29,18 @@ const Footer = ({locale}: {locale: Locale}) => {
                     </Link>
                   </li>
                 ))}
+                <li style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: "2%" }}>
+                  <img src="/location.png" alt="Location" className={styles.footer_icon} style={{width: '16px', height: '16px', margin: 0}} />
+                  <a 
+                    href="https://maps.app.goo.gl/CjbCscitPJNKdCV4A" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{textDecoration: "none", color: "#fff"}} 
+                    className={styles.footer_containers_text}
+                  >
+                    {t('Footer.guestHouse')}
+                  </a>
+                </li>
               </div>
             </div>
           </div>

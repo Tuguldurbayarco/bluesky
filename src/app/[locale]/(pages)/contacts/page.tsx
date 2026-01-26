@@ -1,6 +1,7 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import InputForm from '@/components/UI/InputForm';
 import styles from "./contacts.module.css";
+import formStyles from "@/components/footer.module.css";
 import { Suspense } from "react";
 
 const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
@@ -13,7 +14,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
     <div >
       <div style={{width: "100%", position: "relative"}}>
         <img 
-          src='/2-2.jpg'
+          src='/3.jpg'
           alt='Contacts'
           width='100%'
           height='auto'
@@ -22,7 +23,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
           <h1 className='header_on_picture'>{t('Contacts.title')}</h1>
         </div>
       </div>
-      <div style={{width: "100%", height: "100%", textAlign: "center"}}> {/*Endehee*/}
+      <div style={{width: "100%", height: "100%", textAlign: "center"}}>
         <div style={{width: "100%", height: "100%"}}>
           <div className={styles.contact_plank}>
             <div style={{padding: "2%"}}>
@@ -32,8 +33,8 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href="tel:+97688109099" style={{textDecoration: "none"}}>+976-88109099<br /></a>
-              <a href="tel:+97672206810" style={{textDecoration: "none"}}>+976-72206810</a>
+              <a href="tel:+97699902202" style={{textDecoration: "none"}}>+976-99902202<br /></a>
+              <a href="tel:+97680303997" style={{textDecoration: "none"}}>+976-80303997</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -42,7 +43,8 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href="mailto:info@saibaitour.mn" style={{textDecoration: "none"}}>info@saibaitour.mn<br /></a>
+              <a href="mailto:eternalskytour@gmail.com" style={{textDecoration: "none"}}>eternalskytour@gmail.com<br /></a>
+              <a href="mailto:eternalskytour@naver.com" style={{textDecoration: "none"}}>eternalskytour@naver.com</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -51,7 +53,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href={`https://www.google.com/maps?q=${encodeURIComponent('47.924610, 106.863472')}`} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('Contacts.fourth')}</a>
+              <a href="https://maps.app.goo.gl/CjbCscitPJNKdCV4A" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('Contacts.fourth')}</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -60,11 +62,11 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <p>16093-0024, 9 khoroo, 3-2 building,<br />Ulaanbaatar, Mongolia</p>
+              <p>{t('Footer.address_line1')}<br />{t('Footer.address_line2')}<br />{t('Footer.address_line3')}<br />{t('Footer.address')}</p>
             </div>
           </div>
         </div>
-      </div> {/*Ene hurter*/}
+      </div>
       <div className='visibility_area'>
         <div>
           <h2 className={styles.contact_subheader}>{t('Contacts.header')}</h2>
@@ -78,7 +80,8 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
         <p className={styles.contact_text} style={{textAlign: "center"}}>{t('Contacts.third')}</p>
         <div className='visibility_area'>
           <Suspense fallback={<div>Loading...</div>}>
-            <InputForm
+            <div className={formStyles.footer_third_column} style={{backgroundColor: "#3d3d3b", padding: "2rem", borderRadius: "8px", marginTop: "2rem"}}>
+              <InputForm
               formHeader={t('Contacts.formHeader')}
               formTitle={t('Contacts.name')}
               formPlaceholder1={t('Contacts.first')}
@@ -120,6 +123,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
               country12={t('Contacts.country12')}
               country13={t('Contacts.country13')}
             />
+            </div>
           </Suspense>
         </div>
       </div>

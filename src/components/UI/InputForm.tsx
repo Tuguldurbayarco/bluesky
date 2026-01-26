@@ -125,12 +125,12 @@ const InputForm = ({ ...props }: any) => {
 
   return (
     <div>
-      <h2 className="contacts_form_header">{props.formHeader}</h2>
+      <h2 style={{color: "#fff", marginBottom: "0.5rem", fontWeight: 500, letterSpacing: "0.03em"}}>{props.formHeader}</h2>
       <form onSubmit={sendForm} className="contact_form">
-        <p style={{ marginBottom: 0 }}>
-          {props.formTitle} <a style={{ color: "red" }}>*</a>
+        <p style={{ marginBottom: 0, color: "#fff" }}>
+          {props.formTitle} <span style={{ color: "red" }}>*</span>
         </p>
-        <div style={{ width: "100%", display: "flex", gap: "5%" }}>
+        <div style={{ width: "100%", display: "flex", gap: "0.75rem" }}>
           <Input
             type="text"
             id="name"
@@ -156,8 +156,8 @@ const InputForm = ({ ...props }: any) => {
             }}
           />
         </div>
-        <p style={{ marginBottom: 0 }}>
-          {props.mail} <a style={{ color: "red" }}>*</a>
+        <p style={{ marginBottom: 0, color: "#fff" }}>
+          {props.mail} <span style={{ color: "red" }}>*</span>
         </p>
         <Input
           type="email"
@@ -172,7 +172,7 @@ const InputForm = ({ ...props }: any) => {
           }}
         />
         <div>
-          <p style={{ marginBottom: 0 }}>{props.countryTitle}</p>
+          <p style={{ marginBottom: 0, color: "#fff" }}>{props.countryTitle}</p>
           <div>
             <select
               id="country"
@@ -181,6 +181,7 @@ const InputForm = ({ ...props }: any) => {
               value={country}
               className="Input"
               onChange={(e) => setCountry(e.target.value)}
+              style={{backgroundColor: "#fff", cursor: "pointer"}}
             >
               <option value="not selected">{props.choice}</option>
               <option value="South Korea">{props.country1} </option>
@@ -198,7 +199,7 @@ const InputForm = ({ ...props }: any) => {
               <option value="Other">{props.country13} </option>
             </select>
           </div>
-          <p style={{ marginBottom: 0 }}>{props.tourTitle}</p>
+          <p style={{ marginBottom: 0, color: "#fff" }}>{props.tourTitle}</p>
           <div>
             <select
               id="tour"
@@ -208,6 +209,7 @@ const InputForm = ({ ...props }: any) => {
               className="Input"
               onChange={(e) => setTour(e.target.value)}
               disabled={isTourPreSelected}
+              style={{backgroundColor: "#fff", cursor: isTourPreSelected ? "not-allowed" : "pointer", opacity: isTourPreSelected ? 0.6 : 1}}
             >
               <option value="not selected">{props.choice}</option>
               <option
@@ -257,8 +259,8 @@ const InputForm = ({ ...props }: any) => {
               <option value="tsaatan">{props.choice8} </option>
             </select>
           </div>
-          <p style={{ marginBottom: 0 }}>
-            {props.numberTitle} <a style={{ color: "red" }}>*</a>
+          <p style={{ marginBottom: 0, color: "#fff" }}>
+            {props.numberTitle} <span style={{ color: "red" }}>*</span>
           </p>
           <Input
             type="number"
@@ -280,7 +282,7 @@ const InputForm = ({ ...props }: any) => {
             }}
           />
         </div>
-        <p style={{ marginBottom: 0 }}>{props.messageTitle}</p>
+        <p style={{ marginBottom: 0, color: "#fff" }}>{props.messageTitle}</p>
         <TextArea
           id="message"
           name="message"
@@ -302,7 +304,7 @@ const InputForm = ({ ...props }: any) => {
             {props.agreeTitle}
           </label>
         </div>*/}
-        <div style={{ marginTop: "3%" }}>
+        <div style={{ marginTop: "0.5rem" }}>
           <Button type="Submit" disabled={isLoading} isLoading={isLoading}>
             {isLoading ? "Sending..." : props.buttonTitle}
           </Button>

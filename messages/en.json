@@ -56,7 +56,7 @@
   },
   "Contacts": {
     "title": "CONTACTS",
-    "header": "Get in Touch with Saibai Tour",
+    "header": "Get in Touch with Eternal Sky Tour",
     "text": "Our friendly and experienced team is always here to answer any questions about our travel products and services. Just fill out the form below, and we’ll get back to you quickly—often in no time at all!",
     "second": "Leave us your request",
     "third": "and we will get back to you.",
@@ -594,6 +594,7 @@
         "title": "SIM card"
       }
     ],
+    "guestHouse": "Our Guest House",
     "title3": "Have a question?",
     "ntitle": "Name",
     "ntitle1": "Email",
