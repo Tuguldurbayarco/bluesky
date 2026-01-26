@@ -64,30 +64,31 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
-  // Close submenu when clicking outside or on other menu items
+  // Close submenu when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const navbarMenu = target.closest(`.${styles.navbar_menu_container}`);
+      // Check if click is inside the "Why WE?" menu item or its submenu
       const whyWeMenuItem = target.closest(`.${styles.navbar_menu_item}`);
       const submenu = target.closest(`.${styles.submenu}`);
+      const hasSubmenu = target.closest(`.${styles.has_submenu}`);
       
-      // Close submenu if:
-      // 1. Click is outside the navbar menu entirely, OR
-      // 2. Click is on a menu item that is NOT the "Why WE?" item (and not inside the submenu)
+      // Close submenu if click is outside the "Why WE?" menu item and its submenu
       if (isSubmenuOpen) {
-        if (!navbarMenu || (whyWeMenuItem && !submenu && !target.closest(`.${styles.has_submenu}`))) {
+        const isInsideWhyWe = whyWeMenuItem && (submenu || hasSubmenu);
+        if (!isInsideWhyWe) {
           setSubmenuOpen(false);
         }
       }
     };
 
     if (isSubmenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      // Use capture phase to catch clicks earlier
+      document.addEventListener('click', handleClickOutside, true);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('click', handleClickOutside, true);
     };
   }, [isSubmenuOpen, styles]);
 
