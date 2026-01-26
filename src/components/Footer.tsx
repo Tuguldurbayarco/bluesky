@@ -1,5 +1,5 @@
 import FooterInput from "./UI/FooterInput"
-import { links } from "@/constants";
+import { links, SOCIALS } from "@/constants";
 import Link from "next/link"
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import styles from "./footer.module.css";
@@ -112,7 +112,30 @@ const Footer = ({locale}: {locale: Locale}) => {
       </div>
       <div style={{backgroundColor: "#282829", color: "#fff"}}>
         <div className={`visibility_area ${styles.footer_bottom}`}>
-          <p className={styles.footer_copyright} style={{marginBottom: 0}}>©Eternal Sky Tours LLC. 2018 - 2025.</p>
+          <div className={styles.footer_bottom_content}>
+            <p className={styles.footer_copyright}>©Eternal Sky Tours LLC. 2018 - 2025.</p>
+            <div className={styles.footer_socials}>
+              {SOCIALS.links.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.footer_social_link}
+                  aria-label={social.name}
+                >
+                  {social.icon === 'email' ? (
+                    <svg className={styles.footer_social_icon} width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polyline points="22,6 12,13 2,6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  ) : (
+                    <img src={social.icon} alt={social.name} className={styles.footer_social_icon} />
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </footer>

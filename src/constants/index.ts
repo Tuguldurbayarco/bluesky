@@ -45,9 +45,21 @@ export const FOOTER_LINKS = {
 export const SOCIALS = {
   title: 'Socials',
   links: [
-    '/instagram.svg', 
-    '/facebook.svg', 
-    '/mail.png', 
+    { 
+      name: 'Facebook',
+      url: 'https://www.facebook.com/EternalSkyTour',
+      icon: '/facebook.svg'
+    },
+    { 
+      name: 'Instagram',
+      url: 'https://www.instagram.com/eternalskytour/',
+      icon: '/instagram.svg'
+    },
+    { 
+      name: 'Email',
+      url: 'mailto:eternalskytour@gmail.com',
+      icon: 'email'
+    },
   ],
 };
 

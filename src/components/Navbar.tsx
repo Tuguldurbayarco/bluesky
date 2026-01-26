@@ -110,7 +110,7 @@ const Navbar = () => {
 
     const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
       // Temporarily disable navigation for tours, events, and contact
-      const disabledLinks = ['tours', 'events', 'contact'];
+      const disabledLinks = ['tours', 'events'];
       if (disabledLinks.includes(link.key)) {
         e.preventDefault();
         return;
