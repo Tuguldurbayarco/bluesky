@@ -64,12 +64,21 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
-  // Close submenu when clicking outside
+  // Close submenu when clicking outside or on other menu items
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (isSubmenuOpen && !target.closest(`.${styles.navbar_menu_item}`)) {
-        setSubmenuOpen(false);
+      const navbarMenu = target.closest(`.${styles.navbar_menu_container}`);
+      const whyWeMenuItem = target.closest(`.${styles.navbar_menu_item}`);
+      const submenu = target.closest(`.${styles.submenu}`);
+      
+      // Close submenu if:
+      // 1. Click is outside the navbar menu entirely, OR
+      // 2. Click is on a menu item that is NOT the "Why WE?" item (and not inside the submenu)
+      if (isSubmenuOpen) {
+        if (!navbarMenu || (whyWeMenuItem && !submenu && !target.closest(`.${styles.has_submenu}`))) {
+          setSubmenuOpen(false);
+        }
       }
     };
 
@@ -80,7 +89,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, [isSubmenuOpen]);
+  }, [isSubmenuOpen, styles]);
 
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
@@ -110,7 +119,7 @@ const Navbar = () => {
 
     const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
       // Temporarily disable navigation for tours, events, and contact
-      const disabledLinks = ['tours', 'events'];
+      const disabledLinks = ['tours'];
       if (disabledLinks.includes(link.key)) {
         e.preventDefault();
         return;
@@ -121,6 +130,8 @@ const Navbar = () => {
         e.preventDefault();
         setSubmenuOpen(!isSubmenuOpen);
       } else {
+        // Close submenu when clicking other menu items
+        setSubmenuOpen(false);
         // Close menu when clicking other links on mobile
         if (isMenuOpen) {
           setMenuOpen(false);

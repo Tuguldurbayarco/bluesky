@@ -7,13 +7,14 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
   
   return (
     <main>
-      <div>
-        <div>
-          <img
-            className="d-block w-100"
-            src="/3.jpg"
-            alt="Header image"
-          />
+      <div style={{position: "relative"}}>
+        <img
+          className="d-block w-100"
+          src="/3.jpg"
+          alt="Header image"
+        />
+        <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
+          <h1 className='header_on_picture'>Travel to Mongolia</h1>
         </div>
       </div>
       <div className={styles.welcomeSection}>

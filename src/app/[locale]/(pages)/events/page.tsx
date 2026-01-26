@@ -9,8 +9,8 @@ const Events = ({params: {locale}}: {params: {locale: string}}) => {
     <div>
       <div style={{position: "relative"}}>
         <img
-          src='/3-3.jpg'
-          alt='Name'
+          src='/events/eventsHeader.jpg'
+          alt='Events'
           width='100%'
         />
         <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>

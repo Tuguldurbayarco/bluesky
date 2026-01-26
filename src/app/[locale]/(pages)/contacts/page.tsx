@@ -14,7 +14,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
     <div >
       <div style={{width: "100%", position: "relative"}}>
         <img 
-          src='/3.jpg'
+          src='/contacts/contactsHeader.jpg'
           alt='Contacts'
           width='100%'
           height='auto'
