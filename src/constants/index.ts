@@ -103,11 +103,11 @@ export const INDIVIDUAL_TOURS = [
 ]
 
 export const EVENTS = [
-  {id: 1, href: '/events/tsagaansar', src: "/tsagaan.jpg", title: 'Tsagaan Sar', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
-  {id: 2, href: '/events/camel', src: "/22.jpg", title: "Camel Festival", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
-  {id: 3, href: '/events/eagle', src: "/20.jpg", title: 'Eagle Festival', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
-  {id: 4, href: '/events/ice', src: "/23.jpg", title: 'Ice festival', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
-  {id: 5, href: '/events/naadam', src: "/21.jpg", title: 'Naadam Festival', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
+  {id: 1, href: '/events/tsagaansar', src: "/events/tsagaan.jpg", title: 'Tsagaan Sar', days: '5 days 4 nights'},
+  {id: 2, href: '/events/ice', src: "/events/23.jpg", title: 'Ice Festival', days: '6 days 5 nights'},
+  {id: 3, href: '/events/eagle', src: "/events/20.jpg", title: 'Eagle Festival', days: '4 days 3 nights'},
+  {id: 4, href: '/events/camel', src: "/events/22.jpg", title: "Camel Festival", days: '5 days 4 nights'},
+  {id: 5, href: '/events/naadam', src: "/events/21.jpg", title: 'Naadam Festival', days: '3 days 2 nights'},
 ]
 
 export const OPTIONS = [
@@ -117,9 +117,9 @@ export const OPTIONS = [
 ]
 
 export const FESTIVALS = [
-  {id: 1, href: '/events/naadam', src: "/21-c.jpg", title: 'Naadam Festival', description: "Far far"},
-  {id: 2, href: '/events/camel', src: "/22-c.jpg", title: 'Camel Festival', description: "Far far"},
-  {id: 3, href: '/events/eagle', src: "/20-c.jpg", title: 'Eagle Festival', description: "Far far"},
+  {id: 1, href: '/events/naadam', src: "/events/21-c.jpg", title: 'Naadam Festival', description: "Far far"},
+  {id: 2, href: '/events/camel', src: "/events/22-c.jpg", title: 'Camel Festival', description: "Far far"},
+  {id: 3, href: '/events/eagle', src: "/events/20-c.jpg", title: 'Eagle Festival', description: "Far far"},
 ]
 
 export const CENTRAL = "Immerse yourself in the captivating beauty of central Mongolia, where rolling hills, emerald grasslands, and meandering rivers paint a picturesque landscape. Experience the serenity of pristine nature, dotted with nomadic herder communities and their traditional gers. Central Mongolia invites you to explore its enchanting valleys, historic monasteries, and the majestic Khangai mountain range. Discover the heart of the country's cultural heritage as you witness age-old traditions against a backdrop of lush meadows. A journey through central Mongolia promises an awe-inspiring encounter with the charm of its landscapes and the enduring spirit of its people."

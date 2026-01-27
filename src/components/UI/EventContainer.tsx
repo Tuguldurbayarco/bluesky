@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { EVENTS } from '@/constants';
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
+import styles from "@/app/[locale]/(pages)/events/events.module.css";
 
 const EventContainer = ({locale}: {locale?: Locale}) => {
   const validLocale = isValidLocale(locale || 'en') ? (locale || 'en') : defaultLocale;
@@ -12,10 +13,10 @@ const EventContainer = ({locale}: {locale?: Locale}) => {
   }
   return (
     <div >
-      <div className='events_display'>
+      <div className={styles.events_display}>
         {EVENTS.map((element, index) => (
-          <div key={index} className='events_display_container'>
-            <a href={addLocaleToHref(element.href)} className='events_display_image_cont'>
+          <div key={index} className={styles.events_display_container}>
+            <a href={addLocaleToHref(element.href)} className={styles.events_display_image_cont}>
               <img
                 src={element.src}
                 alt='images'
@@ -24,9 +25,9 @@ const EventContainer = ({locale}: {locale?: Locale}) => {
                 style={{borderRadius: "10px", marginTop:"38px"}}
               />
             </a>
-            <div className='events_display_text_cont'>
-              <p className='event_block_header'>{t(`Events.event-container.${index}.title`)}</p>
-              <p className='event_block_desc'>
+            <div className={styles.events_display_text_cont}>
+              <h3 className={styles.event_block_header}>{t(`Events.event-container.${index}.title`)} <span style={{fontSize: '0.72em', fontWeight: 'normal', color: '#c23b3b'}}>{element.days}</span></h3>
+              <p className={styles.event_block_desc}>
                 {t(`Events.event-container.${index}.description`)}
                 <a href={addLocaleToHref(element.href)} style={{color: "#4d5df0"}}> {t('Events.eventContainer')}</a>
               </p>

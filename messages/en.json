@@ -12,7 +12,7 @@
         "label": "Tours"
       },
       {
-        "label": "Events" 
+        "label": "Events"
       },
       {
         "label": "Why WE?"
@@ -108,23 +108,125 @@
     "previous": "Previous",
     "camel-festival": {
       "title": "Camel festival",
-      "text": "Thousand Camel Festival – A Celebration of Mongolia’s Iconic Animal. Held in the vast expanses of Mongolia’s southern Umnugovi Province, the \"Thousand Camel Festival\" is a truly unique winter spectacle that celebrates the resilient and majestic Bactrian camel—an animal that has long been central to the lives of Mongolian nomads. This thrilling festival was first initiated in 1997 by local herders and communities in partnership with a non-governmental organization. Its goal was to raise awareness about the declining camel population, preserve the age-old camel breeding traditions, and pass this cultural heritage on to future generations. The festival has since grown into a national and international attraction, drawing visitors from around the world to witness this extraordinary gathering of camels and camel herders. Set against the stark beauty of the Gobi Desert’s winter landscape, the event typically features hundreds of Bactrian camels—strong, woolly, and well-adapted to Mongolia’s harsh climate. Festival highlights include thrilling camel races across the snow-dusted steppe and exciting camel polo matches that showcase remarkable skill and coordination. Visitors can also enjoy the \"best camel\" competition, which celebrates the finest breeding stock, along with folk concerts, traditional dance, and throat singing performed in colorful deels. Local markets and stalls offer camel wool products, handmade crafts, and delicious Gobi delicacies. Families gather warmly around the festivities, dressed in their best winter deels, while children ride camels or enjoy traditional games. The atmosphere is festive, yet also rooted in the seriousness of conservation and cultural pride. For travelers, the Thousand Camel Festival offers a rare window into the lives of Gobi nomads, where camels are not only vital means of transport but also companions and a source of livelihood. This is a once-in-a-lifetime opportunity to connect with Mongolia’s living traditions, support community-based conservation, and celebrate the enduring spirit of nomadic life in one of the world’s most remote and remarkable regions. Contact us to make this unforgettable experience a reality!"
+      "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province (South Gobi) to celebrate Mongolian camels and protect the species and pass the rich Mongolian camel breeding heritage to the next generation. Nomads from afar and near wear their best traditional costumes and ride their best camels to attend the Festival.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "description": "Arrival in Ulaanbaatar / City tour"
+        },
+        {
+          "day": "Day 2",
+          "description": "Early in the morning drive to the South Gobi"
+        },
+        {
+          "day": "Day 3",
+          "description": "CAMEL FESTIVAL day"
+        },
+        {
+          "day": "Day 4",
+          "description": "CAMEL FESTIVAL day"
+        },
+        {
+          "day": "Day 5",
+          "description": "Travel back to Ulaanbaatar. Shopping and free time. Dinner / Mongolian food."
+        }
+      ]
     },
     "eagle-festival": {
       "title": "Eagle festival",
-      "text": "The Eagle Festival in Bayan-Ölgii Province, nestled in the remote western reaches of Mongolia, is one of the most unique and captivating cultural events in the world. Held every autumn, typically in early October, this festival brings together Kazakh eagle hunters—known locally as \"berkutchi\"—to celebrate and compete in the centuries-old tradition of hunting with golden eagles. Set against the dramatic backdrop of the Altai Mountains, the festival is a vibrant expression of Kazakh nomadic heritage, where the bond between human and bird is both revered and proudly displayed. Participants arrive on horseback dressed in full traditional Kazakh regalia, accompanied by their powerful golden eagles perched on their arms. The festival is a thrilling spectacle: hunters release their eagles from hilltops, calling them from a distance to test their speed, precision, and loyalty. The competition also includes simulated hunts using fox skins, traditional horseback games like kokpar (a tug-of-war played with a goat carcass), and displays of horsemanship that reflect the strength and skill of the nomadic way of life. But beyond the competition, the Eagle Festival is a joyous cultural gathering. Visitors are welcomed warmly into the world of the Kazakh nomads, invited to share their food, music, stories, and customs. It's a chance to experience the warmth of their hospitality, learn about eagle training and Kazakh folklore, and witness traditions that have been preserved for generations in one of the world’s most isolated landscapes. Attending the Eagle Festival is more than just a journey—it’s a deep cultural immersion into the soul of Mongolia’s western frontier. Contact us to make this unforgettable experience a reality."
+      "text": "Join the Kazakh Eagle Hunters on a hunt during the cold winter months. The Kazakhs use eagles to hunt for foxes and hares that are easy to see against the snow. Freezing temperatures and long days on Mongolian horses discourage most people from attempting this adventure. For those who do, seeing an eagle released from a man's forearm swoop down and kill a fox a mile away is a truly unforgettable experience.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "description": "Arrival in Ulaanbaatar"
+        },
+        {
+          "day": "Day 2",
+          "description": "Take a flight to Ulgii (Bayan-Ulgii Province) and transfer to the Festival place, located only 45 kms from Ulgii airport. Meet the Kazakh eagle-hunters. The rodeo of eagle-hunting. A fantastic opportunity for photographers and adventurers alike to see these magnificent birds up close. There are approx. 400 eagle-hunters in Bayan-Ulgii aimag. The eagle-hunters from around regions gather to test their finely trained birds in singular contests of speed and agility in these few days."
+        },
+        {
+          "day": "Day 3",
+          "description": "Attend the Eagle Festival"
+        },
+        {
+          "day": "Day 4",
+          "description": "Fly back to Ulaanbaatar"
+        }
+      ]
     },
     "ice-festival": {
       "title": "Ice festival",
-      "text": "The Ice Festival on Lake Khuvsgul is one of Mongolia’s most magical winter events, held every March on the frozen surface of the country's largest freshwater lake. Set against the stunning backdrop of snow-covered mountains and pristine ice, the festival brings together local residents, nomadic communities, and international travelers in a vibrant celebration of culture, nature, and tradition. A key highlight of the festival is the participation of the Tsaatan reindeer herders and shamans from the remote northern taiga. They showcase their unique customs and rich spiritual heritage through traditional performances, music, and shamanic rituals. These rare cultural expressions provide a rare and meaningful insight into one of the world’s last remaining reindeer-herding societies. Throughout the two-day event, visitors can enjoy a wide range of winter sports and cultural competitions, including ice wrestling, horse sleigh racing, ice skating, tug-of-war, and even ice sumo. Artists and craftsmen also present intricate ice sculptures and displays of handmade goods, giving guests a chance to experience the artistry and craftsmanship of Mongolian nomads. The Ice Festival has been growing steadily each year, drawing more travelers from around the world who come to experience its unique blend of natural beauty and cultural richness. It offers unforgettable opportunities to capture breathtaking photographs, meet local families, and witness Mongolia’s winter traditions in their most authentic form. Whether you're seeking adventure, cultural discovery, or a once-in-a-lifetime journey into the heart of Mongolia's winter wilderness, the Ice Festival on Lake Khuvsgul is an experience you won’t forget. Contact us to help you make this extraordinary journey a reality!"
+      "text": "Nomadic reindeer herders and shamans show off their cultural performances, such as art, music and shaman rituals. This Ice Festival has been developing year by year. International visitors come to the Festival to capture scenic images and experience winter Mongolia and nomadic culture. It is worth to visit here.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "description": "Arrival in Ulaanbaatar"
+        },
+        {
+          "day": "Day 2",
+          "description": "Drive to Erdenet City and stay in hotel"
+        },
+        {
+          "day": "Day 3",
+          "description": "After breakfast drive to Khuvsgul Lake"
+        },
+        {
+          "day": "Day 4",
+          "description": "Enjoy the first day of Ice Festival"
+        },
+        {
+          "day": "Day 5",
+          "description": "Enjoy the second day of Ice Festival"
+        },
+        {
+          "day": "Day 6",
+          "description": "Back to Ulaanbaatar"
+        }
+      ]
     },
     "naadam-festival": {
       "title": "Naadam festival",
-      "text": "The Naadam Festival is Mongolia’s most iconic and celebrated national holiday, held every year from July 11 to 13. Often referred to as the \"Three Manly Games\" Naadam showcases traditional Mongolian wrestling, horse racing, and archery—each deeply rooted in the country's nomadic warrior culture and history. More than just a sports event, Naadam is a grand celebration of Mongolia’s independence, cultural pride, and heritage. The festival dates back to the era of the Great Khans, when such competitions were used to test the strength, skill, and stamina of warriors. Today, it begins with a colorful opening ceremony featuring parades, music, traditional dances, and performances of throat singing and morin khuur (horse-head fiddle). Wrestlers in ceremonial garb enter the arena in a proud procession, archers release arrows with centuries-old techniques, and child jockeys—some as young as five—ride powerful horses across vast steppes in epic long-distance races. Naadam is celebrated nationwide, from the capital Ulaanbaatar’s stadium events to small village competitions. Locals wear their finest traditional deels, feast on festive foods like khuushuur (fried meat dumplings), and gather with family and friends. The spirit of unity, resilience, and celebration runs high throughout the country. Experiencing Naadam offers visitors a rare glimpse into Mongolia’s living history, where the traditions of Genghis Khan’s era are honored with pride. Whether you join in the capital or in a rural province, Naadam is a unique opportunity to witness the heart and soul of Mongolian culture. Contact us to plan your journey and experience the Naadam Festival firsthand!"
+      "text": "The core of the festival – three manly sports – the wrestling, horse-racing and archery embrace many elements of art, such as singing, dancing and performing. Nomadic Mongolians have known when to throw the parties. Naadam Festival is held in the most enjoyable month of the most pleasant season in the country. Therefore, everyone takes the opportunity and enjoys the Festival in diverse schedule such as travelling to the countryside, camping out and gathering in their closest herds.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "description": "Arrival in Ulaanbaatar City tour"
+        },
+        {
+          "day": "Day 2",
+          "description": "The Opening Ceremony of the Naadam Festival Day"
+        },
+        {
+          "day": "Day 3",
+          "description": "Explore the Terelj National Park & the Chinggis Khaan Statue Complex. Drive back to Ulaanbaatar"
+        }
+      ]
     },
     "tsagaan-sar": {
       "title": "Tsagaan Sar",
-      "text": "Tsagaan Sar, meaning White Moon or White Month, is Mongolia’s most important and beloved traditional holiday. Marking the end of winter and the start of spring, it is celebrated during the Lunar New Year, symbolizing renewal, purification, and new beginnings. Despite the global spread of Christmas, Tsagaan Sar remains the true heart of Mongolia’s festive calendar — a time when families come together to reflect on the past year and welcome the new one with warmth, gratitude, and hope. Rooted in centuries-old nomadic customs, Tsagaan Sar is more than a holiday — it’s a deeply spiritual and social event. It begins with Bituun, the day before the new moon, when families thoroughly clean their homes to sweep away bad luck and prepare to greet the new year with clarity and positive energy. On the main day, people dress in their finest, often wearing newly made winter \"deels\" — beautifully embroidered traditional garments passed down through generations. The heart of the celebration lies in family visits and feasting. Elders are honored with respectful greetings, known as \"zolgokh\", where younger family members clasp their elders’ arms and offer kind wishes. In return, the young are given symbolic gifts, often money or sweets, as a blessing for a prosperous year ahead. This mutual exchange strengthens bonds and pays tribute to the wisdom and legacy of older generations. Guests are welcomed with a grand spread of traditional dishes: \"buuz\" (steamed dumplings), dairy delicacies, \"ul boov\" (layered ceremonial cakes), and \"airag\" (fermented mare’s milk), all arranged with symbolic meaning. Families travel from far and wide to reconnect — some spending days on the road — as Tsagaan Sar is not only about the turning of the year but also a time to refresh relationships and reinforce unity. The holiday typically lasts several days, during which relatives, friends, and neighbors visit one another in a joyful rotation of hospitality. Despite the often harsh winter temperatures, the atmosphere is warm, welcoming, and filled with laughter, storytelling, and traditional games. For travelers, experiencing Tsagaan Sar offers a rare cultural window into Mongolia’s soul. It is an immersive opportunity to witness authentic nomadic traditions, taste unique foods, and join in age-old rituals that are still deeply alive in modern Mongolia. Celebrate renewal the Mongolian way — through kinship, tradition, and unforgettable hospitality. Join us during Tsagaan Sar for a truly enriching travel experience unlike any other."
+      "text": "Winter in Mongolia is a remarkable experience for those willing to take themselves outside of their comfort zone. Pack your thermals and come to Mongolia this winter and do something a little out of the ordinary. Come and enjoy being part of a minority who visit Mongolia in the winter and actually interact with the local people and enjoy slowing-down and seeing and experiencing Mongolia like few other people get to do.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "description": "Arrival in Ulaanbaatar (we will pick you up from the airport)"
+        },
+        {
+          "day": "Day 2",
+          "description": "Drive to Chinggis Khaan Statue, go to a local family, celebrate Lunar New Year eve (homestay)"
+        },
+        {
+          "day": "Day 3",
+          "description": "Attending first day of Lunar New Year, try Mongolian cuisine"
+        },
+        {
+          "day": "Day 4",
+          "description": "Drive to Terelj National Park"
+        },
+        {
+          "day": "Day 5",
+          "description": "Back to Ulaanbaatar and go to the airport"
+        }
+      ]
     },
     "festivals": [
       {
@@ -140,26 +242,29 @@
     "event-container": [
       {
         "title": "TSAGAAN SAR",
-        "description": "Tsagaan Sar, or the White Month, is Mongolia’s Lunar New Year and the most important celebration of the year. Taking place at the beginning of spring, it marks a time of renewal, family gatherings, and deep-rooted cultural traditions. We highly recommend experiencing this meaningful festival during your trip. You’ll have the chance to taste traditional foods like *buuz* (steamed dumplings), wear colorful Mongolian clothing, take part in age-old rituals, and witness the warmth and hospitality that define Mongolian culture. Celebrate the Lunar New Year the Mongolian way — it’s a truly unforgettable experience that will stay with you long after your journey ends."
-      },
-      {
-        "title": "CAMEL FESTIVAL",
-        "description": "Travel to the legendary Gobi Desert to experience the renowned Thousand Camel Festival — one of the world’s most unique and celebrated winter events. Held annually, this vibrant festival is organized by a local non-governmental organization committed to the protection and preservation of the endangered Bactrian camel, a vital symbol of Mongolia’s nomadic heritage. More than just a spectacle, the festival shines a spotlight on the cultural and ecological importance of these majestic two-humped camels, whose numbers have been steadily declining in recent decades. Through colorful parades, camel polo, races, and traditional performances, the event raises awareness while offering travelers a rare glimpse into the rich traditions of camel herders in the Gobi."
-      },
-      {
-        "title": "EAGLE FESTIVAL",
-        "description": "Each year, the eagle hunters of Mongolia’s majestic Altai Mountains gather for a breathtaking spectacle — a competition to determine the finest among 90 to 100 golden eagles. This unique event celebrates centuries-old Kazakh traditions, testing the birds' speed, precision, beauty, and hunting prowess. More than just a contest, it’s a tribute to the deep, almost spiritual bond between hunter and eagle — forged over years of mutual trust and respect. Against the dramatic backdrop of rugged peaks and sweeping steppe, the festival offers an unforgettable glimpse into a proud and enduring nomadic heritage."
+        "description": "\"Tsagaan Sar\" /White Month/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip."
       },
       {
         "title": "ICE FESTIVAL",
-        "description": "Each winter, local communities in Khuvsgul Province gather on the frozen surface of Lake Khuvsgul to celebrate the Ice Festival. The event features a variety of winter sports and cultural traditions, including ice skating, horse-drawn sleigh races, ice sumo, and other traditional games and competitions. It’s a fantastic opportunity to embrace the season and join the community in lively, festive celebration."
+        "description": "Local communities gather on the lake for the winter Ice Festival. Several winter and cultural activities are held each year such as ice skating, horse sleighing race, ice sumo and traditional winter games and competitions."
+      },
+      {
+        "title": "EAGLE FESTIVAL",
+        "description": "Every year, the eagle hunters of the Altai Mountains in western Mongolia take part in a competition to show which of the 90 to 100 competing eagles is the best in speed, agility, beauty and hunting skills."
+      },
+      {
+        "title": "CAMEL FESTIVAL",
+        "description": "Travel south to the Gobi Desert to attend the renowned \"Thousand Camel Festival\". It is already one of the most famous winter festivals in the world, organized by a local non-governmental organization working to protect and preserve the Bactrian camel population, which has been steadily declining over the past twelve years."
       },
       {
         "title": "NAADAM FESTIVAL",
-        "description": "The Naadam Festival is truly one of a kind—a refined and vivid expression of Mongolia’s ancient nomadic heritage. Celebrated with great pride and reverence, it marks national independence through a unique blend of athletic competition and artistic performance. This cherished event brings together the \"Three Manly Games\" of wrestling, horse racing, and archery, alongside colorful ceremonies and cultural displays. Immerse yourself in the vibrant spirit of Naadam and experience the living traditions of Mongolia in one unforgettable celebration."
+        "description": "Naadam Festival is the only one of its kind; it is a sophisticated and eloquent expression of nomadic culture. It is the honored celebration of a national independence, and it is an outstanding combination of arts and sports."
       }
     ],
-    "eventContainer": "read more"
+    "eventContainer": "read more",
+    "headerTitle": "Festivals and Events",
+    "headerDescription": "Experience the vibrant culture and traditions of Mongolia through our carefully curated festival tours. From the colorful celebrations of Tsagaan Sar to the thrilling competitions of Naadam, join us for unforgettable cultural experiences that showcase the heart and soul of Mongolian heritage.",
+    "itineraryLabel": "Itinerary"
   },
   "Information": {
     "title": "ABOUT MONGOLIA",
@@ -346,7 +451,7 @@
       "ul3": "Philippines - no need a visa for a visit not exceeding three weeks",
       "ul4": "Singapore, Hong Kong - no need a visa for a visit not exceeding two weeks",
       "ul5": "People's Republic of China, Vietnam, Bulgaria, Thailand, Romania and Chile – who has diplomatic or official passport - no need a visa for a visit",
-	  "ul6": "Indian travelers need a visa but don’t have to pay the visa fee.",
+      "ul6": "Indian travelers need a visa but don’t have to pay the visa fee.",
       "ul7": "Hungary, Democratic People's Republic of Korea, Republic of Korea - who has diplomatic or official passport - no need a visa for a visit not exceeding three months",
       "ul8": "India – needs Mongolian visa without visa fee",
       "ul9": "Cuba – no need a visa for a visit not exceeding one month",
@@ -364,22 +469,22 @@
       "fees2": "Multiple entry-exit visa valid for six months - $65; for urgent service (within a working day) $130",
       "fees3": "Multiple entry-exit visa valid for one year - $13 - $130; for urgent service (within a working day) $26",
       "fees4": "Visa extension valid for one week - US$15; for urgent service (within a working day) US$30; US$2 per a day exceeding a week."
-	  },
+    },
     "visit": "Seasons in Mongolia",
     "seasons": {
-        "title1": "Winter",
-        "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
-        "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
-        "title2": "Spring",
-        "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
-        "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
-        "title3": "Summer",
-        "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
-        "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
-        "title4": "Autumn",
-        "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
-        "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
-      },
+      "title1": "Winter",
+      "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
+      "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
+      "title2": "Spring",
+      "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
+      "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
+      "title3": "Summer",
+      "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
+      "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
+      "title4": "Autumn",
+      "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
+      "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+    },
     "weather": {
       "title": "Average weather in Mongolia",
       "text1": "Mongolia is known for its highly continental climate, characterized by dramatic temperature extremes and distinct seasonal shifts. Often referred to as \"the Land of Blue Sky,\" the country enjoys approximately 250 sunny days per year, making it one of the sunniest places in the world. With vast, open landscapes and minimal vegetation, Mongolia experiences intense diurnal and annual temperature variations.",
@@ -390,9 +495,9 @@
     }
   },
   "Tours": {
-    "title": "CLASSIC TOURS", 
+    "title": "CLASSIC TOURS",
     "title_on_picture": "TOURS",
-    "individual_title": "INDIVIDUAL TOURS", 
+    "individual_title": "INDIVIDUAL TOURS",
     "subtitle": "TOURS & TRIPS",
     "group_tours": "Group Tours",
     "classic_tours": "Classic Tours",
@@ -758,7 +863,7 @@
     "day1": "Day 1. Terelj National Park",
     "day1text": "Explore the stunning Terelj National Park, home to the iconic Turtle Rock and the towering Chinggis Khan Equestrian Statue. Enjoy a short hike to Aryabal Monastery, go horseback riding through scenic landscapes, and experience an overnight stay in a traditional Mongolian ger. Savor authentic khorkhog, along with international cuisine, for a rich and memorable adventure.",
     "program": "Program",
-	"schedule1-1": "08:00 - Breakfast",
+    "schedule1-1": "08:00 - Breakfast",
     "schedule1-2": "09:00 - Drive to Terelj National Park",
     "schedule1-3": "11:30 - Visit Chinggis Khaan Statue Complex",
     "schedule1-4": "13:30 - Lunch",
