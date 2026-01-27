@@ -1,4 +1,5 @@
 import TourCards from "@/components/UI/TourCards";
+import TravelTools from "@/components/UI/TravelTools";
 import { isValidLocale, defaultLocale } from "@/lib/i18n";
 import styles from "./(pages)/main.module.css";
 
@@ -24,6 +25,7 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
         </p>
       </div>
       <TourCards locale={validLocale} />
+      <TravelTools locale={validLocale} />
     </main>
   );
 }
