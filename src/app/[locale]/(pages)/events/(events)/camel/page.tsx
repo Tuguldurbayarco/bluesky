@@ -13,19 +13,17 @@ const CamelFestival = ({params: {locale}}: {params: {locale: string}}) => {
   }
 
   return (
-    <div className='visibility_area'>
-      <div className='image_container'>
-        <div className='image_container_image'>
-          <img
-            src='/events/22.jpg'
-            style={{marginBottom: "3%"}}
-          /> 
-        </div>
+    <div>
+      <div style={{position: "relative", width: "100%", aspectRatio: "2048 / 982", overflow: "hidden"}}>
+        <img
+          src="/events/camelFest.jpg"
+          alt="Camel Festival"
+          style={{width: "100%", height: "100%", objectFit: "cover", display: "block"}}
+        />
       </div>
-      <div className='main_container'>
-        <div className={styles.events_margins}> 
-          <p className='header_container'>{t('Events.camel-festival.title')}</p>
-        </div>
+      <div className='visibility_area' style={{marginTop: "5%"}}>
+        <div className='main_container'>
+          <h2 className="pageTitle" style={{marginTop: '2rem', marginBottom: '2rem', textAlign: 'center'}}>{t('Events.camel-festival.title')}</h2>
         <div>
           <p className='text_container' style={{textAlign: 'justify'}}>{t('Events.camel-festival.text')}</p>
         </div>
@@ -40,18 +38,19 @@ const CamelFestival = ({params: {locale}}: {params: {locale: string}}) => {
             ))}
           </div>
         )}
-      </div>
-      <div className={styles.events_button_btn}> 
-        <Link href={addLocaleToHref('/events/eagle')}>
-          <button className={styles.events_button}>
-            {t('Events.previous')}
-          </button>
-        </Link>
-        <Link href={addLocaleToHref('/events/naadam')}>
-          <button className={styles.events_button}> 
-            {t('Events.next')}
-          </button>
-        </Link>
+        </div>
+        <div className={styles.events_button_btn}> 
+          <Link href={addLocaleToHref('/events/eagle')}>
+            <button className={styles.events_button}>
+              {t('Events.previous')}
+            </button>
+          </Link>
+          <Link href={addLocaleToHref('/events/naadam')}>
+            <button className={styles.events_button}> 
+              {t('Events.next')}
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   )
