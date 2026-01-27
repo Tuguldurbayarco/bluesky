@@ -103,11 +103,11 @@ export const INDIVIDUAL_TOURS = [
 ]
 
 export const EVENTS = [
-  {id: 1, href: '/events/tsagaansar', src: "/events/tsagaan.jpg", title: 'Tsagaan Sar', days: '5 days 4 nights'},
-  {id: 2, href: '/events/ice', src: "/events/23.jpg", title: 'Ice Festival', days: '6 days 5 nights'},
-  {id: 3, href: '/events/eagle', src: "/events/20.jpg", title: 'Eagle Festival', days: '4 days 3 nights'},
-  {id: 4, href: '/events/camel', src: "/events/22.jpg", title: "Camel Festival", days: '5 days 4 nights'},
-  {id: 5, href: '/events/naadam', src: "/events/21.jpg", title: 'Naadam Festival', days: '3 days 2 nights'},
+  {id: 1, href: '/events/tsagaansar', src: "/events/tsagaansar3.jpg", title: 'Tsagaan Sar', days: '5 days 4 nights'},
+  {id: 2, href: '/events/ice', src: "/events/ice-fest.jpeg", title: 'Ice Festival', days: '6 days 5 nights'},
+  {id: 3, href: '/events/eagle', src: "/events/eagleFest.jpg", title: 'Eagle Festival', days: '4 days 3 nights'},
+  {id: 4, href: '/events/camel', src: "/events/camelFest.jpg", title: "Camel Festival", days: '5 days 4 nights'},
+  {id: 5, href: '/events/naadam', src: "/events/naadamFest.jpg", title: 'Naadam Festival', days: '3 days 2 nights'},
 ]
 
 export const OPTIONS = [

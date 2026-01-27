@@ -17,7 +17,7 @@ const TsagaanSar = ({params: {locale}}: {params: {locale: string}}) => {
       <div className='image_container'>
         <div className='image_container_image'>
           <img
-            src='/events/tsagaan.jpg'
+            src='/events/tsagaansar3.jpg'
             style={{marginBottom: "3%"}}
           />
         </div>
