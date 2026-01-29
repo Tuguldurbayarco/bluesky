@@ -70,7 +70,7 @@ export const images = [
   {id: 2, src: "/2.jpg", title: 'Second trip'},
   {id: 3, src: "/3.jpg", title: 'Third destination'},
 ];
-// Лучше добавить title в объекте ниже
+// Consider adding `title` to the objects below.
 export const TOURS_IMAGES = [
   {id: 1, href: '/tours/city', src: "/tours/ctmcity.jpg"}, 
   {id: 2, href: '/tours/central', src: "/tours/ctmcentral.jpg"},
@@ -83,10 +83,10 @@ export const TOURS_IMAGES_2 = [
 ]
 
 export const TOURS_LINK = [
-  {id: 1, href: '/tours/city', src: "/tours/tmcity.jpg", tourKey: "city"}, 
-  {id: 2, href: '/tours/gobi', src: "/tours/tmgobi.jpg", tourKey: "gobi"},
-  {id: 3, href: '/tours/central', src: "/tours/tmcentral.jpg", tourKey: "central"},
-  {id: 4, href: '/tours/khangai', src: "/tours/tmkhangai.jpg", tourKey: "khangai"},
+  {id: 1, href: '/tours/city', src: "/tours/Ulaanbaatar.webp", tourKey: "city"}, 
+  {id: 2, href: '/tours/gobi', src: "/tours/gobi.jpg", tourKey: "gobi"},
+  {id: 3, href: '/tours/central', src: "/tours/central.jpg", tourKey: "central"},
+  {id: 4, href: '/tours/khangai', src: "/tours/gobiKhangai.jpg", tourKey: "khangai"},
   {id: 5, href: '/tours/khuvsgul1', src: "/tours/tmkhuvsgul1.jpg", tourKey: "khuvsgul1"},
   {id: 6, href: '/tours/khuvsgul2', src: "/tours/khuvsgul2.jpg", tourKey: "khuvsgul2"},
 ]
