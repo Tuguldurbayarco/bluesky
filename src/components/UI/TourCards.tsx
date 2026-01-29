@@ -18,11 +18,11 @@ const TourCards = ({ locale }: TourCardsProps) => {
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
 
   const tours: TourCard[] = [
-    { name: "City", href: "/tours/city", imageSrc: "/tmcity.jpg" },
-    { name: "Gobi", href: "/tours/gobi", imageSrc: "/ctmgobi.jpg" },
-    { name: "Central", href: "/tours/central", imageSrc: "/ctmcentral.jpg" },
-    { name: "Gobi Khangai", href: "/tours/khangai", imageSrc: "/ctmgobi.jpg" },
-    { name: "Khuvsgul", href: "/tours/khuvsgul", imageSrc: "/ctmkhuvsgul1.jpg" },
+    { name: "City", href: "/tours/city", imageSrc: "/tours/tmcity.jpg" },
+    { name: "Gobi", href: "/tours/gobi", imageSrc: "/tours/ctmgobi.jpg" },
+    { name: "Central", href: "/tours/central", imageSrc: "/tours/ctmcentral.jpg" },
+    { name: "Gobi Khangai", href: "/tours/khangai", imageSrc: "/tours/ctmgobi.jpg" },
+    { name: "Khuvsgul", href: "/tours/khuvsgul", imageSrc: "/tours/ctmkhuvsgul1.jpg" },
   ];
 
   function addLocaleToHref(href: string): string {

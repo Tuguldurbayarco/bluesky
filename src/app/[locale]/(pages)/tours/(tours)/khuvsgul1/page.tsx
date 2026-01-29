@@ -15,7 +15,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapkhuvsgul.png'
+              src='/tours/mapkhuvsgul.png'
               alt='Route'
             />
           </div>
@@ -25,7 +25,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt0.jpg'
+              src='/tours/kt0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -45,7 +45,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/kt1.jpg'
+              src='/tours/kt1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -64,7 +64,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt2.jpg'
+              src='/tours/kt2.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

@@ -1,5 +1,3 @@
-import exp from "constants";
-
 //Navigation
 export const NAV_LINKS = [
   {href: '/', key: 'home', title: 'Home'},
@@ -74,23 +72,23 @@ export const images = [
 ];
 // Лучше добавить title в объекте ниже
 export const TOURS_IMAGES = [
-  {id: 1, href: '/tours/city', src: "/ctmcity.jpg"}, 
-  {id: 2, href: '/tours/central', src: "/ctmcentral.jpg"},
-  {id: 3, href: '/tours/khuvsgul1', src: "/ctmkhuvsgul1.jpg"},
+  {id: 1, href: '/tours/city', src: "/tours/ctmcity.jpg"}, 
+  {id: 2, href: '/tours/central', src: "/tours/ctmcentral.jpg"},
+  {id: 3, href: '/tours/khuvsgul1', src: "/tours/ctmkhuvsgul1.jpg"},
 ]
 
 export const TOURS_IMAGES_2 = [
-  {id: 4, href: '/tours/gobi', src: "/ctmgobi.jpg"},
-  {id: 5, href: '/tours/khangai', src: "/ctmkhangai.jpg"},
+  {id: 4, href: '/tours/gobi', src: "/tours/ctmgobi.jpg"},
+  {id: 5, href: '/tours/khangai', src: "/tours/ctmkhangai.jpg"},
 ]
 
 export const TOURS_LINK = [
-  {id: 1, href: '/tours/city', src: "/tmcity.jpg", tourKey: "city"}, 
-  {id: 2, href: '/tours/gobi', src: "/tmgobi.jpg", tourKey: "gobi"},
-  {id: 3, href: '/tours/central', src: "/tmcentral.jpg", tourKey: "central"},
-  {id: 4, href: '/tours/khangai', src: "/tmkhangai.jpg", tourKey: "khangai"},
-  {id: 5, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg", tourKey: "khuvsgul1"},
-  {id: 6, href: '/tours/khuvsgul2', src: "/tmkhuvsgul1.jpg", tourKey: "khuvsgul2"},
+  {id: 1, href: '/tours/city', src: "/tours/tmcity.jpg", tourKey: "city"}, 
+  {id: 2, href: '/tours/gobi', src: "/tours/tmgobi.jpg", tourKey: "gobi"},
+  {id: 3, href: '/tours/central', src: "/tours/tmcentral.jpg", tourKey: "central"},
+  {id: 4, href: '/tours/khangai', src: "/tours/tmkhangai.jpg", tourKey: "khangai"},
+  {id: 5, href: '/tours/khuvsgul1', src: "/tours/tmkhuvsgul1.jpg", tourKey: "khuvsgul1"},
+  {id: 6, href: '/tours/khuvsgul2', src: "/tours/khuvsgul2.jpg", tourKey: "khuvsgul2"},
 ]
 
 export const INDIVIDUAL = [

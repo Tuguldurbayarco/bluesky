@@ -18,7 +18,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapkhangai.png'
+              src='/tours/mapkhangai.png'
               alt='Route'
             />
           </div>
@@ -28,7 +28,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt0.jpg'
+              src='/tours/gkt0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -47,7 +47,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt1.jpg'
+              src='/tours/gkt1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -66,7 +66,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt2.jpg'
+              src='/tours/gkt2.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -85,7 +85,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt3.jpg'
+              src='/tours/gkt3.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -104,7 +104,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt4.jpg'
+              src='/tours/gkt4.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -123,7 +123,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt5.jpg'
+              src='/tours/gkt5.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -142,7 +142,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt6.jpg'
+              src='/tours/gkt6.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -161,7 +161,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt8.jpg'
+              src='/tours/gkt8.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -184,7 +184,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt9.jpg'
+              src='/tours/gkt9.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -203,7 +203,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt10.jpg'
+              src='/tours/gkt10.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -222,7 +222,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt11.jpg'
+              src='/tours/gkt11.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -241,7 +241,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt12.jpg'
+              src='/tours/gkt12.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -260,7 +260,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div style={{ marginBottom: "5%"}}> {/*удалить отсуп снизу*/}
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt13.jpg'
+              src='/tours/gkt13.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -283,7 +283,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt14.jpg'
+              src='/tours/gkt14.jpg'
               alt='Amarbayasgalant Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -302,7 +302,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div style={{ marginBottom: "5%"}}>
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt15.jpg'
+              src='/tours/gkt15.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

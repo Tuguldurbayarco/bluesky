@@ -16,7 +16,7 @@ const Accommodation = ({locale}: {locale?: Locale}) => {
     <div style={{position: 'relative', marginBottom: "3%"}}>
       <h2 className={`${tourStyles.tour_items_header} trocchi-regular`}>{t('Accommodation.title')}</h2>
       <img
-        src='/tmcity.jpg'
+        src='/tours/tmcity.jpg'
         alt="City"
         width='100%'
         height='auto'

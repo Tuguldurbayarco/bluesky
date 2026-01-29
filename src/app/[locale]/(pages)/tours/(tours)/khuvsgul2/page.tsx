@@ -18,7 +18,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapkhuvsgul.png'
+              src='/tours/mapkhuvsgul.png'
               alt='Route'
             />
           </div>
@@ -28,7 +28,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt0.jpg'
+              src='/tours/kt0.jpg'
               alt='Bulgan Province'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -48,7 +48,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt1.jpg'
+              src='/tours/kt1.jpg'
               alt='Khuvsgul Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -67,7 +67,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt2.jpg'
+              src='/tours/kt2.jpg'
               alt='Khuvsgul Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -86,7 +86,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt3.jpg'
+              src='/tours/kt3.jpg'
               alt='Zuun Nuur'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -105,7 +105,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt4.jpg'
+              src='/tours/kt4.jpg'
               alt='Terkh White Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -124,7 +124,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt5.jpg'
+              src='/tours/kt5.jpg'
               alt='Tsenkher Hot Spring'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -143,7 +143,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt6.jpg'
+              src='/tours/kt6.jpg'
               alt='Mini Gobi'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -162,7 +162,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div style={{ marginBottom: "5%"}}>
           <div style={{position: 'relative'}}>
             <img
-              src='/kt7.jpg'
+              src='/tours/kt7.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

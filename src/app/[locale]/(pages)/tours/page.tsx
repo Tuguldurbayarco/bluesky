@@ -1,6 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import { TOURS_LINK } from '@/constants';
-import ClassicTourCard from "@/components/UI/ClassicTourCard";
+import TourCard from "@/components/UI/TourCard";
 import tourStyles from "./tours.module.css";
 
 const Tours = ({params: {locale}}: {params: {locale: string}}) => {
@@ -14,11 +14,11 @@ const Tours = ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <div className='visibility_area' style={{marginTop: "5%"}}>
         <div>
-          <h2 className="pageTitle" style={{marginTop: '2rem', marginBottom: '2rem'}}>{t('Tours.classic_tours_title')}</h2>
+          <h2 className="pageTitle" style={{marginTop: '2rem', marginBottom: '2rem', textAlign: 'center'}}>{t('Tours.classic_tours_title')}</h2>
           <p className="pageDescription" style={{marginBottom: '2rem'}}>{t('Tours.classic_tours_description')}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '2rem' }}>
             {TOURS_LINK.map((tour) => (
-              <ClassicTourCard
+              <TourCard
                 key={tour.id}
                 locale={validLocale as Locale}
                 tourKey={tour.tourKey}

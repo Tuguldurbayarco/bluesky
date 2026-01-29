@@ -18,7 +18,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapcity.png'
+              src='/tours/mapcity.png'
               alt='Route'
             />
           </div>
@@ -28,7 +28,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/cit0.jpg'
+              src='/tours/cit0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -47,7 +47,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/cit1.jpg'
+              src='/tours/cit1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -66,7 +66,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/cit2.jpg'
+              src='/tours/cit2.jpg'
               alt='Chinggis Khaan Statue'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

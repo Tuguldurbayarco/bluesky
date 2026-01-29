@@ -18,7 +18,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapgobi.png'
+              src='/tours/mapgobi.png'
               alt='Route'
             />
           </div>
@@ -28,7 +28,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/gt0.jpg'
+              src='/tours/gt0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -47,7 +47,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt1.jpg'
+              src='/tours/gt1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -66,7 +66,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt2.jpg'
+              src='/tours/gt2.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -85,7 +85,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt3.jpg'
+              src='/tours/gt3.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -104,7 +104,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt4.jpg'
+              src='/tours/gt4.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -123,7 +123,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt5.jpg'
+              src='/tours/gt5.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -142,7 +142,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gt6.jpg'
+              src='/tours/gt6.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

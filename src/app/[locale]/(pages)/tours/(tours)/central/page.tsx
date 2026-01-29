@@ -18,7 +18,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/mapcenter.png'
+              src='/tours/mapcenter.png'
               alt='Route'
             />
           </div>
@@ -28,7 +28,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/cet0.jpg'
+              src='/tours/cet0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -47,7 +47,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div> 
           <div style={{position: 'relative'}}>
             <img
-              src='/cet1.jpg'
+              src='/tours/cet1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -70,7 +70,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/cet3.jpg'
+              src='/tours/cet3.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -89,7 +89,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div> 
           <div style={{position: 'relative'}}>
             <img
-              src='/cet4.jpg'
+              src='/tours/cet4.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -108,7 +108,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div style={{ marginBottom: "5%"}}> {/*удалить отсуп снизу*/}
           <div style={{position: 'relative'}}>
             <img
-              src='/cet5.jpg'
+              src='/tours/cet5.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
