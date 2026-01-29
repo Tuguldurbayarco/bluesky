@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build && cp index.html out/",
     "build:zip": "npm run build && cp index.html out/ && zip -r out.zip out/",
+    "build:zip-no-video": "npm run build && zip -r out.zip out/ -x '*.mp4' -x '*.webm' -x '*.mov' -x '*.avi' -x '*.mkv'",
     "start": "NODE_ENV=production next start",
     "lint": "next lint"
   },
