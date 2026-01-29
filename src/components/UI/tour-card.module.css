@@ -1,6 +1,7 @@
 .tour_card {
   display: flex;
   gap: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
   padding: 1.5rem;
   background-color: #fff;
