@@ -3,13 +3,16 @@ import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import styles from "../../tours.module.css";
 
-const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
   
   // Function to add locale prefix to href
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
-  }  return (
+  }
+  
+  return (
     <div className={styles.tours_and_events_margin_top}>
       <div className='visibility_area'> {/*For description*/}
         <div>
@@ -29,7 +32,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <p className={styles.tours_page_main_header}></p>
           </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
@@ -38,42 +40,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day1text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule1-1')}</li>
-                  <li>{t('Khangai.schedule1-2')}</li>
-                  <li>{t('Khangai.schedule1-3')}</li>
-                  <li>{t('Khangai.schedule1-4')}</li>
-                  <li>{t('Khangai.schedule1-5')}</li>
-                  <li>{t('Khangai.schedule1-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -94,41 +60,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day2text')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule2-1')}</li>
-                  <li>{t('Khangai.schedule2-2')}</li>
-                  <li>{t('Khangai.schedule2-3')}</li>
-                  <li>{t('Khangai.schedule2-4')}</li>
-                  <li>{t('Khangai.schedule2-5')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -147,41 +78,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day3text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule3-1')}</li>
-                  <li>{t('Khangai.schedule3-2')}</li>
-                  <li>{t('Khangai.schedule3-3')}</li>
-                  <li>{t('Khangai.schedule3-4')}</li>
-                  <li>{t('Khangai.schedule3-5')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -202,42 +98,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day4text')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule4-1')}</li>
-                  <li>{t('Khangai.schedule4-2')}</li>
-                  <li>{t('Khangai.schedule4-3')}</li>
-                  <li>{t('Khangai.schedule4-4')}</li>
-                  <li>{t('Khangai.schedule4-5')}</li>
-                  <li>{t('Khangai.schedule4-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -256,41 +116,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day5text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule5-1')}</li>
-                  <li>{t('Khangai.schedule5-2')}</li>
-                  <li>{t('Khangai.schedule5-3')}</li>
-                  <li>{t('Khangai.schedule5-4')}</li>
-                  <li>{t('Khangai.schedule5-5')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -311,41 +136,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day6text')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule6-1')}</li>
-                  <li>{t('Khangai.schedule6-2')}</li>
-                  <li>{t('Khangai.schedule6-3')}</li>
-                  <li>{t('Khangai.schedule6-4')}</li>
-                  <li>{t('Khangai.schedule6-5')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -364,42 +154,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day7text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule7-1')}</li>
-                  <li>{t('Khangai.schedule7-2')}</li>
-                  <li>{t('Khangai.schedule7-3')}</li>
-                  <li>{t('Khangai.schedule7-4')}</li>
-                  <li>{t('Khangai.schedule7-5')}</li>
-                  <li>{t('Khangai.schedule7-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -425,38 +179,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
                 <p className={styles.tour_left_column_text_sec}>{t('Khangai.attention_desc')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule8-1')}</li>
-                  <li>{t('Khangai.schedule8-2')}</li>
-                  <li>{t('Khangai.schedule8-3')}</li>
-                  <li>{t('Khangai.schedule8-4')}</li>
-                  <li>{t('Khangai.schedule8-5')}</li>
-                  <li>{t('Khangai.schedule8-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <div >
@@ -474,43 +196,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day9text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule9-1')}</li>
-                  <li>{t('Khangai.schedule9-2')}</li>
-                  <li>{t('Khangai.schedule9-3')}</li>
-                  <li>{t('Khangai.schedule9-4')}</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -530,40 +215,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day10text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule10-1')}</li>
-                  <li>{t('Khangai.schedule10-2')}</li>
-                  <li>{t('Khangai.schedule10-3')}</li>
-                  <li>{t('Khangai.schedule10-4')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -585,39 +236,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
                 <p className={styles.tour_left_column_text}>{t('Khangai.day11text')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule11-1')}</li>
-                  <li>{t('Khangai.schedule11-2')}</li>
-                  <li>{t('Khangai.schedule11-3')}</li>
-                  <li>{t('Khangai.schedule11-4')}</li>
-                  <li>{t('Khangai.schedule11-5')}</li>
-                  <li>{t('Khangai.schedule11-6')}</li>
-                  <li>{t('Khangai.schedule11-7')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <div >
@@ -635,40 +253,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Khangai.day12text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule12-1')}</li>
-                  <li>{t('Khangai.schedule12-2')}</li>
-                  <li>{t('Khangai.schedule12-3')}</li>
-                  <li>{t('Khangai.schedule12-4')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -694,36 +278,45 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const
                 <p className={styles.tour_left_column_text_sec} style={{ visibility: 'hidden' }}>text</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
+          </div>
+        </div>
+        <div >
+          <div style={{position: 'relative'}}>
+            <img
+              src='/gkt14.jpg'
+              alt='Amarbayasgalant Monastery'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.program')}</p>
+                <p className={styles.tour_left_column_header}>{t('Khangai.day14')}</p>
               </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Khangai.schedule13-1')}</li>
-                  <li>{t('Khangai.schedule13-2')}</li>
-                  <li>{t('Khangai.schedule13-3')}</li>
-                  <li>{t('Khangai.schedule13-4')}</li>
-                  <li>{t('Khangai.schedule13-5')}</li>
-                </ul>
+              <div>
+                <p className={styles.tour_left_column_text}>{t('Khangai.day14text')}</p>
               </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Khangai.icon3')}
-                </p>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginBottom: "5%"}}>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/gkt15.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p className={styles.tour_left_column_header}>{t('Khangai.day15')}</p>
               </div>
+              <div>
+                <p className={styles.tour_left_column_text}>{t('Khangai.day15text')}</p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>
               <div style={{marginTop: "2%"}}>
                 <Link href={addLocaleToHref("/contacts?tour=gobikhangai#targetBlock")} className='myButton '>
                   {t('Khangai.button')}

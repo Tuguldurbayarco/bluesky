@@ -18,7 +18,10 @@ const Navbar = () => {
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
   }
-  const [scrolled, setScrolled] = useState(false);
+  // Check if current route is a tour detail page (no hero image)
+  // Matches patterns like /en/tours/khuvsgul, /en/tours/city, etc.
+  const isTourDetailPage = pathname.match(/\/[a-z]{2}\/tours\/[^/]+$/);
+  const [scrolled, setScrolled] = useState(!!isTourDetailPage);
 
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSubmenuOpen, setSubmenuOpen] = useState(false);
@@ -31,6 +34,15 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // If on a tour detail page, always show scrolled style
+    if (isTourDetailPage) {
+      setScrolled(true);
+      return;
+    }
+
+    // Reset scrolled state when navigating away from tour detail pages
+    setScrolled(false);
+
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       setScrolled(isScrolled);
@@ -41,7 +53,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isTourDetailPage, pathname]);
 
   useEffect(() => {
     const handleBodyScroll = (e: { preventDefault: () => void; }) => {
@@ -116,12 +128,11 @@ const Navbar = () => {
     ] : [];
 
     const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      // Temporarily disable navigation for tours, events, and contact
-      const disabledLinks = ['tours'];
-      if (disabledLinks.includes(link.key)) {
-        e.preventDefault();
-        return;
-      }
+      // const disabledLinks = [''];
+      // if (disabledLinks.includes(link.key)) {
+      //   e.preventDefault();
+      //   return;
+      // }
       
       if (isWhyWe) {
         // Toggle submenu on click for "Why WE?" link

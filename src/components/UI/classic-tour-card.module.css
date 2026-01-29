@@ -1,0 +1,130 @@
+.classic_tour_card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.classic_tour_card:hover {
+  transform: translateY(-2px);
+}
+
+.classic_tour_image_container {
+  flex: 0 0 40%;
+  min-width: 300px;
+}
+
+.classic_tour_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  min-height: 250px;
+}
+
+.classic_tour_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.classic_tour_title_link {
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.classic_tour_title_link:hover {
+  opacity: 0.7;
+}
+
+.classic_tour_title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 0.5rem 0;
+}
+
+.classic_tour_duration_link {
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.classic_tour_duration_link:hover {
+  opacity: 0.7;
+}
+
+.classic_tour_duration {
+  font-size: 1rem;
+  color: #d42b2b;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.classic_tour_description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.classic_tour_read_more {
+  color: #4d5df0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.classic_tour_read_more:hover {
+  color: #3b4ae0;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .classic_tour_card {
+    flex-direction: column;
+  }
+
+  .classic_tour_image_container {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .classic_tour_image {
+    min-height: 200px;
+  }
+
+  .classic_tour_title {
+    font-size: 1.5rem;
+  }
+
+  .classic_tour_description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .classic_tour_card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .classic_tour_title {
+    font-size: 1.3rem;
+  }
+
+  .classic_tour_duration {
+    font-size: 0.9rem;
+  }
+
+  .classic_tour_description {
+    font-size: 0.95rem;
+  }
+}

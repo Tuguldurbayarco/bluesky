@@ -3,13 +3,16 @@ import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import styles from "../../tours.module.css";
 
-const Central = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+const Central = ({params: {locale}}: {params: {locale: string}}) => {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
   
   // Function to add locale prefix to href
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
-  }  return (
+  }
+  
+  return (
     <div className={styles.tours_and_events_margin_top}>
       <div className='visibility_area'> {/*For description*/}
         <div>
@@ -29,7 +32,6 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <p className={styles.tours_page_main_header}></p>
           </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
@@ -38,38 +40,6 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Central.day1text')}</p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Central.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Central.schedule1-1')}</li>
-                  <li>{t('Central.schedule1-2')}</li>
-                  <li>{t('Central.schedule1-3')}</li>
-                  <li>{t('Central.schedule1-4')}</li>
-                  <li>{t('Central.schedule1-5')}</li>
-                  <li>{t('Central.schedule1-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -95,38 +65,6 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
                 <p className={styles.tour_left_column_text_sec}>{t('Central.att_desc2')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Central.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Central.schedule2-1')}</li>
-                  <li>{t('Central.schedule2-2')}</li>
-                  <li>{t('Central.schedule2-3')}</li>
-                  <li>{t('Central.schedule2-4')}</li>
-                  <li>{t('Central.schedule2-5')}</li>
-                  <li>{t('Central.schedule2-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon3')}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <div >
@@ -146,38 +84,6 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
                 <p className={styles.tour_left_column_text}>{t('Central.day3text')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Central.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Central.schedule3-1')}</li>
-                  <li>{t('Central.schedule3-2')}</li>
-                  <li>{t('Central.schedule3-3')}</li>
-                  <li>{t('Central.schedule3-4')}</li>
-                  <li>{t('Central.schedule3-5')}</li>
-                  <li>{t('Central.schedule3-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon3')}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <div> 
@@ -195,38 +101,6 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
               </div>
               <div>
                 <p className={styles.tour_left_column_text}>{t('Central.day4text')}</p>
-              </div>
-            </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Central.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Central.schedule4-1')}</li>
-                  <li>{t('Central.schedule4-2')}</li>
-                  <li>{t('Central.schedule4-3')}</li>
-                  <li>{t('Central.schedule4-4')}</li>
-                  <li>{t('Central.schedule4-5')}</li>
-                  <li>{t('Central.schedule4-6')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon3')}
-                </p>
               </div>
             </div>
           </div>
@@ -252,35 +126,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {  const val
                 <p className={styles.tour_left_column_text_sec} style={{ visibility: 'hidden' }}> text</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>{/*right cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Central.program')}</p>
-              </div>
-              <div className={styles.tour_right_column_text}>
-                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('Central.schedule5-1')}</li>
-                  <li>{t('Central.schedule5-2')}</li>
-                  <li>{t('Central.schedule5-3')}</li>
-                  <li>{t('Central.schedule5-4')}</li>
-                </ul>
-              </div>
-              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon1')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>3g/4g
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon4')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon5')}
-                </p>
-                <p className={styles.tour_right_column_icons_text}>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className={styles.tour_right_column_icons}/>{t('Central.icon3')}
-                </p>
-              </div>
+            <div style={{width: "100%"}}>
               <div style={{marginTop: "2%", bottom: 0}}>
                 <Link href={addLocaleToHref("/contacts?tour=central#targetBlock")} className='myButton'>
                   {t('Central.button')}

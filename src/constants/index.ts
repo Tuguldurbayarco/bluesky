@@ -85,10 +85,12 @@ export const TOURS_IMAGES_2 = [
 ]
 
 export const TOURS_LINK = [
-  {id: 1, href: '/tours/city', src: "/tmcity.jpg"}, 
-  {id: 2, href: '/tours/central', src: "/tmcentral.jpg"},
-  {id: 3, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg"},
-  {id: 4, href: '/tours/gobi', src: "/tmgobi.jpg"},
+  {id: 1, href: '/tours/city', src: "/tmcity.jpg", tourKey: "city"}, 
+  {id: 2, href: '/tours/gobi', src: "/tmgobi.jpg", tourKey: "gobi"},
+  {id: 3, href: '/tours/central', src: "/tmcentral.jpg", tourKey: "central"},
+  {id: 4, href: '/tours/khangai', src: "/tmkhangai.jpg", tourKey: "khangai"},
+  {id: 5, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg", tourKey: "khuvsgul1"},
+  {id: 6, href: '/tours/khuvsgul2', src: "/tmkhuvsgul1.jpg", tourKey: "khuvsgul2"},
 ]
 
 export const INDIVIDUAL = [
