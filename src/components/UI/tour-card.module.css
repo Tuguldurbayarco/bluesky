@@ -14,8 +14,8 @@
 }
 
 .tour_image_container {
-  flex: 0 0 40%;
-  min-width: 300px;
+  flex: 1 1 50%;
+  min-width: 0;
 }
 
 .tour_image {
@@ -27,7 +27,8 @@
 }
 
 .tour_content {
-  flex: 1;
+  flex: 1 1 50%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,8 +84,12 @@
   }
 
   .tour_image_container {
-    flex: 1;
+    flex: 1 1 100%;
     min-width: 100%;
+  }
+
+  .tour_content {
+    flex: 1 1 100%;
   }
 
   .tour_image {

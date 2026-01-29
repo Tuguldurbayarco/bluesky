@@ -16,15 +16,20 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
     <div className={styles.tours_and_events_margin_top}>
       <div className='visibility_area'> {/*For description*/}
         <div>
-          <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
-            <img
-              src='/tours/mapcity.png'
-              alt='Route'
-            />
-          </div>
           <div className={styles.tours_background_color}>
-            <h1 className={styles.tours_main_description_header}>{t('City.picture_text')}</h1>
+            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('City.picture_text')}</h1>
             <p className={styles.tours_main_description}>{t('City.description')}</p>
+          </div>
+          <div style={{position: 'relative', width: '100%'}}>
+            <video
+              src='/tours/city-tour-video.mp4'
+              controls
+              playsInline
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+              aria-label="City tour video"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div style={{position: 'relative'}}>
             <img
