@@ -211,52 +211,22 @@ const InputForm = ({ ...props }: any) => {
               disabled={isTourPreSelected}
               style={{backgroundColor: "#fff", cursor: isTourPreSelected ? "not-allowed" : "pointer", opacity: isTourPreSelected ? 0.6 : 1}}
             >
-              <option value="not selected">{props.choice}</option>
-              <option
-                value="mask"
-                disabled
-                style={{
-                  color: "rgba(0, 0, 0, 0.5)",
-                  fontWeight: "bolder",
-                  fontStyle: "italic",
-                }}
-              >
-                {props.disabled_mask0}{" "}
-              </option>
-              <option value="south-north">{props.groupTour1} </option>
-              <option value="eight-lakes-trekking">{props.groupTour2} </option>
-              <option value="eight-lakes-equestrian">{props.groupTour3} </option>
-              <option value="altai-expedition">{props.groupTour4} </option>
-              <option
-                value="mask"
-                disabled
-                style={{
-                  color: "rgba(0, 0, 0, 0.5)",
-                  fontWeight: "bolder",
-                  fontStyle: "italic",
-                }}
-              >
-                {props.disabled_mask1}{" "}
-              </option>
-              <option value="city">{props.choice1} </option>
-              <option value="gobi">{props.choice2} </option>
-              <option value="central">{props.choice3} </option>
-              <option value="khuvsgul">{props.choice4} </option>
-              <option value="gobikhangai">{props.choice5} </option>
-              <option
-                value="mask"
-                disabled
-                style={{
-                  color: "rgba(0, 0, 0, 0.5)",
-                  fontWeight: "bolder",
-                  fontStyle: "italic",
-                }}
-              >
-                {props.disabled_mask2}{" "}
-              </option>
-              <option value="horse">{props.choice6} </option>
-              <option value="altai">{props.choice7} </option>
-              <option value="tsaatan">{props.choice8} </option>
+              <option value="">{props.choice}</option>
+              <optgroup label={props.toursCategory}>
+                <option value="city">{props.tour1}</option>
+                <option value="gobi">{props.tour2}</option>
+                <option value="central">{props.tour3}</option>
+                <option value="khangai">{props.tour4}</option>
+                <option value="khuvsgul1">{props.tour5}</option>
+                <option value="khuvsgul2">{props.tour6}</option>
+              </optgroup>
+              <optgroup label={props.eventsCategory}>
+                <option value="camel">{props.event1}</option>
+                <option value="eagle">{props.event2}</option>
+                <option value="ice">{props.event3}</option>
+                <option value="naadam">{props.event4}</option>
+                <option value="tsagaansar">{props.event5}</option>
+              </optgroup>
             </select>
           </div>
           <p style={{ marginBottom: 0, color: "#fff" }}>

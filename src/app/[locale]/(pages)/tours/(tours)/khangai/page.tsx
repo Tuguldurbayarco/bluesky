@@ -13,166 +13,160 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
   }
   
   return (
-    <div className={styles.tours_and_events_margin_top}>
+    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
       <div className='visibility_area'> {/*For description*/}
         <div>
-          <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
-            <img
-              src='/tours/mapkhangai.png'
-              alt='Route'
-            />
+          <div style={{ marginBottom: '4rem' }}>
+            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Khangai.picture_text')}</h1>
+            <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Khangai.description')}</p>
           </div>
-          <div className={styles.tours_background_color}>
-            <h1 className={styles.tours_main_description_header}>{t('Khangai.picture_text')}</h1>
-            <p className={styles.tours_main_description}>{t('Khangai.description')}</p>
-          </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day1')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day1text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day1text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt1.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/gobi day 1.jpeg'
+              alt='Gobi landscape - Tsagaan Suvarga'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day2')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day2text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day2text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt2.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day3')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day3text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day3text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt3.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day4')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day4text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day4text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt4.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/gobi day 4.jpg'
+              alt='Bayanzag Flaming Cliffs'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day5')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day5text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day5text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt5.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/ongi.jpg'
+              alt='Ongi Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day6')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day6text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day6text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt6.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/central day 3.png'
+              alt='Kharkhorin - Erdene Zuu Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day7')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day7text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day7text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt8.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day8')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day8text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day8text')}</p>
               </div>
               <div>
                 <p className={styles.tour_left_column_subheader}>{t('Khangai.attention')}</p>
@@ -182,146 +176,121 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt9.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day9')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day9text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day9text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt10.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/tsagaan nuur.jpg'
+              alt='Zuun Nuur - Tsagaan Nuur'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day10')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day10text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day10text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
               src='/tours/gkt11.jpg'
-              alt='Ulaanbaatar'
+              alt='Khuvsgul Lake - Day 11, 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
-            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.day11')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day11text')}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div >
-          <div style={{position: 'relative'}}>
-            <img
-              src='/tours/gkt12.jpg'
-              alt='Ulaanbaatar'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day12')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day12text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day12text')}</p>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ marginBottom: "5%"}}> {/*удалить отсуп снизу*/}
-          <div style={{position: 'relative'}}>
+        <div>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt13.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/uran togoo.webp'
+              alt='Uran Togoo - Volcanic Mountain'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day13')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day13text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader} style={{ visibility: 'hidden' }}>text</p>
-                <p className={styles.tour_left_column_text_sec} style={{ visibility: 'hidden' }}>text</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day13text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt14.jpg'
+              src='/tours/amarbayasgalant_splash.jpg'
               alt='Amarbayasgalant Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day14')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day14text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day14text')}</p>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ marginBottom: "5%"}}>
-          <div style={{position: 'relative'}}>
+        <div>
+          <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt15.jpg'
+              src='/tours/central day 5.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
-            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+          <div style={{display: "flex", flexDirection: "column", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%"}}>
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khangai.day15')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('Khangai.day15text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day15text')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>
-              <div style={{marginTop: "2%"}}>
-                <Link href={addLocaleToHref("/contacts?tour=gobikhangai#targetBlock")} className='myButton '>
-                  {t('Khangai.button')}
-                </Link>
-              </div>
+            <div style={{marginTop: "2rem", width: "100%"}}>
+              <Link href={addLocaleToHref("/contacts?tour=khangai#targetBlock")} className='myButton'>
+                {t('Khangai.button')}
+              </Link>
             </div>
           </div>
         </div>

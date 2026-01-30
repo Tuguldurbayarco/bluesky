@@ -8,20 +8,14 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
   const t = createTranslator(validLocale);
   
   return (
-    <div className={styles.tours_and_events_margin_top}>
+    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
       <div className='visibility_area'>
         <div>
-          <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
-            <img
-              src='/group-eight-lake-trekk/eight_lake_trek_header.png'
-              alt='Eight Lakes Trekking Adventure'
-            />
+          <div style={{ marginBottom: '4rem' }}>
+            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Tours.eightLakesTrekking.title')} - {t('Tours.eightLakesTrekking.duration')}</h1>
+            <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Tours.eightLakesTrekking.detail_description')}</p>
           </div>
-          <div className={styles.tours_background_color}>
-            <h1 className={styles.tours_main_description_header}>{t('Tours.eightLakesTrekking.title')} - {t('Tours.eightLakesTrekking.duration')}</h1>
-            <p className={styles.tours_main_description}>{t('Tours.eightLakesTrekking.detail_description')}</p>
-          </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 1 ub naadam.png'
               alt='Day 1'
@@ -33,10 +27,10 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day1')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day1text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day1text')}</p>
             </div>
           </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 2 elsen tasarkhai 2B.png'
               alt='Day 2'
@@ -48,10 +42,10 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day2')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day2text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day2text')}</p>
             </div>
           </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 3 gobi malchin ail 2C.png'
               alt='Day 3'
@@ -63,10 +57,10 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day3')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day3text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day3text')}</p>
             </div>
           </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 4 naiman nuur.png'
               alt='Day 4-10'
@@ -78,10 +72,10 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day4to10')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day4to10text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day4to10text')}</p>
             </div>
           </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 11 tsenkher hot springs.png'
               alt='Day 11'
@@ -93,22 +87,22 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day11')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day11text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day11text')}</p>
             </div>
           </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 12 kharkhorin eredenzuu.png'
               alt='Day 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{padding: "2%", backgroundColor: "#f6f5ff", marginBottom: "5%"}}>
+          <div style={{padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div>
               <p className={styles.tour_left_column_header}>{t('EightLakesTrekking.day12')}</p>
             </div>
             <div>
-              <p className={styles.tour_left_column_text}>{t('EightLakesTrekking.day12text')}</p>
+              <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('EightLakesTrekking.day12text')}</p>
             </div>
           </div>
           <PricingDetails locale={validLocale as Locale} />

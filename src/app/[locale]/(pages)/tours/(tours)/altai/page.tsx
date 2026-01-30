@@ -13,12 +13,6 @@ const Altai = ({params: {locale}}: {params: {locale: string}}) => {  const valid
     <div className={styles.tours_and_events_margin_top}>
       <div className='visibility_area'> {/*For description*/}
         <div>
-          <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
-            <img
-              src='/altai_tour.jpg'
-              alt='Route'
-            />
-          </div>
           <div style={{ padding: "2%", backgroundColor: "#f6f5ff"}}>
             <h2 className={styles.tour_left_column_header}>{t('Tours.altai_tour_title')}</h2>
             <p className='tour_individual_text'>{t('Tours.altai_tour_text')}</p>

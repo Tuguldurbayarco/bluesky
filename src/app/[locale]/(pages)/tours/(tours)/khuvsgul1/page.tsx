@@ -10,43 +10,38 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
   }  return (
-    <div className={styles.tours_and_events_margin_top}>
+    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
       <div className='visibility_area'> {/*For description*/}
         <div>
-          <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
-            <img
-              src='/tours/mapkhuvsgul.png'
-              alt='Route'
-            />
+          <div style={{ marginBottom: '4rem' }}>
+            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Khuvsgul1.picture_text')}</h1>
+            <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Khuvsgul1.description')}</p>
           </div>
-          <div className={styles.tours_background_color}>
-            <h1 className={styles.tours_main_description_header}>{t('Khuvsgul1.picture_text')}</h1>
-            <p className={styles.tours_main_description}>{t('Khuvsgul1.description')}</p>
-          </div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/kt0.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/khuvsgul 1 1.jpg'
+              alt='Lake Khuvsgul'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <p className={styles.tours_page_main_header}></p>
           </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%"}}>
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khuvsgul1.day1')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_text}>{t('Khuvsgul1.day1text')}</p>
-              </div>
+              <ul className={styles.tour_left_column_text} style={{ listStyle: 'disc', paddingLeft: '1.5rem', margin: 0 }}>
+                {(t('Khuvsgul1.day1text') as string).split('\n').map((line, i) => (
+                  <li key={i} style={{ marginBottom: '0.5rem' }}>{line}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/kt1.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/khuvsgul 1 2.jpg'
+              alt='Lake Khuvsgul'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -55,37 +50,37 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khuvsgul1.day2')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_text}>{t('Khuvsgul1.day2text')}</p>
-              </div>
+              <ul className={styles.tour_left_column_text} style={{ listStyle: 'disc', paddingLeft: '1.5rem', margin: 0 }}>
+                {(t('Khuvsgul1.day2text') as string).split('\n').map((line, i) => (
+                  <li key={i} style={{ marginBottom: '0.5rem' }}>{line}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
         <div>
-          <div style={{position: 'relative'}}>
+          <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/kt2.jpg'
+              src='/tours/city - day 1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", flexDirection: "column", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%"}}>
               <div>
                 <p className={styles.tour_left_column_header}>{t('Khuvsgul1.day3')}</p>
               </div>
-              <div>
-                <p className={styles.tour_left_column_text}>{t('Khuvsgul1.day3text')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_subheader}></p>
-                <p className={styles.tour_left_column_text_sec}></p>
-              </div>
-              <div style={{marginTop: "2%"}}>
-                <Link href={addLocaleToHref("/contacts?tour=khuvsgul1#targetBlock")} className='myButton '>
-                  {t('Khuvsgul1.button')}
-                </Link>
-              </div>
+              <ul className={styles.tour_left_column_text} style={{ listStyle: 'disc', paddingLeft: '1.5rem', margin: 0 }}>
+                {(t('Khuvsgul1.day3text') as string).split('\n').map((line, i) => (
+                  <li key={i} style={{ marginBottom: '0.5rem' }}>{line}</li>
+                ))}
+              </ul>
+            </div>
+            <div style={{marginTop: "2rem", width: "100%"}}>
+              <Link href={addLocaleToHref("/contacts?tour=khuvsgul1#targetBlock")} className='myButton'>
+                {t('Khuvsgul1.button')}
+              </Link>
             </div>
           </div>
         </div>

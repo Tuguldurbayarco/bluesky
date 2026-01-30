@@ -13,46 +13,46 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
   }
   
   return (
-    <div className={styles.tours_and_events_margin_top}>
+    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
       <div className='visibility_area'> {/*For description*/}
         <div>
-          <div className={styles.tours_background_color}>
+          <div>
             <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('City.picture_text')}</h1>
-            <p className={styles.tours_main_description}>{t('City.description')}</p>
+            <p className="pageDescription">{t('City.description')}</p>
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/cit0.jpg'
-              alt='Ulaanbaatar'
+              src='/tours/city - day 1.jpg'
+              alt='Sukhbaatar Square, Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('City.day1')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('City.day1text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day1text')}</p>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div style={{position: 'relative'}}>
+          <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}>
             <img
-              src='/tours/cit1.jpg'
-              alt='Ulaanbaatar'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              src='/tours/city - day 2.jpg'
+              alt='Terelj National Park'
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.17)' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('City.day2')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('City.day2text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day2text')}</p>
               </div>
             </div>
           </div>
@@ -60,26 +60,24 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/cit2.jpg'
-              alt='Chinggis Khaan Statue'
+              src='/tours/city - day 3.jpg'
+              alt='Chinggis Khan Statue Complex'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
-            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+          <div style={{display: "flex", flexDirection: "column", padding: "2% 2% 2% 2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%"}}>
               <div>
                 <p className={styles.tour_left_column_header}>{t('City.day3')}</p>
               </div>
               <div>
-                <p className={styles.tour_left_column_text}>{t('City.day3text')}</p>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day3text')}</p>
               </div>
             </div>
-            <div style={{width: "100%"}}>
-              <div style={{marginTop: "2%", bottom: 0}}>
-                <Link href={addLocaleToHref("/contacts?tour=city#targetBlock")} className='myButton'>
-                  {t('City.button')}
-                </Link>
-              </div>
+            <div style={{marginTop: "2rem", width: "100%"}}>
+              <Link href={addLocaleToHref("/contacts?tour=city#targetBlock")} className='myButton'>
+                {t('City.button')}
+              </Link>
             </div>
           </div>
         </div>

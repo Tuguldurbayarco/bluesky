@@ -17,6 +17,7 @@
   letter-spacing: 0.02em;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  text-decoration: none;
 }
 
 .myButton:hover:not(:disabled) {
@@ -24,6 +25,7 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
   transform: translateY(-1px);
   border-color: rgba(59, 130, 246, 0.7);
+  text-decoration: none;
 }
 
 .myButton:active:not(:disabled) {
