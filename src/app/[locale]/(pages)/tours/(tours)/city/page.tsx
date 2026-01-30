@@ -20,17 +20,6 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
             <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('City.picture_text')}</h1>
             <p className={styles.tours_main_description}>{t('City.description')}</p>
           </div>
-          <div style={{position: 'relative', width: '100%'}}>
-            <video
-              src='/tours/city-tour-video.mp4'
-              controls
-              playsInline
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-              aria-label="City tour video"
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
           <div style={{position: 'relative'}}>
             <img
               src='/tours/cit0.jpg'
