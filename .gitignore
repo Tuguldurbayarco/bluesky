@@ -3,3 +3,6 @@ node_modules/
 out/
 .DS_Store
 *.zip
+
+# Large video files (host elsewhere or use LFS)
+public/tours/city-tour-video.mp4
