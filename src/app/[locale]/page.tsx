@@ -1,11 +1,12 @@
 import TourCards from "@/components/UI/TourCards";
 import TravelTools from "@/components/UI/TravelTools";
-import { isValidLocale, defaultLocale } from "@/lib/i18n";
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import styles from "./(pages)/main.module.css";
 
 export default function Index({params: {locale}}: {params: {locale: string}}) {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
-  
+  const t = createTranslator(validLocale);
+
   return (
     <main>
       <div style={{position: "relative", marginTop: 100}}>
@@ -25,9 +26,9 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
         </div>
       </div>
       <div className={styles.welcomeSection}>
-        <h1 className="pageTitle">Welcome to Eternal Sky Tour</h1>
-        <p className="pageDescription">
-          Discover the breathtaking beauty of Mongolia with unforgettable adventures and authentic experiences.
+        <h1 className="pageTitle">{t('Index.welcomeTitle')}</h1>
+        <p className="pageDescription" style={{ whiteSpace: 'pre-line' }}>
+          {t('Index.pageDescription')}
         </p>
       </div>
       <TourCards locale={validLocale} />

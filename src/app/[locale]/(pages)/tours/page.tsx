@@ -27,33 +27,29 @@ const Tours = ({ params: { locale } }: { params: { locale: string } }) => {
           locale={validLocale as Locale}
           dateRanges={["07/11 – 07/23", "08/02 – 08/14"]}
           tourKey="southNorthTour"
-          imageSrc="/group-south-north/south-north-display.webp"
+          imageSrc="/group-south-north/south-north-header.png"
           tourHref="/tours/south-north"
-          reverse={false}
         />
         <SouthNorthTour
           locale={validLocale as Locale}
           dateRanges={["07/11 – 07/22", "08/04 – 08/15"]}
           tourKey="eightLakesTrekking"
-          imageSrc="/group-eight-lake-trekk/eight-lake-trekk-display.png"
+          imageSrc="/group-eight-lake-trekk/eight_lake_trek_header.png"
           tourHref="/tours/eight-lakes-trekking"
-          reverse={true}
         />
         <SouthNorthTour
           locale={validLocale as Locale}
           dateRanges={["07/11 – 07/20", "08/06 – 08/15"]}
           tourKey="eightLakesEquestrian"
-          imageSrc="/group-eight-lake-equestrian/eight-lake-eq-display.png"
+          imageSrc="/group-eight-lake-equestrian/eight_lake_eq_header.png"
           tourHref="/tours/eight-lakes-equestrian"
-          reverse={false}
         />
         <SouthNorthTour
           locale={validLocale as Locale}
           dateRanges={["07/11 – 07/26", "08/08 – 08/23"]}
           tourKey="altaiExpedition"
-          imageSrc="/group-altai/group-altai-display.jpg"
+          imageSrc="/group-altai/group-altai-header.png"
           tourHref="/tours/altai-expedition"
-          reverse={true}
         />
       </div>
     </div>

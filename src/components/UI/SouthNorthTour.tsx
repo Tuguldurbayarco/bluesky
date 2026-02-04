@@ -9,10 +9,9 @@ type SouthNorthTourProps = {
   tourKey: string;
   imageSrc: string;
   tourHref: string;
-  reverse?: boolean; // When true, swaps left and right sides
 };
 
-const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tourKey, imageSrc, tourHref, reverse = false }) => {
+const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tourKey, imageSrc, tourHref }) => {
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
   const t = createTranslator(validLocale);
   const dates = dateRanges ? dateRanges : [];
@@ -88,21 +87,12 @@ const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tou
 
   return (
     <div className={styles.group_tour_wrapper}>
-      <p className={`${styles.group_tour_title} ${reverse ? styles.group_tour_title_right : styles.group_tour_title_left}`}>
+      <p className={`${styles.group_tour_title} ${styles.group_tour_title_left}`}>
         {t(`Tours.${tourKey}.title`)}
       </p>
-      <div className={`${styles.group_tour_container} ${reverse ? styles.group_tour_reverse : ''}`}>
-        {reverse ? (
-          <>
-            {contentSection}
-            {imageSection}
-          </>
-        ) : (
-          <>
-            {imageSection}
-            {contentSection}
-          </>
-        )}
+      <div className={styles.group_tour_container}>
+        {imageSection}
+        {contentSection}
       </div>
     </div>
   );

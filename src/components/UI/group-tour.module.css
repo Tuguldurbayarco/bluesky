@@ -39,10 +39,6 @@
   text-align: left;
 }
 
-.group_tour_title_right {
-  text-align: right;
-}
-
 .group_tour_right {
   width: 43%;
   background: #fff;
@@ -199,32 +195,15 @@
     width: 100%;
   }
 
-  .group_tour_title_right{
-    text-align: left !important;
-  }
-
-  /* For non-reversed containers, image first, then content */
-  .group_tour_container:not(.group_tour_reverse) .group_tour_left {
-    order: 1;
-  }
-
-  .group_tour_container:not(.group_tour_reverse) .group_tour_right {
-    order: 2;
-  }
-
-  /* For reverse containers, image first, then content */
-  .group_tour_container.group_tour_reverse .group_tour_left {
-    order: 1;
-  }
-
-  .group_tour_container.group_tour_reverse .group_tour_right {
-    order: 2;
-  }
-
-  /* Align image to the right when wrapped */
+  /* Stack: image first, then content */
   .group_tour_left {
+    order: 1;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .group_tour_right {
+    order: 2;
   }
 
   .group_tour_image_link {

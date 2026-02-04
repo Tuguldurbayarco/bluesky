@@ -19,9 +19,9 @@ const TourCards = ({ locale }: TourCardsProps) => {
 
   const tours: TourCard[] = [
     { name: "City", href: "/tours/city", imageSrc: "/tours/Ulaanbaatar.webp" },
-    { name: "Gobi", href: "/tours/gobi", imageSrc: "/tours/ctmgobi.jpg" },
-    { name: "Central", href: "/tours/central", imageSrc: "/tours/ctmcentral.jpg" },
-    { name: "ZAVKHAN", href: "/tours/khangai", imageSrc: "/tours/ctmgobi.jpg" },
+    { name: "Gobi", href: "/tours/gobi", imageSrc: "/tours/Gobi1.jpg" },
+    { name: "Central", href: "/tours/central", imageSrc: "/tours/Central1.jpg" },
+    { name: "ZAVKHAN", href: "/tours/khangai", imageSrc: "/tours/Zavkhan1.jpg" },
     { name: "Khuvsgul", href: "/tours/khuvsgul", imageSrc: "/tours/ctmkhuvsgul1.jpg" },
   ];
 
