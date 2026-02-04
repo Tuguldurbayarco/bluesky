@@ -3,9 +3,9 @@ import CertificatesSection from "@/components/UI/CertificatesSection";
 import styles from "./about-us.module.css";
 
 const CERTIFICATE_IMAGES = [
-  { src: "/certificates/몽-한 관광협회 회원.jpg", alt: "Certificate of membership - Mongolia-Korea Tourism Association" },
-  { src: "/certificates/전문협회 등록증 앞면.jpg", alt: "Mongolia Tourism Organization certificate - front" },
-  { src: "/certificates/전문협회 등록증 뒷면.jpg", alt: "Registration extension - back" },
+  { src: "/certificates/cert1.jpg", alt: "Certificate of membership - Mongolia-Korea Tourism Association" },
+  { src: "/certificates/cert3.jpg", alt: "Mongolia Tourism Organization certificate - front" },
+  { src: "/certificates/cert2.jpg", alt: "Registration extension - back" },
 ];
 
 const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {

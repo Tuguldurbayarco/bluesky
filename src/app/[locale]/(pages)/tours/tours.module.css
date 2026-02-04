@@ -23,7 +23,7 @@
 .tour_container_header_desc {
   display: block;
   font-size: 160%;
-  color: #ebc934;
+  color: var(--color-main);
   margin-bottom: 1%;
 }
 
@@ -35,7 +35,7 @@
 .tour_container_header_desc_mini {
   display: block;
   font-size: 120%;
-  color: #ebc934;
+  color: var(--color-main);
   margin-bottom: 1%;
 }
 

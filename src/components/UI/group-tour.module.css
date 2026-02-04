@@ -1,33 +1,247 @@
-.group_tour_reserve_button {
-  padding: 0.8rem 1.5rem;
-  color: #fff;
-  background: linear-gradient(135deg, #96c15f 0%, #7ba84a 100%);
-  border: 1px solid rgba(150, 193, 95, 0.5);
+/* Group Tour Component Styles */
+.group_tour_wrapper {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.group_tour_container {
+  display: flex;
+  gap: 2%;
+}
+
+.group_tour_left {
+  position: relative;
+  width: 55%;
+}
+
+.group_tour_image_link {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  display: block;
   border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.group_tour_title {
+  width: 100%;
+  font-size: 160%;
+  color: #000;
+  margin-bottom: 1%;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.group_tour_title_left {
+  text-align: left;
+}
+
+.group_tour_title_right {
+  text-align: right;
+}
+
+.group_tour_right {
+  width: 43%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.group_tour_meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.group_tour_duration {
+  color: var(--color-main);
   font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
   letter-spacing: 0.02em;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 4px rgba(150, 193, 95, 0.2);
+}
+
+.group_tour_price {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+.group_tour_price_amount {
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+/* Available dates block (icon + text, not buttons) */
+.group_tour_dates {
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(34, 121, 199, 0.15);
+  border-bottom: 1px solid rgba(34, 121, 199, 0.15);
+}
+
+.group_tour_dates_header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.group_tour_calendar_icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-main);
+  flex-shrink: 0;
+}
+
+.group_tour_dates_label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.group_tour_date_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.group_tour_date_item {
+  font-size: 1rem;
+  color: #333;
+  padding: 0.25rem 0;
+}
+
+.group_tour_date_item::before {
+  content: "•";
+  color: var(--color-main);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.group_tour_reserve_button {
+  display: block;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  background: var(--color-main);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 0.25rem;
 }
 
 .group_tour_reserve_button:hover {
-  background: linear-gradient(135deg, #7ba84a 0%, #6a973f 100%);
-  box-shadow: 0 4px 12px rgba(150, 193, 95, 0.4);
-  transform: translateY(-1px);
-  border-color: rgba(150, 193, 95, 0.7);
+  background: var(--color-main-dark);
+  border-color: var(--color-main-dark);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(34, 121, 199, 0.35);
 }
 
-.group_tour_reserve_button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(150, 193, 95, 0.3);
+.group_tour_soldout_button {
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 100%;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  color: #666;
+  cursor: default;
+}
+
+.group_tour_soldout_button:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.tours_image_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1.5%;
+  margin: 0;
+  text-align: justify;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.tour_container_desc {
+  font-size: 120%;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .group_tour_container {
+    flex-direction: column;
+  }
+
+  .group_tour_left,
+  .group_tour_right {
+    width: 100%;
+  }
+
+  .group_tour_title_right{
+    text-align: left !important;
+  }
+
+  /* For non-reversed containers, image first, then content */
+  .group_tour_container:not(.group_tour_reverse) .group_tour_left {
+    order: 1;
+  }
+
+  .group_tour_container:not(.group_tour_reverse) .group_tour_right {
+    order: 2;
+  }
+
+  /* For reverse containers, image first, then content */
+  .group_tour_container.group_tour_reverse .group_tour_left {
+    order: 1;
+  }
+
+  .group_tour_container.group_tour_reverse .group_tour_right {
+    order: 2;
+  }
+
+  /* Align image to the right when wrapped */
+  .group_tour_left {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .group_tour_image_link {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
-  .group_tour_reserve_button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    width: 100%;
+  .group_tour_right {
+    padding: 1.25rem;
+  }
+
+  .group_tour_dates_label {
+    font-size: 0.8125rem;
+  }
+
+  .group_tour_date_item {
+    font-size: 0.9375rem;
   }
 }
