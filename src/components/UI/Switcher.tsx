@@ -18,8 +18,8 @@ const languages: Language[] = [
 ];
 
 export default function LocalSwitcher() {
-  const pathname = usePathname();
-  const locale = pathname.split('/')[1];
+   const pathname = usePathname();
+   const locale = (pathname ?? "").split("/")[1];
   const localActive = isValidLocale(locale) ? locale : defaultLocale;
   const currentLanguage = languages.find(lang => lang.code === localActive) || languages[0];
 
@@ -27,7 +27,7 @@ export default function LocalSwitcher() {
     const selectedLang = event.target.value;
     if (selectedLang !== localActive) {
       // Replace the locale in the current path
-      const newPath = pathname.replace(`/${localActive}`, `/${selectedLang}`);
+      const newPath = (pathname ?? "").replace(`/${localActive}`, `/${selectedLang}`);
       location.href = newPath;
     }
   };

@@ -9,8 +9,9 @@ import styles from "./navbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const pathnameStr = pathname ?? "";
   // Extract locale from pathname
-  const locale = pathname.split('/')[1];
+  const locale = pathnameStr.split("/")[1];
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
   
@@ -97,13 +98,13 @@ const Navbar = () => {
   function isLinkActive(link: { href: string, key: string }) {
     const base = `/${validLocale}`;
     if (link.key === 'home') {
-      return pathname === base || pathname === `${base}/`;
+      return pathnameStr === base || pathnameStr === `${base}/`;
     }
     if (link.key === 'why-we') {
-      return pathname.startsWith(`${base}/about`) || pathname.startsWith(`${base}/about-us`) ||
-        pathname.startsWith(`${base}/travel-tools`);
+      return pathnameStr.startsWith(`${base}/about`) || pathnameStr.startsWith(`${base}/about-us`) ||
+        pathnameStr.startsWith(`${base}/travel-tools`);
     }
-    return pathname.startsWith(`${base}${link.href}`);
+    return pathnameStr.startsWith(`${base}${link.href}`);
   }
 
   function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {

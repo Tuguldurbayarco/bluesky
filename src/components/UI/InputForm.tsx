@@ -7,7 +7,7 @@ import TextArea from "./TextArea";
 
 const InputForm = ({ ...props }: any) => {
   const searchParams = useSearchParams();
-  const tourFromUrl = searchParams.get("tour");
+  const tourFromUrl = searchParams?.get("tour") ?? null;
   const [name, setName] = useState("");
   const [last, setLast] = useState("");
   const [country, setCountry] = useState("");
