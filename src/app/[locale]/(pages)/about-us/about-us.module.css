@@ -50,3 +50,31 @@
     font-size: 120%;
   }
 }
+
+/* Certificates section: outside visibility_area, full width */
+.certificates_section {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.certificates_title {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.certificates_title_blue {
+  display: block;
+  color: #2563eb;
+}
+
+.certificates_title_gray {
+  display: block;
+  color: #6b7280;
+}

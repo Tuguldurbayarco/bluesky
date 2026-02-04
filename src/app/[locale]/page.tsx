@@ -8,11 +8,17 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
   
   return (
     <main>
-      <div style={{position: "relative"}}>
-        <img
-          className="d-block w-100"
-          src="/3.jpg"
-          alt="Header image"
+      <div style={{position: "relative", marginTop: 100}}>
+        <video
+          className={styles.heroVideo}
+          src="/video-header/hero-web.mp4"
+          poster="/3.jpg"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-label="Header video"
         />
         <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
           <h1 className='header_on_picture'>Travel to Mongolia</h1>

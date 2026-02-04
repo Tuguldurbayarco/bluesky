@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Main brand color (footer, active nav link, etc.) */
+:root {
+  --color-main: #2279c7;
+  --color-main-dark: #1c6ab3;
+}
+
 /* Global Font Styles */
 .trocchi-regular {
   font-family: "Trocchi", serif;

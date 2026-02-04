@@ -18,10 +18,6 @@ const Navbar = () => {
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
   }
-  // Check if current route is a tour detail page (no hero image)
-  // Matches patterns like /en/tours/khuvsgul, /en/tours/city, etc.
-  const isTourDetailPage = pathname.match(/\/[a-z]{2}\/tours\/[^/]+$/);
-  const [scrolled, setScrolled] = useState(!!isTourDetailPage);
 
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSubmenuOpen, setSubmenuOpen] = useState(false);
@@ -32,28 +28,6 @@ const Navbar = () => {
       setSubmenuOpen(false);
     }
   };
-
-  useEffect(() => {
-    // If on a tour detail page, always show scrolled style
-    if (isTourDetailPage) {
-      setScrolled(true);
-      return;
-    }
-
-    // Reset scrolled state when navigating away from tour detail pages
-    setScrolled(false);
-
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isTourDetailPage, pathname]);
 
   useEffect(() => {
     const handleBodyScroll = (e: { preventDefault: () => void; }) => {
@@ -111,6 +85,8 @@ const Navbar = () => {
         return t("Index.menu.2.label");
       case "why-we":
         return t("Index.menu.3.label");
+      case "gallery":
+        return "Gallery";
       case "contact":
         return t("Index.menu.4.label");
       default:
@@ -118,12 +94,24 @@ const Navbar = () => {
     }
   }
 
+  function isLinkActive(link: { href: string, key: string }) {
+    const base = `/${validLocale}`;
+    if (link.key === 'home') {
+      return pathname === base || pathname === `${base}/`;
+    }
+    if (link.key === 'why-we') {
+      return pathname.startsWith(`${base}/about`) || pathname.startsWith(`${base}/about-us`) ||
+        pathname.startsWith(`${base}/travel-tools`);
+    }
+    return pathname.startsWith(`${base}${link.href}`);
+  }
+
   function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {
     const isWhyWe = link.key === 'why-we';
+    const isActive = isLinkActive(link);
     
     const submenuItems = isWhyWe ? [
       { href: '/about-us', label: 'About Us' },
-      { href: '/gallery', label: 'Gallery' },
       { href: '/travel-tools', label: 'Travel Tools' }
     ] : [];
 
@@ -155,7 +143,7 @@ const Navbar = () => {
         <Link 
           href={addLocaleToHref(link.href)} 
           key={link.key} 
-          className={`${styles.navbar_menu_buttons} ${isWhyWe ? styles.has_submenu : ''}`}
+          className={`${styles.navbar_menu_buttons} ${isWhyWe ? styles.has_submenu : ''} ${isActive ? styles.navbar_menu_buttons_active : ''}`}
           onClick={handleWhyWeClick}
         >
           {menuLabel(link)}
@@ -193,11 +181,9 @@ const Navbar = () => {
   return (
     <div >
       <div >
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : styles.non_scrolled}`} 
-          style={{position: 'fixed', top: 0, width: '100%'}} 
-        >
+        <nav className={styles.navbar} style={{position: 'fixed', top: 0, width: '100%'}}>
           <div className={styles.navbar_content}>
-            <Link href={`/${validLocale}/`} className={`${styles.logo} ${scrolled ? styles.scrolled : ''}`}>
+            <Link href={`/${validLocale}/`} className={styles.logo}>
               <img src="/logo.png" alt="logo" height='auto'/>
             </Link>
             <div className={`${styles.header_menu} ${isMenuOpen ? styles.open : ''}`}>

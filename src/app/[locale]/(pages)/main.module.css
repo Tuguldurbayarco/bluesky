@@ -1,4 +1,12 @@
 /* Main Page Styles */
+.heroVideo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 85vh;
+}
+
 .welcomeSection {
   text-align: center;
   padding: 3rem 2rem;

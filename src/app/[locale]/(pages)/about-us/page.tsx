@@ -1,5 +1,12 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import CertificatesSection from "@/components/UI/CertificatesSection";
 import styles from "./about-us.module.css";
+
+const CERTIFICATE_IMAGES = [
+  { src: "/certificates/몽-한 관광협회 회원.jpg", alt: "Certificate of membership - Mongolia-Korea Tourism Association" },
+  { src: "/certificates/전문협회 등록증 앞면.jpg", alt: "Mongolia Tourism Organization certificate - front" },
+  { src: "/certificates/전문협회 등록증 뒷면.jpg", alt: "Registration extension - back" },
+];
 
 const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
@@ -32,6 +39,13 @@ const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
         </div>
       </div>
+      <section className={styles.certificates_section} aria-label="Certificates">
+        <h2 className={styles.certificates_title}>
+          <span className={styles.certificates_title_blue}>ETERNAL SKY TOUR</span>
+          <span className={styles.certificates_title_gray}>CERTIFICATE</span>
+        </h2>
+        <CertificatesSection images={CERTIFICATE_IMAGES} />
+      </section>
     </div>
   );
 }

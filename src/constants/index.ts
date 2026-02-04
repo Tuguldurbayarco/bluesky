@@ -3,6 +3,7 @@ export const NAV_LINKS = [
   {href: '/', key: 'home', title: 'Home'},
   {href: '/tours', key: 'tours', title: 'Tours'},
   {href: '/events', key: 'events', title: 'Events'},
+  {href: '/gallery', key: 'gallery', title: 'Gallery'},
   {href: '/about', key: 'why-we', title: 'Why WE?'},
   {href: '/contacts', key: 'contact', title: 'Contact'},
 ];
@@ -40,6 +41,12 @@ export const FOOTER_LINKS = {
   ]
 }
 
+/** Footer partner logos (add name, logoSrc, optional url, optional width in px) */
+export const FOOTER_PARTNERS: { name: string; logoSrc: string; url?: string; width?: number }[] = [
+  { name: 'Mongolia Tourism Professional Association', logoSrc: '/partners/partner1.png', width: 202 },
+  { name: 'Mongolian Tourism Association', logoSrc: '/partners/partner2.png', width: 202 },
+];
+
 export const SOCIALS = {
   title: 'Socials',
   links: [
@@ -50,7 +57,7 @@ export const SOCIALS = {
     },
     { 
       name: 'Instagram',
-      url: 'https://www.instagram.com/eternalskytour/',
+      url: 'https://www.instagram.com/eternalskytour.mn/',
       icon: '/instagram.svg'
     },
     { 
@@ -60,6 +67,20 @@ export const SOCIALS = {
     },
   ],
 };
+
+/** Third column: small social row above big icons (Facebook, Instagram, YouTube – white/transparent style) */
+export const FOOTER_CTA_SOCIALS: { name: string; url: string; icon: string }[] = [
+  { name: 'Facebook', url: 'https://www.facebook.com/EternalSkyTour', icon: '/facebook.svg' },
+  { name: 'Instagram', url: 'https://www.instagram.com/eternalskytour.mn/', icon: '/instagram.svg' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@eternalskytour', icon: '/icons/youtube.svg' },
+];
+
+/** Third column CTA: big icons (KakaoTalk, Naver, WhatsApp) – use image paths */
+export const FOOTER_CTA_BIG_ICONS: { name: string; url: string; icon: string }[] = [
+  { name: 'KakaoTalk', url: 'https://open.kakao.com/o/seK7AIah', icon: '/icons/kakaoTalkIcon.png' },
+  { name: 'Naver', url: 'https://blog.naver.com/eternalskytour', icon: '/icons/naverIcon.png' },
+  { name: 'WhatsApp', url: 'https://wa.me/97699902202', icon: '/icons/whatsup.png' },
+];
 
 export const QUESTION_FORM = {
   title: 'Have a question?', value: '* Indicates required field'
