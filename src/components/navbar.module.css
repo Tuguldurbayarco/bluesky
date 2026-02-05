@@ -14,8 +14,8 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  width: auto;
-  padding-inline: 15px;
+  width: 100%;
+  padding-inline: 15%;
 }
 
 .logo {
@@ -24,7 +24,7 @@
 }
 
 .navbar_menu_buttons {
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   color: #000;
   transition: opacity 0.4s ease;
@@ -37,7 +37,7 @@
 }
 
 .navbar_menu_buttons_active {
-  color: var(--color-main);
+  color: #e60023; /* web red for active nav item */
   font-weight: 600;
 }
 
@@ -142,17 +142,27 @@
 
 /* Responsive Styles */
 @media (max-width: 1250px) {
+  .navbar_content {
+    padding-inline: 10%;
+  }
 }
 
 @media (max-width: 992px) {
+  .navbar_content {
+    padding-inline: 7%;
+  }
 }
 
 @media (max-width: 865px) {
 }
 
 @media (max-width: 767px) {
+  .navbar_content {
+    padding-inline: 5%;
+  }
+
   .navbar_menu_buttons {
-    font-size: 13px;
+    font-size: 16px;
   }
   
   .navbar_menu_container {
@@ -301,7 +311,7 @@
   }
 
   .navbar_menu_container .navbar_menu_buttons_active {
-    color: var(--color-main);
+    color: #e60023; /* web red for active nav item on mobile */
   }
 
   .navbar_menu_buttons.has_submenu {

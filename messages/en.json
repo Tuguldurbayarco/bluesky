@@ -242,7 +242,7 @@
     "event-container": [
       {
         "title": "TSAGAAN SAR",
-        "description": "\"Tsagaan Sar\" /White Month/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip."
+        "description": "\"Tsagaan Sar\" /Lunar New Year/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip."
       },
       {
         "title": "ICE FESTIVAL",
@@ -543,6 +543,7 @@
     "text": "Traveling to Mongolia as part of a group has many advantages. You can meet like-minded individuals and make new friends. On top of that, group tours also allow for discounted bundle deals - so you get to enjoy everything Mongolia offer at much more reasonable price.",
     "subtitle1": "INFORMATION ABOUT TOURS",
     "tour_dates": "Tour dates:",
+    "book_this_tour": "BOOK THIS TOUR",
     "main_tour": "GOBI-KHANGAI TOUR - 13 days 12 nights",
     "main_tour_desc": "Although Mongolia is largely covered in endless steppes, the journey also reveals stunning landscapes—lakes, canyons, sand dunes, and dramatic cliffs. Traveling from one province to another often means days of driving across some of the Earth’s roughest and most remote terrain. At times, your only companions are herds of horses and yaks grazing the open plains. At others, eagles circle silently overhead.",
     "read_more": "Read more",
@@ -550,7 +551,7 @@
     "classicTours": {
       "city": {
         "title": "CITY TOUR",
-        "duration": "3 days 2 nights",
+        "duration": "2 days 1 night",
         "description": "A city tour of Mongolia, particularly focusing on Ulaanbaatar, offers visitors a glimpse into the country's rich history, culture, and modern life."
       },
       "gobi": {
@@ -564,8 +565,8 @@
         "description": "This central tour of Mongolia provides a comprehensive overview of the country's cultural heritage, historical landmarks, and natural beauty, offering travelers a memorable and immersive experience in the heart of Mongolia."
       },
       "khangai": {
-        "title": "GOBI-KHANGAI TOUR",
-        "duration": "15 days 14 nights",
+        "title": "ZAVKHAN",
+        "duration": "14 days 13 nights",
         "description": "Getting from one province to another involves days of driving over some of the roughest terrain on the planet, often across vast stretches of empty space. Sometimes, the only company you will have on the road is the herds of horses, yaks and sheep found grazing on the plains. Other times, its vultures seen circling above. While the landlocked country is mostly covered by steppes, you also get to see marvels such as lakes, canyons, sand dunes, and cliffs along the way."
       },
       "khuvsgul1": {
@@ -589,7 +590,7 @@
       "price_usd": "2,251",
       "price_eur": "1,945",
       "read_more": "[Read more..]",
-      "reserve_spot": "Reserve your spot",
+      "reserve_spot": "Join now",
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
@@ -602,7 +603,7 @@
       "price_usd": "1,925",
       "price_eur": "1,663",
       "read_more": "[Read more..]",
-      "reserve_spot": "Reserve your spot",
+      "reserve_spot": "Join now",
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
@@ -615,7 +616,7 @@
       "price_usd": "1,702",
       "price_eur": "1,471",
       "read_more": "[Read more..]",
-      "reserve_spot": "Reserve your spot",
+      "reserve_spot": "Join now",
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
@@ -628,7 +629,7 @@
       "price_usd": "2,586",
       "price_eur": "2,235",
       "read_more": "[Read more...]",
-      "reserve_spot": "Reserve your spot",
+      "reserve_spot": "Join now",
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
@@ -788,7 +789,7 @@
     ]
   },
   "Khangai": {
-    "picture_text": "GOBI-KHANGAI TOUR - 15 days 14 nights",
+    "picture_text": "ZAVKHAN - 14 days 13 nights",
     "description": "Getting from one province to another involves days of driving over some of the roughest terrain on the planet, often across vast stretches of empty space. Sometimes, the only company you will have on the road is the herds of horses, yaks and sheep found grazing on the plains. Other times, its vultures seen circling above. While the landlocked country is mostly covered by steppes, you also get to see marvels such as lakes, canyons, sand dunes, and cliffs along the way.",
     "day1": "Day 1. Baga Gazryn Chuluu",
     "day1text": "Around the mountain pass and the valley, one can see considerable number of ancient graves, monuments besides many gushing springs. There are many sights to explore such as a rocky ravine of poplar called Sudutyn Am, Jargalant Cave, spring of eyesight.",
@@ -900,7 +901,7 @@
     "schedule14-3": "Around 12:00 - Lunch",
     "schedule14-4": "Around 14:00 - Arrival and visit the monastery",
     "schedule14-5": "18:00 - Dinner",
-    "day15": "Day 15. Back to Ulaanbaatar",
+    "day15": "Day 14. Back to Ulaanbaatar",
     "day15text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khan Uul National Park.",
     "schedule15-1": "08:00 - Breakfast",
     "schedule15-2": "09:00 - Drive to Ulaanbaatar",
@@ -910,10 +911,10 @@
     "button": "Go to Booking"
   },
   "City": {
-    "picture_text": "CITY TOUR - 3 days 2 nights",
+    "picture_text": "CITY TOUR - 2 days 1 night",
     "description": "A city tour of Mongolia, particularly focusing on Ulaanbaatar, offers visitors a glimpse into the country's rich history, culture, and modern life.",
     "day1": "Day 1. Ulaanbaatar City",
-    "day1text": "Ulaanbaatar, the capital and largest city of Mongolia, is a vibrant and bustling metropolis situated in the heart of the country. Despite its relatively small population compared to other capital cities, Ulaanbaatar serves as Mongolia's political, economic, and cultural center.\n\n1. Sukhbaatar Square\n2. Gandan Monastery\n3. National Museum of Mongolia\n4. Zaisan Memorial",
+    "day1text": "Ulaanbaatar, the capital and largest city of Mongolia, is a vibrant and bustling metropolis situated in the heart of the country. Despite its relatively small population compared to other capital cities, Ulaanbaatar serves as Mongolia's political, economic, and cultural center.\n\n1. Sukhbaatar Square\n2. Gandan Monastery\n3. Chinggis Khan Museum\n4. Zaisan Memorial",
     "program": "Program",
     "schedule1-1": "08:00 - Breakfast",
     "schedule1-2": "09:00 - Tour begins at Sukhbaatar Square",
@@ -1047,12 +1048,12 @@
     "schedule3-3": "13:00 - Lunch",
     "schedule3-4": "Afternoon - Activities and exploration",
     "schedule3-5": "19:00 - Dinner",
-    "day4": "Day 4. Zuun Nuur",
-    "day4text": "Zuun Nuur, also spelled as Zun Nuur or Tsagaan Nuur, is a beautiful freshwater lake located in the Arkhangai Province of central Mongolia. It is part of the Khangai Nuruu National Park, a protected area known for its stunning landscapes, diverse wildlife, and nomadic culture.",
+    "day4": "Day 4. Shine-ider",
+    "day4text": "Shine-ider is a district in the Zavkhan region of western Mongolia. The area features scenic valleys, traditional nomadic herding life, and access to the natural beauty of the Khangai mountain range and surrounding landscapes.",
     "schedule4-1": "08:00 - Breakfast",
-    "schedule4-2": "09:00 - Drive to Zuun Nuur",
+    "schedule4-2": "09:00 - Drive to Shine-ider",
     "schedule4-3": "Around 12:00 - Lunch",
-    "schedule4-4": "Around 15:00 - Arrival at Zuun Nuur",
+    "schedule4-4": "Around 15:00 - Arrival at Shine-ider",
     "schedule4-5": "19:00 - Dinner",
     "day5": "Day 5. Terkh White Lake",
     "day5text": "Terkh White lake is located 648 km from Ulaanbaatar city in Arkhangai province. Fresh water and volcanogenic Terkh White lake is 16 km long and it runs from the west to the east, and 6km wide from north to south. This lake was created as a result of a 4050 cm thick basaltic blockage of Terkhiin River, following the eruption of Khorhiintogoo and some other volcanoes.",
@@ -1086,7 +1087,7 @@
   },
   "Gobi": {
     "picture_text": "GOBI TOUR - 7 days 6 nights",
-    "description": "The Gobi is renowned for its vast sand dunes, rugged mountains, and rare wildlife, including snow leopards and two-humped Bactrian camels. In Gobi Gurvansaikhan National Park, the towering Khongoryn Els dunes are known to \"sing\" as the wind moves across them, while the Yolyn Am canyon surprises visitors with its deep ice fields even in summer. The region is also famous for the Flaming Cliffs of Bayanzag, where groundbreaking dinosaur fossils were first discovered. This route is one of Mongolia’s most iconic and popular journeys among travelers.",
+    "description": "The Gobi is renowned for its vast sand dunes, rugged mountains, and rare wildlife, including snow leopards and two-humped Bactrian camels. In Gobi Gurvansaikhan National Park, the towering Khongoryn Els dunes are known to \"SING\" as the wind moves across them, while the Yolyn Am canyon surprises visitors with its deep ice fields even in summer. The region is also famous for the Flaming Cliffs of Bayanzag, where groundbreaking dinosaur fossils were first discovered. This route is one of Mongolia’s most iconic and popular journeys among travelers.",
     "day1": "Day 1. Tsagaan Suvarga",
     "day1text": "Tsagaan Suvarga, or The White Stupa, is a stunning natural formation in the Gobi Desert, known for its dramatic, eroded limestone cliffs that resemble ancient city ruins. Standing up to 30 meters high and stretching over 400 meters, the cliffs display beautiful layers of white, pink, and orange hues, especially vibrant at sunrise and sunset. Shaped by millions of years of wind and weather, Tsagaan Suvarga offers a surreal and unforgettable landscape that captures the quiet majesty of the Mongolian desert.",
     "program": "Program",

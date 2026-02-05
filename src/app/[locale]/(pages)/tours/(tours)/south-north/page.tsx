@@ -1,6 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import PricingDetails from "@/components/UI/PricingDetails";
-import TourBooking from "@/components/UI/TourBooking";
+import GroupTourDetailLayout from "@/components/UI/GroupTourDetailLayout";
 import styles from "../../tours.module.css";
 
 const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
@@ -8,13 +8,16 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
   const t = createTranslator(validLocale);
   
   return (
-    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
-      <div className='visibility_area'>
-        <div>
-          <div style={{ marginBottom: '4rem' }}>
-            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Tours.southNorthTour.title')} - {t('Tours.southNorthTour.duration')}</h1>
-            <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Tours.southNorthTour.detail_description')}</p>
-          </div>
+    <div className="visibility_area">
+      <GroupTourDetailLayout
+        locale={validLocale as Locale}
+        tourKey="southNorthTour"
+        mapSrc="/group-south-north/map.jpg"
+        mapAlt="South North Tour route map"
+        dateRanges={["07/11 – 07/23", "08/02 – 08/14"]}
+        title={`${t("Tours.southNorthTour.title")} - ${t("Tours.southNorthTour.duration")}`}
+      >
+          <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.southNorthTour.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-south-north/day 1 ub naadam.png'
@@ -215,13 +218,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
             </div>
           </div>
           <PricingDetails locale={validLocale as Locale} />
-          <TourBooking 
-            locale={validLocale as Locale} 
-            tourKey="southNorthTour"
-            dateRanges={["07/11 – 07/23", "08/02 – 08/14"]}
-          />
-        </div>
-      </div>
+      </GroupTourDetailLayout>
     </div>
   );
 }

@@ -28,7 +28,7 @@
 
 .tab_button:hover {
   color: #fff;
-  background-color: var(--color-main);
+  background-color: #1f4a8a; /* darken hover to reduce brightness */
   box-shadow: none;
   transform: none;
 }
@@ -45,7 +45,7 @@
 
 .tab_button.active:hover {
   color: #fff;
-  background-color: var(--color-main);
+  background-color: #1f4a8a;
 }
 
 .tab_button.active::after {

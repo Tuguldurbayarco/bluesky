@@ -22,8 +22,8 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/city - day 1.jpg'
-              alt='Sukhbaatar Square, Ulaanbaatar'
+              src='/tours/central day 5.jpg'
+              alt='Central Mongolia - Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -46,32 +46,13 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.17)' }}
             />
           </div>
-          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
+          <div style={{display: "flex", flexDirection: "column", padding: "2% 2% 2% 2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
                 <p className={styles.tour_left_column_header}>{t('City.day2')}</p>
               </div>
               <div>
                 <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day2text')}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div >
-          <div style={{position: 'relative'}}>
-            <img
-              src='/tours/city - day 3.jpg'
-              alt='Chinggis Khan Statue Complex'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </div>
-          <div style={{display: "flex", flexDirection: "column", padding: "2% 2% 2% 2%", backgroundColor: "#f6f5ff"}}>
-            <div style={{width: "100%"}}>
-              <div>
-                <p className={styles.tour_left_column_header}>{t('City.day3')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day3text')}</p>
               </div>
             </div>
             <div style={{marginTop: "2rem", width: "100%"}}>

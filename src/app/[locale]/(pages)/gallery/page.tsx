@@ -1,28 +1,46 @@
-"use client";
-
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import ImageGallery from "@/components/UI/ImageGallery";
 import styles from "./gallery.module.css";
+import fs from "node:fs";
+import path from "node:path";
 
-// Gallery images - Add more images by adding them to the gallery folder
-// and including them in this array
-const GALLERY_IMAGES = [
-  { src: "/gallery/1.jpg", alt: "Gallery Image 1" },
-  { src: "/gallery/1-1.jpg", alt: "Gallery Image 2" },
-  { src: "/gallery/2.jpg", alt: "Gallery Image 3" },
-  { src: "/gallery/2-2.jpg", alt: "Gallery Image 4" },
-  { src: "/gallery/3.jpg", alt: "Gallery Image 5" },
-  { src: "/gallery/3-3.jpg", alt: "Gallery Image 6" },
-  { src: "/gallery/15.jpg", alt: "Gallery Image 7" },
-  { src: "/gallery/16.jpg", alt: "Gallery Image 8" },
-  { src: "/gallery/18.jpg", alt: "Gallery Image 9" },
-  { src: "/gallery/19.jpg", alt: "Gallery Image 10" },
-];
+export type GalleryMediaItem =
+  | { type: "image"; src: string; alt: string }
+  | { type: "video"; src: string; alt: string };
 
-const Gallery = ({params: {locale}}: {params: {locale: string}}) => {
+const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp"]);
+const videoExtensions = new Set([".mp4"]);
+
+const getGalleryMedia = async (): Promise<GalleryMediaItem[]> => {
+  const galleryDir = path.join(process.cwd(), "public", "gallery");
+  const files = await fs.promises.readdir(galleryDir);
+
+  const videos = files
+    .filter((file) => videoExtensions.has(path.extname(file).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map((file, index) => ({
+      type: "video" as const,
+      src: `/gallery/${file}`,
+      alt: `Gallery video ${index + 1}`,
+    }));
+
+  const images = files
+    .filter((file) => imageExtensions.has(path.extname(file).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map((file, index) => ({
+      type: "image" as const,
+      src: `/gallery/${file}`,
+      alt: `Gallery image ${index + 1}`,
+    }));
+
+  return [...videos, ...images];
+};
+
+const Gallery = async ({ params: { locale } }: { params: { locale: string } }) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
-  
+  const media = await getGalleryMedia();
+
   return (
     <div>
       <div style={{position: "relative"}}>
@@ -40,7 +58,7 @@ const Gallery = ({params: {locale}}: {params: {locale: string}}) => {
         <p className="pageDescription" style={{marginBottom: '5rem'}}>
           Explore the beautiful moments and stunning landscapes captured during our tours across Mongolia.
         </p>
-        <ImageGallery images={GALLERY_IMAGES} />
+        <ImageGallery media={media} />
       </div>
     </div>
   );

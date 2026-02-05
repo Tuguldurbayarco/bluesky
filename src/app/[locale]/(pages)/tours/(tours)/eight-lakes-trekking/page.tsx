@@ -1,6 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import PricingDetails from "@/components/UI/PricingDetails";
-import TourBooking from "@/components/UI/TourBooking";
+import GroupTourDetailLayout from "@/components/UI/GroupTourDetailLayout";
 import styles from "../../tours.module.css";
 
 const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
@@ -8,13 +8,16 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
   const t = createTranslator(validLocale);
   
   return (
-    <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
-      <div className='visibility_area'>
-        <div>
-          <div style={{ marginBottom: '4rem' }}>
-            <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Tours.eightLakesTrekking.title')} - {t('Tours.eightLakesTrekking.duration')}</h1>
-            <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Tours.eightLakesTrekking.detail_description')}</p>
-          </div>
+    <div className="visibility_area">
+      <GroupTourDetailLayout
+        locale={validLocale as Locale}
+        tourKey="eightLakesTrekking"
+        mapSrc="/group-eight-lake-trekk/map.jpg"
+        mapAlt="Eight Lakes Trekking route map"
+        dateRanges={["07/11 – 07/22", "08/04 – 08/15"]}
+        title={`${t("Tours.eightLakesTrekking.title")} - ${t("Tours.eightLakesTrekking.duration")}`}
+      >
+          <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.eightLakesTrekking.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
               src='/group-eight-lake-trekk/day 1 ub naadam.png'
@@ -106,13 +109,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
             </div>
           </div>
           <PricingDetails locale={validLocale as Locale} />
-          <TourBooking 
-            locale={validLocale as Locale} 
-            tourKey="eightLakesTrekking"
-            dateRanges={["07/11 – 07/22", "08/04 – 08/15"]}
-          />
-        </div>
-      </div>
+      </GroupTourDetailLayout>
     </div>
   );
 }

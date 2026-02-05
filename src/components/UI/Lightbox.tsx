@@ -1,25 +1,31 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useMemo } from "react";
 import styles from "./Lightbox.module.css";
+import type { GalleryMediaItem } from "@/app/[locale]/(pages)/gallery/page";
 
-export interface LightboxImage {
-  src: string;
-  alt: string;
-}
+export type LightboxImage = { src: string; alt: string };
 
 interface LightboxProps {
-  images: LightboxImage[];
+  media?: GalleryMediaItem[];
+  images?: LightboxImage[];
   selectedIndex: number;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
 }
 
-const Lightbox = ({ images, selectedIndex, onClose, onPrev, onNext }: LightboxProps) => {
+const Lightbox = ({ media: mediaProp, images, selectedIndex, onClose, onPrev, onNext }: LightboxProps) => {
+  const media = useMemo(
+    () =>
+      mediaProp ??
+      (images?.map((img) => ({ type: "image" as const, src: img.src, alt: img.alt })) ?? []),
+    [mediaProp, images]
+  );
   const hasPrev = selectedIndex > 0;
-  const hasNext = selectedIndex < images.length - 1;
-  const image = images[selectedIndex];
+  const hasNext = selectedIndex < media.length - 1;
+  const item = media[selectedIndex];
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -41,7 +47,15 @@ const Lightbox = ({ images, selectedIndex, onClose, onPrev, onNext }: LightboxPr
     };
   }, [selectedIndex, hasPrev, hasNext, onClose, onPrev, onNext]);
 
-  if (!image) return null;
+  // Auto-play video when it becomes the selected item (open or switch)
+  useEffect(() => {
+    const video = videoRef.current;
+    if (item?.type === "video" && video) {
+      video.play().catch(() => {});
+    }
+  }, [selectedIndex, item?.type, item?.src]);
+
+  if (!item) return null;
 
   return (
     <div className={styles.lightbox} onClick={onClose}>
@@ -73,7 +87,7 @@ const Lightbox = ({ images, selectedIndex, onClose, onPrev, onNext }: LightboxPr
             e.stopPropagation();
             onPrev();
           }}
-          aria-label="Previous image"
+          aria-label="Previous"
         >
           <svg
             width="24"
@@ -97,7 +111,7 @@ const Lightbox = ({ images, selectedIndex, onClose, onPrev, onNext }: LightboxPr
             e.stopPropagation();
             onNext();
           }}
-          aria-label="Next image"
+          aria-label="Next"
         >
           <svg
             width="24"
@@ -117,13 +131,25 @@ const Lightbox = ({ images, selectedIndex, onClose, onPrev, onNext }: LightboxPr
         className={styles.lightbox_content}
         onClick={(e) => e.stopPropagation()}
       >
-        <img
-          src={image.src}
-          alt={image.alt}
-          className={styles.lightbox_image}
-        />
+        {item.type === "video" ? (
+          <video
+            ref={videoRef}
+            src={item.src}
+            controls
+            autoPlay
+            playsInline
+            className={styles.lightbox_video}
+            onLoadedData={(e) => e.currentTarget.play().catch(() => {})}
+          />
+        ) : (
+          <img
+            src={item.src}
+            alt={item.alt}
+            className={styles.lightbox_image}
+          />
+        )}
         <div className={styles.lightbox_counter}>
-          {selectedIndex + 1} / {images.length}
+          {selectedIndex + 1} / {media.length}
         </div>
       </div>
     </div>

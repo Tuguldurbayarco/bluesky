@@ -251,25 +251,6 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
             </div>
           </div>
         </div>
-        <div >
-          <div style={{position: 'relative', marginTop: 0}}>
-            <img
-              src='/tours/amarbayasgalant_splash.jpg'
-              alt='Amarbayasgalant Monastery'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </div>
-          <div style={{display: "flex", padding: "2% 2% 0 2%", backgroundColor: "#f6f5ff"}}>
-            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
-              <div>
-                <p className={styles.tour_left_column_header}>{t('Khangai.day14')}</p>
-              </div>
-              <div>
-                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('Khangai.day14text')}</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img

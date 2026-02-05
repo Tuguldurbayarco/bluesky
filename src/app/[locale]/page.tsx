@@ -1,4 +1,5 @@
 import TourCards from "@/components/UI/TourCards";
+import GroupToursHome from "@/components/UI/GroupToursHome";
 import TravelTools from "@/components/UI/TravelTools";
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import styles from "./(pages)/main.module.css";
@@ -6,6 +7,13 @@ import styles from "./(pages)/main.module.css";
 export default function Index({params: {locale}}: {params: {locale: string}}) {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
+
+  const groupTours = [
+    { tourKey: "southNorthTour", href: "/tours/south-north", imageSrc: "/tours/3.jpg", title: t("Tours.southNorthTour.title") },
+    { tourKey: "eightLakesTrekking", href: "/tours/eight-lakes-trekking", imageSrc: "/tours/2.jpg", title: t("Tours.eightLakesTrekking.title") },
+    { tourKey: "eightLakesEquestrian", href: "/tours/eight-lakes-equestrian", imageSrc: "/tours/1.jpg", title: t("Tours.eightLakesEquestrian.title") },
+    { tourKey: "altaiExpedition", href: "/tours/altai-expedition", imageSrc: "/tours/4.jpg", title: t("Tours.altaiExpedition.title") },
+  ];
 
   return (
     <main>
@@ -32,6 +40,7 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
         </p>
       </div>
       <TourCards locale={validLocale} />
+      <GroupToursHome locale={validLocale} sectionTitle={t("Tours.group_tours")} tours={groupTours} />
       <TravelTools locale={validLocale} />
     </main>
   );
