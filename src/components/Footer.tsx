@@ -22,14 +22,14 @@ const Footer = ({locale}: {locale: Locale}) => {
         <div className={styles.footer_display}>
           {/* Column 1: CONTACT */}
           <div className={styles.footer_first_column}>
-            <h2 className={styles.footer_containers_title}>CONTACT</h2>
+            <h2 className={styles.footer_containers_title}>{t('Footer.contactTitle')}</h2>
             <div className={styles.footer_contact_list}>
               <div className={`${styles.footer_contact_item} ${styles.footer_tooltip_item}`} title={t('Footer.phone')}>
                 <img src="/phone.png" alt="Phone" className={styles.footer_icon} />
                 <div className={styles.footer_contact_text}>
-                  <div>{t('Footer.phone2')} (English)</div>
-                  <div>{t('Footer.phone1')} (Korea)</div>
-                  <div>{t('Footer.phone3')} (Korea)</div>
+                  <div>{t('Footer.phone2')} ({t('Footer.phoneLabelEnglish')})</div>
+                  <div>{t('Footer.phone1')} ({t('Footer.phoneLabelKorea')})</div>
+                  <div>{t('Footer.phone3')} ({t('Footer.phoneLabelKorea')})</div>
                 </div>
               </div>
               <div className={`${styles.footer_contact_item} ${styles.footer_tooltip_item}`} title={t('Footer.mail')}>
@@ -56,7 +56,7 @@ const Footer = ({locale}: {locale: Locale}) => {
           </div>
           {/* Column 2: PARTNERS */}
           <div className={styles.footer_second_column}>
-            <h2 className={styles.footer_containers_title}>PARTNERS</h2>
+            <h2 className={styles.footer_containers_title}>{t('Footer.partnersTitle')}</h2>
             <div className={styles.footer_partners_list}>
               {FOOTER_PARTNERS.map((partner, index) => {
                 const imgStyle = partner.width != null ? { width: partner.width, height: 'auto' } : undefined;

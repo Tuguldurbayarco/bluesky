@@ -87,7 +87,7 @@ const Navbar = () => {
       case "why-we":
         return t("Index.menu.3.label");
       case "gallery":
-        return "Gallery";
+        return t("Index.galleryLabel");
       case "contact":
         return t("Index.menu.4.label");
       default:
@@ -112,8 +112,8 @@ const Navbar = () => {
     const isActive = isLinkActive(link);
     
     const submenuItems = isWhyWe ? [
-      { href: '/about-us', label: 'About Us' },
-      { href: '/travel-tools', label: 'Travel Tools' }
+      { href: '/about-us', label: t("Index.submenuAboutUs") },
+      { href: '/travel-tools', label: t("Index.submenuTravelTools") }
     ] : [];
 
     const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

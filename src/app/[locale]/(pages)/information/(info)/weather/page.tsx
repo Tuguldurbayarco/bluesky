@@ -20,7 +20,7 @@ const Weather = ({params: {locale}}: {params: {locale: string}}) => {
           priority
         />
         <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
-          <h1 className='header_on_picture'>Weather / Climate</h1>
+          <h1 className='header_on_picture'>{t('Information.weather.pageTitle')}</h1>
         </div>
       </div>
       <div className='visibility_area'>

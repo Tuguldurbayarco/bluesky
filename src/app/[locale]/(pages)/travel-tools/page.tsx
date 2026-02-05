@@ -12,64 +12,27 @@ const TravelTools = ({params: {locale}}: {params: {locale: string}}) => {
   }
 
   const travelTools = [
-    {
-      title: "Best time to Visit Mongolia",
-      href: "/information/visit",
-      image: "/travel-tools/autumn.jpg"
-    },
-    {
-      title: "SIM card",
-      href: "/information/phone",
-      image: "/travel-tools/sim-card.webp"
-    },
-    {
-      title: "Weather / Climate",
-      href: "/information/weather",
-      image: "/travel-tools/weather.jpg"
-    },
-    {
-      title: "What to bring",
-      href: "/travel-tools/what-to-bring",
-      image: "/travel-tools/header-img.webp"
-    },
-    {
-      title: "Travel Insurance",
-      href: "/information/insurance",
-      image: "/travel-tools/travelInsurance.jpg"
-    },
-    {
-      title: "Plug In/Out",
-      href: "/travel-tools/plug-inout",
-      image: "/travel-tools/pluginout.jpeg"
-    },
-    {
-      title: "Currency",
-      href: "/travel-tools/currency",
-      image: "/travel-tools/currency.png"
-    },
-    {
-      title: "Visa",
-      href: "/information/visa",
-      image: "/travel-tools/visa.webp"
-    },
-    {
-      title: "List of Embassies",
-      href: "https://www.embassypages.com/mongolia",
-      image: "/travel-tools/embassies.jpg",
-      external: true
-    }
+    { title: t("TravelTools.tool1Name"), href: "/information/visit", image: "/travel-tools/autumn.jpg" },
+    { title: t("TravelTools.tool2Name"), href: "/information/phone", image: "/travel-tools/sim-card.webp" },
+    { title: t("TravelTools.tool3Name"), href: "/information/weather", image: "/travel-tools/weather.jpg" },
+    { title: t("TravelTools.tool4Name"), href: "/travel-tools/what-to-bring", image: "/travel-tools/header-img.webp" },
+    { title: t("TravelTools.tool5Name"), href: "/information/insurance", image: "/travel-tools/travelInsurance.jpg" },
+    { title: t("TravelTools.tool6Name"), href: "/travel-tools/plug-inout", image: "/travel-tools/pluginout.jpeg" },
+    { title: t("TravelTools.tool7Name"), href: "/travel-tools/currency", image: "/travel-tools/currency.png" },
+    { title: t("TravelTools.tool8Name"), href: "/information/visa", image: "/travel-tools/visa.webp" },
+    { title: t("TravelTools.tool9Name"), href: "https://www.embassypages.com/mongolia", image: "/travel-tools/embassies.jpg", external: true }
   ];
   
   return (
     <div>
       <div className={styles.travel_tools_hero_container}>
-        <h1 className='header_on_picture' style={{margin: 0, padding: 0}}>Travel Tools</h1>
+        <h1 className='header_on_picture' style={{margin: 0, padding: 0}}>{t("TravelTools.pageTitle")}</h1>
       </div>
       <div className='visibility_area'>
         <div className={styles.travel_tools_header} style={{textAlign: "center"}}>
-          <h2 className="pageTitle" style={{marginTop: '8rem'}}>Essential Travel Information</h2>
+          <h2 className="pageTitle" style={{marginTop: '8rem'}}>{t("TravelTools.pageSubtitle")}</h2>
           <p className="pageDescription" style={{marginBottom: '5rem'}}>
-            Find everything you need to know before your journey to Mongolia, from visa requirements and currency exchange to weather information and travel essentials.
+            {t("TravelTools.pageDescription")}
           </p>
         </div>
         <div className={styles.travel_tools_grid} style={{marginBottom: '5rem'}}>

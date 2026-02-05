@@ -1,4 +1,6 @@
 import "./globals.css";
+import Footer from "@/components/Footer";
+import { defaultLocale, isValidLocale, type Locale } from "@/lib/i18n";
 
 // Generate static params for all supported locales
 export function generateStaticParams() {
@@ -10,10 +12,17 @@ export function generateStaticParams() {
 
 export default function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
-  return children; 
+  const validLocale = isValidLocale(locale) ? (locale as Locale) : defaultLocale;
+
+  return (
+    <>
+      {children}
+      <Footer locale={validLocale} />
+    </>
+  );
 }

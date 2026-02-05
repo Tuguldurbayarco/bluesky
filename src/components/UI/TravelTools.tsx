@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { isValidLocale, defaultLocale } from "@/lib/i18n";
+import { isValidLocale, defaultLocale, createTranslator } from "@/lib/i18n";
 import styles from "./TravelTools.module.css";
 
 interface TravelTool {
@@ -20,17 +20,18 @@ interface TravelToolsProps {
 const TravelTools = ({ locale }: TravelToolsProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
+  const t = createTranslator(validLocale);
 
   const tools: TravelTool[] = [
-    { name: "Best time to Visit Mongolia", image: "/travel-tools/autumn.jpg", description: "Plan your perfect trip", href: "/information/visit" },
-    { name: "SIM card", image: "/travel-tools/sim-card.webp", description: "Stay connected", href: "/information/phone" },
-    { name: "Weather / Climate", image: "/travel-tools/weather.jpg", description: "Check conditions", href: "/information/weather" },
-    { name: "What to bring", image: "/travel-tools/header-img.webp", description: "Travel essentials", href: "/travel-tools/what-to-bring" },
-    { name: "Travel Insurance", image: "/travel-tools/travelInsurance.jpg", description: "Protect your journey", href: "/information/insurance" },
-    { name: "Plug In/Out", image: "/travel-tools/pluginout.jpeg", description: "Power adapters", href: "/travel-tools/plug-inout" },
-    { name: "Currency", image: "/travel-tools/currency.png", description: "Exchange rates", href: "/travel-tools/currency" },
-    { name: "Visa", image: "/travel-tools/visa.webp", description: "Visa requirements", href: "/information/visa" },
-    { name: "List of Embassies", image: "/travel-tools/embassies.jpg", description: "Embassy contacts", href: "https://www.embassypages.com/mongolia", external: true },
+    { name: t("TravelTools.tool1Name"), image: "/travel-tools/autumn.jpg", description: t("TravelTools.tool1Desc"), href: "/information/visit" },
+    { name: t("TravelTools.tool2Name"), image: "/travel-tools/sim-card.webp", description: t("TravelTools.tool2Desc"), href: "/information/phone" },
+    { name: t("TravelTools.tool3Name"), image: "/travel-tools/weather.jpg", description: t("TravelTools.tool3Desc"), href: "/information/weather" },
+    { name: t("TravelTools.tool4Name"), image: "/travel-tools/header-img.webp", description: t("TravelTools.tool4Desc"), href: "/travel-tools/what-to-bring" },
+    { name: t("TravelTools.tool5Name"), image: "/travel-tools/travelInsurance.jpg", description: t("TravelTools.tool5Desc"), href: "/information/insurance" },
+    { name: t("TravelTools.tool6Name"), image: "/travel-tools/pluginout.jpeg", description: t("TravelTools.tool6Desc"), href: "/travel-tools/plug-inout" },
+    { name: t("TravelTools.tool7Name"), image: "/travel-tools/currency.png", description: t("TravelTools.tool7Desc"), href: "/travel-tools/currency" },
+    { name: t("TravelTools.tool8Name"), image: "/travel-tools/visa.webp", description: t("TravelTools.tool8Desc"), href: "/information/visa" },
+    { name: t("TravelTools.tool9Name"), image: "/travel-tools/embassies.jpg", description: t("TravelTools.tool9Desc"), href: "https://www.embassypages.com/mongolia", external: true },
   ];
 
   function addLocaleToHref(href: string): string {
@@ -40,7 +41,7 @@ const TravelTools = ({ locale }: TravelToolsProps) => {
   return (
     <div className={styles.travel_tools_container}>
       <Link href={addLocaleToHref("/travel-tools")} className={styles.travel_tools_title_link}>
-        <h2 className={styles.travel_tools_title}>Travel Tools</h2>
+        <h2 className={styles.travel_tools_title}>{t("TravelTools.title")}</h2>
       </Link>
       <div className={styles.travel_tools_wrapper}>
         <div 
