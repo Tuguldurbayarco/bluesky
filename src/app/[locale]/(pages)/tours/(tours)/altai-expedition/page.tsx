@@ -20,7 +20,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.altaiExpedition.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 1 ulaanbaatar.png'
+              src='/tours/tour-altai-expedition/day1.webp'
               alt='Day 1'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -35,7 +35,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 2 gobi malchin ail 2C.png'
+              src='/tours/tour-altai-expedition/day2.png'
               alt='Day 2'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -65,7 +65,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 4 тосон цэнгэл.jpg'
+              src='/tours/tour-altai-expedition/day4.jpg'
               alt='Day 4'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -80,7 +80,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 5 хар нуур.jpg'
+              src='/tours/tour-altai-expedition/day5.jpg'
               alt='Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -95,7 +95,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 6 Khyaras-Nuur_Хяргас_Нуур_02.jpg'
+              src='/tours/tour-altai-expedition/day6.png'
               alt='Day 6'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -125,7 +125,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 8 баянөлгий цэнгэл сум.png'
+              src='/tours/tour-altai-expedition/day8.jpg'
               alt='Day 8'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -140,7 +140,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 9 altai 5n bogd.jpg'
+              src='/tours/tour-altai-expedition/day9.jpg'
               alt='Days 9-11'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -155,7 +155,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 12 баян өлгий.jpg'
+              src='/tours/tour-altai-expedition/day12.jpg'
               alt='Day 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -200,7 +200,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 15 kharkhorin eredenzuu.png'
+              src='/tours/tour-altai-expedition/day15.avif'
               alt='Day 15'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -215,7 +215,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-altai/day 16 ulaanbaatar.webp'
+              src='/tours/tour-altai-expedition/day16.webp'
               alt='Day 16'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

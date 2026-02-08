@@ -7,7 +7,7 @@ const Events = ({params: {locale}}: {params: {locale: string}}) => {
   
   return (
     <div>
-      <div style={{position: "relative"}}>
+      <div style={{position: "relative", marginTop: 100}}>
         <img
           src='/events/eventsHeader.jpg'
           alt='Events'

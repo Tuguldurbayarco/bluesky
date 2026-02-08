@@ -7,6 +7,7 @@ import styles from "@/app/[locale]/(pages)/main.module.css";
 const SeasonsSlider = ({...props}: any) => { 
   return (
     <Carousel
+      className={styles.seasonsCarousel}
       prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon" />}
       nextIcon={<span aria-hidden="true" className="carousel-control-next-icon" />}
       indicators
@@ -14,8 +15,8 @@ const SeasonsSlider = ({...props}: any) => {
     >
       <Carousel.Item>
         <img
-          className="d-block mw-100"
-          src="/winter.jpg"
+          className={`d-block ${styles.seasonsCarouselImg}`}
+          src="/travel-tools/winter.webp"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -24,8 +25,8 @@ const SeasonsSlider = ({...props}: any) => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block mw-100"
-          src="/spring.jpg"
+          className={`d-block ${styles.seasonsCarouselImg}`}
+          src="/travel-tools/spring.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -34,7 +35,7 @@ const SeasonsSlider = ({...props}: any) => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block mw-100"
+          className={`d-block ${styles.seasonsCarouselImg}`}
           src="/summer.jpg"
           alt="Third slide"
         />
@@ -44,7 +45,7 @@ const SeasonsSlider = ({...props}: any) => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block mw-100"
+          className={`d-block ${styles.seasonsCarouselImg}`}
           src="/autumn.jpg"
           alt="Forth slide"
         />

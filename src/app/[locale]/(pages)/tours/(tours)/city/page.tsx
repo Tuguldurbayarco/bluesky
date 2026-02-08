@@ -22,7 +22,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/central day 5.jpg'
+              src='/tours/tour-central/day5.webp'
               alt='Central Mongolia - Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -54,6 +54,16 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
               <div>
                 <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day2text')}</p>
               </div>
+              <div>
+                <p className={styles.tour_left_column_text} style={{ whiteSpace: 'pre-line' }}>{t('City.day3text')}</p>
+              </div>
+            </div>
+            <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden', marginTop: '1.5rem' }}>
+              <img
+                src='/tours/city - day 3.jpg'
+                alt='Chinggis Khaan Statue'
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.17)' }}
+              />
             </div>
             <div style={{marginTop: "2rem", width: "100%"}}>
               <Link href={addLocaleToHref("/contacts?tour=city#targetBlock")} className='myButton'>

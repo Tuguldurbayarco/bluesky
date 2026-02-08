@@ -71,7 +71,7 @@
 
 .certificates_title_blue {
   display: block;
-  color: #2563eb;
+  color: #b91c3c; /* Same red as home welcome title */
 }
 
 .certificates_title_gray {

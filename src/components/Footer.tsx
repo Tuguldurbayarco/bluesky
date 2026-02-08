@@ -30,6 +30,7 @@ const Footer = ({locale}: {locale: Locale}) => {
                   <div>{t('Footer.phone2')} ({t('Footer.phoneLabelEnglish')})</div>
                   <div>{t('Footer.phone1')} ({t('Footer.phoneLabelKorea')})</div>
                   <div>{t('Footer.phone3')} ({t('Footer.phoneLabelKorea')})</div>
+                  <div>{t('Footer.phone4')} (WhatsApp)</div>
                 </div>
               </div>
               <div className={`${styles.footer_contact_item} ${styles.footer_tooltip_item}`} title={t('Footer.mail')}>

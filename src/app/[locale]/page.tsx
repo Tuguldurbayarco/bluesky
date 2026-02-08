@@ -34,8 +34,8 @@ export default function Index({params: {locale}}: {params: {locale: string}}) {
         </div>
       </div>
       <div className={styles.welcomeSection}>
-        <h1 className="pageTitle">{t('Index.welcomeTitle')}</h1>
-        <p className="pageDescription" style={{ whiteSpace: 'pre-line' }}>
+        <h1 className={styles.welcomeSectionTitle}>{t('Index.welcomeTitle')}</h1>
+        <p className={styles.welcomeSectionDescription} style={{ whiteSpace: 'pre-line' }}>
           {t('Index.pageDescription')}
         </p>
       </div>

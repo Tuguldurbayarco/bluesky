@@ -13,14 +13,14 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
         locale={validLocale as Locale}
         tourKey="eightLakesTrekking"
         mapSrc="/group-eight-lake-trekk/map.jpg"
-        mapAlt="Eight Lakes Trekking route map"
+        mapAlt="Naiman Lakes Trekking route map"
         dateRanges={["07/11 – 07/22", "08/04 – 08/15"]}
         title={`${t("Tours.eightLakesTrekking.title")} - ${t("Tours.eightLakesTrekking.duration")}`}
       >
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.eightLakesTrekking.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-trekk/day 1 ub naadam.png'
+              src='/tours/tour-eight-lakes-trekking/day1.webp'
               alt='Day 1'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -35,7 +35,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-trekk/day 2 elsen tasarkhai 2B.png'
+              src='/tours/tour-eight-lakes-trekking/day2.png'
               alt='Day 2'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -50,7 +50,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-trekk/day 3 gobi malchin ail 2C.png'
+              src='/tours/tour-eight-lakes-trekking/day3.jpg'
               alt='Day 3'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -65,7 +65,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-trekk/day 4 naiman nuur.png'
+              src='/tours/tour-eight-lakes-trekking/day4.jpg'
               alt='Day 4-10'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -95,7 +95,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-trekk/day 12 kharkhorin eredenzuu.png'
+              src='/tours/tour-eight-lakes-trekking/day12.avif'
               alt='Day 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

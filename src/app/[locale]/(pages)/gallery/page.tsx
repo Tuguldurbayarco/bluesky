@@ -45,7 +45,7 @@ const Gallery = async ({ params: { locale } }: { params: { locale: string } }) =
     <div>
       <div style={{position: "relative"}}>
         <img
-          src='/bt0.jpg'
+          src='/gallery/gallery.jpg'
           alt='Gallery'
           width='100%'
         />

@@ -22,7 +22,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '1rem'}}>
             <img
-              src='/tours/gobi day 1.jpeg'
+              src='/tours/tour-gobi/day1.jpg'
               alt='Gobi Day 1'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -41,7 +41,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 2.JPG'
+              src='/tours/tour-gobi/day2.jpg'
               alt='Gobi Day 2'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -60,7 +60,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 3.jpg'
+              src='/tours/tour-gobi/day3.jpg'
               alt='Gobi Day 3'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -79,7 +79,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 4.jpg'
+              src='/tours/tour-gobi/day4.jpg'
               alt='Gobi Day 4'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -98,7 +98,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 5.webp'
+              src='/tours/tour-gobi/day5.jpg'
               alt='Gobi Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -117,7 +117,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 6.jpg'
+              src='/tours/tour-gobi/day6.jpg'
               alt='Gobi Day 6'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -136,7 +136,7 @@ const Gobi = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/gobi day 7.jpg'
+              src='/tours/tour-gobi/day7.webp'
               alt='Gobi Day 7'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

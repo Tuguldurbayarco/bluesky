@@ -787,8 +787,8 @@
       "detail_description": "This 13-day tour is the perfect way to explore Mongolia, from the vast South Gobi—with its striking White Stupa, majestic Khongor Sand Dunes, and fiery Flaming Cliffs—through the scenic Khangai region, where you can relax in natural hot springs and discover the pristine Terkh Lake, all the way to the stunning Lake Khuvsgul in the north. Our tours are fully inclusive with no hidden fees; you only need to bring your sleeping bag, and we take care of everything else. Your safety and comfort are our top priority, and we would be honored to make this journey truly unforgettable. Experience the nomadic way of life with us and create memories that will last a lifetime."
     },
     "eightLakesTrekking": {
-      "title": "Eight Lakes Trekking Adventure (12 Days 11 Nights)",
-      "description": "Embark on an 12-day trekking adventure into Mongolia's wild landscapes. Hike through the Orkhon Valley to the remote Eight Lakes, camp under endless stars, meet nomads, and finish with soothing hot springs and historic Kharkhorin.",
+      "title": "Naiman Lakes Trekking Adventure (12 Days 11 Nights)",
+      "description": "Embark on an 12-day trekking adventure into Mongolia's wild landscapes. Hike through the Orkhon Valley to the remote Naiman Lakes, camp under endless stars, meet nomads, and finish with soothing hot springs and historic Kharkhorin.",
       "duration": "12 days 11 nights",
       "price_usd": "1,925",
       "price_eur": "1,663",
@@ -797,11 +797,11 @@
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
-      "detail_description": "This 12-day guided adventure is crafted for hikers seeking Mongolia's untouched beauty. After Naadam festival in Ulaanbaatar, travel to Elsen Tasarkhai and the Orkhon Valley to begin a multi-day trek through forests, valleys, and rugged terrain toward the Eight Lakes. Camp beside alpine lakes beneath star-filled skies; bring only your personal sleeping bag—our team provides tents, meals, logistics, and a support vehicle. After the trek, relax at Tsenkher hot springs and explore ancient Kharkhorin before returning to UB."
+      "detail_description": "This 12-day guided adventure is crafted for hikers seeking Mongolia's untouched beauty. After Naadam festival in Ulaanbaatar, travel to Elsen Tasarkhai and the Orkhon Valley to begin a multi-day trek through forests, valleys, and rugged terrain toward the Naiman Lakes. Camp beside alpine lakes beneath star-filled skies; bring only your personal sleeping bag—our team provides tents, meals, logistics, and a support vehicle. After the trek, relax at Tsenkher hot springs and explore ancient Kharkhorin before returning to UB."
     },
     "eightLakesEquestrian": {
-      "title": "Eight Lakes Equestrian Adventure (10 Days 9 Nights)",
-      "description": "Saddle up for a horseback odyssey across Mongolia's majestic heartland. Ride through the Orkhon Valley to the remote Eight Lakes, canter across ancient trails, camp under starry skies, meet nomadic herders, and conclude with relaxing hot springs and historic Kharkhorin.",
+      "title": "Naiman Lakes Equestrian Adventure (10 Days 9 Nights)",
+      "description": "Saddle up for a horseback odyssey across Mongolia's majestic heartland. Ride through the Orkhon Valley to the remote Naiman Lakes, canter across ancient trails, camp under starry skies, meet nomadic herders, and conclude with relaxing hot springs and historic Kharkhorin.",
       "duration": "10 days 9 nights",
       "price_usd": "1,702",
       "price_eur": "1,471",
@@ -810,7 +810,7 @@
       "sold_out": "SOLD OUT",
       "tour_duration_label": "Tour duration:",
       "price_per_person": "Price per person:",
-      "detail_description": "This 10-day guided equestrian adventure is crafted for riders seeking Mongolia's untouched beauty from the saddle. After the Naadam festival in Ulaanbaatar, travel to Elsen Tasarkhai and the Orkhon Valley to begin a five-day horseback expedition. Ride through forests, valleys, and high mountain passes toward the legendary Eight Lakes, covering approximately 15-25 km per day on sturdy Mongolian horses. Camp beside alpine lakes; we provide all riding gear, horses, tack, meals, logistics, and a support vehicle. After your ride, unwind at Tsenkher hot springs and explore ancient Kharkhorin before returning to UB."
+      "detail_description": "This 10-day guided equestrian adventure is crafted for riders seeking Mongolia's untouched beauty from the saddle. After the Naadam festival in Ulaanbaatar, travel to Elsen Tasarkhai and the Orkhon Valley to begin a five-day horseback expedition. Ride through forests, valleys, and high mountain passes toward the legendary Naiman Lakes, covering approximately 15-25 km per day on sturdy Mongolian horses. Camp beside alpine lakes; we provide all riding gear, horses, tack, meals, logistics, and a support vehicle. After your ride, unwind at Tsenkher hot springs and explore ancient Kharkhorin before returning to UB."
     },
     "altaiExpedition": {
       "title": "Altai Expedition: Mongolia's West (16 Days / 15 Nights)",
@@ -918,9 +918,10 @@
     "phone": "Phone Number:",
     "phoneLabelEnglish": "English",
     "phoneLabelKorea": "Korea",
-    "phone1": "+976-99902202",
-    "phone2": "+976-80845684",
+    "phone1": "+976 99902202",
+    "phone2": "+976 80845684",
     "phone3": "+976 80303997",
+    "phone4": "+976 99902202",
     "kakao": "Kakao Talk ID:",
     "kakao1": "1. Ankhaa8899.",
     "kakao2": "2. narangarav",
@@ -1076,7 +1077,7 @@
     "schedule9-2": "09:00 - Depart for Terkhin Tsagaan Nuur",
     "schedule9-3": "Around 13:00 - Arrival and lunch",
     "schedule9-4": "19:00 - Dinner",
-    "day10": "Day 10. Zuun Nuur",
+    "day10": "Day 10. Shine-ider",
     "day10text": "This large lake is the scenic highlight of Khuvsgul's far south. There is an excellent camping all around, or you can choose stay in the Ger to experience the nomadic day to day life.",
     "schedule10-1": "08:00 - Breakfast",
     "schedule10-2": "08:30 - Depart for Ider soum",
@@ -1414,8 +1415,8 @@
     "day2text": "Travel to the beautiful Elsen Tasarkhai dunes, a unique stretch of desert surrounded by steppe and mountains. Enjoy a peaceful camel ride across golden sands and take in Mongolia's dramatic landscape contrasts. Overnight in a ger camp surrounded by serene desert silence.",
     "day3": "Day 3. Stay with Nomadic Family in the Orkhon Valley",
     "day3text": "Journey into the UNESCO-listed Orkhon Valley, home to centuries of nomadic tradition. We will visit the magnificent Orkhon Waterfall, where the river plunges over a volcanic basalt cliff, creating a powerful spectacle in the middle of the vast grassland. Spend the night with a herder family for an authentic experience — from tending animals to sharing home-cooked meals — and learn firsthand how nomads live in harmony with nature. This intimate stay is often one of the most memorable moments of the trip.",
-    "day4to8": "Day 4–8. Eight Lakes Horseback Riding Expedition",
-    "day4to8text": "Begin your five-day horseback journey into the volcanic highlands of the Eight Lakes region. Each day, you'll ride approximately 15-25 km on sure-footed local horses, following ancient herder trails that weave through wildflower meadows, past ancient lava fields, and over forested ridges. Your destination is the chain of pristine alpine lakes—Shireet, Khaliut, Bugat, Shanaa, Duruu, Khaya, Khuis, and Onon—perched between 2,400–2,600 meters. Experience the rhythm of nomadic travel: mornings saddling up with your guide, days spent traversing vast, untouched landscapes, and evenings setting up camp beside mirror-still lakes under endless stars. Our support vehicle transports all camp gear and luggage, allowing you to ride freely. This immersive riding section is the heart of the tour—connecting you to the land in the traditional Mongolian way.",
+    "day4to8": "Day 4–8. Naiman Lakes Horseback Riding Expedition",
+    "day4to8text": "Begin your five-day horseback journey into the volcanic highlands of the Naiman Lakes region. Each day, you'll ride approximately 15-25 km on sure-footed local horses, following ancient herder trails that weave through wildflower meadows, past ancient lava fields, and over forested ridges. Your destination is the chain of pristine alpine lakes—Shireet, Khaliut, Bugat, Shanaa, Duruu, Khaya, Khuis, and Onon—perched between 2,400–2,600 meters. Experience the rhythm of nomadic travel: mornings saddling up with your guide, days spent traversing vast, untouched landscapes, and evenings setting up camp beside mirror-still lakes under endless stars. Our support vehicle transports all camp gear and luggage, allowing you to ride freely. This immersive riding section is the heart of the tour—connecting you to the land in the traditional Mongolian way.",
     "day9": "Day 9. Tsenkher Hot Springs",
     "day9text": "Relax in natural hot springs surrounded by forested hills. After days of horseback riding, the warm mineral waters offer a soothing and rejuvenating experience for your muscles. Enjoy free time, optional spa services, or exploring the area—a perfect recovery day before the final stretch of your journey.",
     "day10": "Day 10. Kharkhorin – Ulaanbaatar",
@@ -1428,8 +1429,8 @@
     "day2text": "Travel to the beautiful Elsen Tasarkhai dunes, a unique stretch of desert surrounded by steppe and mountains. Enjoy a peaceful camel ride across golden sands and take in Mongolia's dramatic landscape contrasts. Overnight in a ger camp surrounded by serene desert silence.",
     "day3": "Day 3. Stay with Nomadic Family in the Orkhon Valley",
     "day3text": "Journey into the UNESCO-listed Orkhon Valley, home to centuries of nomadic tradition. We will visit the magnificent Orkhon Waterfall, where the river plunges over a volcanic basalt cliff, creating a powerful spectacle in the middle of the vast grassland. Spend the night with a herder family for an authentic experience — from tending animals to sharing home-cooked meals — and learn firsthand how nomads live in harmony with nature. This intimate stay is often one of the most memorable moments of the trip.",
-    "day4to10": "Day 4–10. Eight Lakes Trekking",
-    "day4to10text": "Begin your multi-day trekking adventure through the volcanic region known for the Eight Lakes (Shireet, Khaliut, Bugat, Shanaa, Duruu, Khaya, Khuis, Onon). Formed centuries ago by volcanic eruptions, the lakes lie in hidden mountain valleys, connected underground and perched at breathtaking elevations above 2,400–2,600 meters. Each day's hike brings new scenery — wildflower meadows, ancient lava fields, forested ridges, clear alpine lakes, and wide-open wilderness. Enjoy campfires under star-filled skies, peaceful mornings beside mirror-calm lakes, and the deep freedom of remote nature. Guests carry only personal necessities; our support team manages the rest with a vehicle ensuring comfort and safety. Note: A personal sleeping bag is not included, but we are happy to help organize one upon request. This trekking section is the highlight of the tour — immersive, pristine, and unforgettable.",
+    "day4to10": "Day 4–10. Naiman Lakes Trekking",
+    "day4to10text": "Begin your multi-day trekking adventure through the volcanic region known for the Naiman Lakes (Shireet, Khaliut, Bugat, Shanaa, Duruu, Khaya, Khuis, Onon). Formed centuries ago by volcanic eruptions, the lakes lie in hidden mountain valleys, connected underground and perched at breathtaking elevations above 2,400–2,600 meters. Each day's hike brings new scenery — wildflower meadows, ancient lava fields, forested ridges, clear alpine lakes, and wide-open wilderness. Enjoy campfires under star-filled skies, peaceful mornings beside mirror-calm lakes, and the deep freedom of remote nature. Guests carry only personal necessities; our support team manages the rest with a vehicle ensuring comfort and safety. Note: A personal sleeping bag is not included, but we are happy to help organize one upon request. This trekking section is the highlight of the tour — immersive, pristine, and unforgettable.",
     "day11": "Day 11. Tsenkher Hot Springs",
     "day11text": "Relax in natural hot springs surrounded by forested hills. After days of trekking, the warm mineral waters offer a soothing and rejuvenating experience. Enjoy free time, optional spa services, or exploring the area. A perfect recovery day before the final stretch.",
     "day12": "Day 12. Kharkhorin – Ulaanbaatar",

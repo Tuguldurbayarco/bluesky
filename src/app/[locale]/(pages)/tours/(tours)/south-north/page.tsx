@@ -20,7 +20,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.southNorthTour.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 1 ub naadam.png'
+              src='/tours/tour-south-north/day1.webp'
               alt='Day 1'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -35,7 +35,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 2 tsagaan suvarga.png'
+              src='/tours/tour-south-north/day2.jpg'
               alt='Day 2'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -50,7 +50,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 3 yoliin am.jpg'
+              src='/tours/tour-south-north/day3.jpeg'
               alt='Day 3'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -65,7 +65,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 4 khongor els.png'
+              src='/tours/tour-south-north/day4.jpg'
               alt='Day 4'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -80,7 +80,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 5 bayanzag.png'
+              src='/tours/tour-south-north/day5.jpg'
               alt='Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -95,7 +95,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 6 ongiin hiid.png'
+              src='/tours/tour-south-north/day6.webp'
               alt='Day 6'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -110,7 +110,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 7 kharkhorin erdenezuu.png'
+              src='/tours/tour-south-north/day7.avif'
               alt='Day 7'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -144,7 +144,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 9 terkhiin tsagaan.png'
+              src='/tours/tour-south-north/day9.jpg'
               alt='Day 9'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -159,7 +159,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 10 drive to jankai.png'
+              src='/tours/tour-south-north/day10.png'
               alt='Day 10'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -174,7 +174,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 11 jankhai.png'
+              src='/tours/tour-south-north/day11.png'
               alt='Day 11'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -189,7 +189,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 12 uran togoo.png'
+              src='/tours/tour-south-north/day12.jpg'
               alt='Day 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -204,7 +204,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-south-north/day 13 ulaanbaatar.png'
+              src='/tours/tour-south-north/day13.webp'
               alt='Day 13'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

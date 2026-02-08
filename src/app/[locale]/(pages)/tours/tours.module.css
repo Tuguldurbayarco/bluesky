@@ -3,13 +3,21 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1492 / 721.5;
-  background-image: url('/tours/terelj-scaled.webp');
+  background-image: url('/tours/toursHeader.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
+}
+
+.tours_hero_container .header_on_picture {
+  padding: 0;
+  padding-top: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .tour_items_header {

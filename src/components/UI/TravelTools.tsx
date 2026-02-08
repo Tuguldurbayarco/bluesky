@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { isValidLocale, defaultLocale, createTranslator } from "@/lib/i18n";
+import { isValidLocale, defaultLocale, createTranslator, type Locale } from "@/lib/i18n";
 import styles from "./TravelTools.module.css";
 
 interface TravelTool {
@@ -19,7 +19,7 @@ interface TravelToolsProps {
 
 const TravelTools = ({ locale }: TravelToolsProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
+  const validLocale = (isValidLocale(locale || "en") ? (locale || "en") : defaultLocale) as Locale;
   const t = createTranslator(validLocale);
 
   const tools: TravelTool[] = [

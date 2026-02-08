@@ -17,13 +17,6 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
             <h1 className="pageTitle" style={{ marginTop: '0', marginBottom: '1rem', textAlign: 'center' }}>{t('Khuvsgul1.picture_text')}</h1>
             <p className="pageDescription" style={{ textAlign: 'justify' }}>{t('Khuvsgul1.description')}</p>
           </div>
-          <div style={{position: 'relative', marginTop: '2rem'}}>
-            <img
-              src='/tours/khuvsgul 1 1.jpg'
-              alt='Lake Khuvsgul'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%"}}>
               <div>
@@ -40,7 +33,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div >
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/khuvsgul 1 2.jpg'
+              src='/tours/tour-khuvsgul1/day1.png'
               alt='Lake Khuvsgul'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -61,7 +54,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/city - day 1.jpg'
+              src='/tours/tour-khuvsgul1/day3.webp'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

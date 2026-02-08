@@ -41,8 +41,8 @@ const Visit = ({params: {locale}}: {params: {locale: string}}) => {
         <div style={{marginTop: '5rem', marginBottom: '5rem'}}>
           <div style={{textAlign: "center", marginBottom: '2rem'}}>
             <img 
-              src="/spring.jpg" 
-              alt="Spring in Mongolia" 
+src="/travel-tools/spring.jpg"
+              alt="Spring in Mongolia"
               style={{display: 'block', width: '100%', maxWidth: '800px', height: 'auto', borderRadius: '10px', margin: '0 auto 2rem auto'}}
             />
             <h3 className="pageTitle" style={{fontSize: '2rem', marginTop: '2rem'}}>{t('Information.visitPage.springTitle')}</h3>

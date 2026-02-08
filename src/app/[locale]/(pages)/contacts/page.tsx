@@ -12,12 +12,16 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
     return `/${validLocale}${href}`;
   }  return (
     <div >
-      <div style={{width: "100%", position: "relative"}}>
-        <img 
-          src='/contacts/contactsHeader.jpg'
-          alt='Contacts'
-          width='100%'
-          height='auto'
+      <div style={{width: "100%", position: "relative", marginTop: 100}}>
+        <video
+          className={styles.contactHeaderVideo}
+          src="/contacts/contact-c.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-label="Contacts header"
         />
         <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
           <h1 className='header_on_picture'>{t('Contacts.title')}</h1>
@@ -33,8 +37,8 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href="tel:+97699902202" style={{textDecoration: "none"}}>+976-99902202<br /></a>
-              <a href="tel:+97680303997" style={{textDecoration: "none"}}>+976-80303997</a>
+              <a href="tel:+97699902202" style={{textDecoration: "none"}}>+976 99902202<br /></a>
+              <a href="tel:+97680303997" style={{textDecoration: "none"}}>+976 80303997</a>
             </div>
             <div style={{padding: "2%"}}>
               <img

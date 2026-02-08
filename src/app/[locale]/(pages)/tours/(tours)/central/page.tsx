@@ -22,7 +22,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/central day 1.webp'
+              src='/tours/tour-central/day1.png'
               alt='Central Mongolia'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -64,7 +64,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/central day 3.png'
+              src='/tours/tour-central/day3.avif'
               alt='Central Mongolia - Day 3'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -102,7 +102,7 @@ const Central = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative'}}>
             <img
-              src='/tours/central day 5.jpg'
+              src='/tours/tour-central/day5.webp'
               alt='Central Mongolia - Day 5'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

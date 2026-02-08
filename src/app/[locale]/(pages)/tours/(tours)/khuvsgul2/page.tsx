@@ -41,7 +41,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/kt4.jpg'
+              src='/tours/tour-khuvsgul2/day2.png'
               alt='Terkh White Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -60,8 +60,8 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/зүүн нуур.jpg'
-              alt='Zuun Nuur'
+              src='/tours/tour-khuvsgul2/day4.png'
+              alt='Shine-ider'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -79,7 +79,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/Terkhijn_Tsagaan_Nuur1_-_panoramio.jpg'
+              src='/tours/tour-khuvsgul2/day5.jpg'
               alt='Terkh White Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -117,7 +117,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/central day 1.webp'
+              src='/tours/tour-khuvsgul2/day7.png'
               alt='Mini Gobi'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -136,7 +136,7 @@ const Khuvsgul2 = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/city - day 1.jpg'
+              src='/tours/tour-khuvsgul2/day8.webp'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

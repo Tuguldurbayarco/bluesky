@@ -13,7 +13,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
         locale={validLocale as Locale}
         tourKey="eightLakesEquestrian"
         mapSrc="/group-eight-lake-equestrian/map.jpg"
-        mapAlt="Eight Lakes Equestrian route map"
+        mapAlt="Naiman Lakes Equestrian route map"
         dateRanges={["07/11 – 07/20", "08/06 – 08/15"]}
         title={`${t("Tours.eightLakesEquestrian.title")} - ${t("Tours.eightLakesEquestrian.duration")}`}
       >
@@ -35,7 +35,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-equestrian/day 2 elsen tasarkhai.png'
+              src='/tours/tour-eight-lakes-equestrian/day2.png'
               alt='Day 2'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -50,7 +50,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-equestrian/day 3 malchin ail 2B.png'
+              src='/tours/tour-eight-lakes-equestrian/day3.jpg'
               alt='Day 3'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -65,7 +65,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-equestrian/day 4 морин аялал хажуугаас хөвсгөл.png'
+              src='/tours/tour-eight-lakes-equestrian/day4.png'
               alt='Day 4-8'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -95,7 +95,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
           </div>
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/group-eight-lake-equestrian/day 10 kharkhorin eredenzuu.png'
+              src='/tours/tour-eight-lakes-equestrian/day10.avif'
               alt='Day 10'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

@@ -20,8 +20,8 @@ export const FOOTER_CONTACT_INFO = {
   title: 'Eternal Sky Tour',
   links: [
     {label: 'Address', value: 'Mongolia, Ulaanbaatar, Sukhbaatar District, 5th Khoroo, Narnii Road, 24-32, Zip code:14253'},
-    {label: 'Phone', value: '+976-99902202'},
-    {label: '', value: '+976-80303997'},
+    {label: 'Phone', value: '+976 99902202'},
+    {label: '', value: '+976 80303997'},
     {label: 'Telegram', value: '@Ankhaa8899'},
     {label: '', value: '@narangarav'},
     {label: 'E-mail', value: 'eternalskytour@gmail.com'},
@@ -188,7 +188,7 @@ export const KhuvsgulAimag = [
 export const KhuvsgulTour = [
   {id: 1, src: "/bl.jpg", title: 'Day 1. Bulgan Province'},
   {id: 2, src: "/kn.jpg", title: 'Day 2 and 3. Khuvsgul Lake'},
-  {id: 3, src: "/zn.jpg", title: 'Day 4. Zuun Nuur'},
+  {id: 3, src: "/zn.jpg", title: 'Day 4. Shine-ider'},
   {id: 4, src: "/tn.jpg", title: 'Day 5. Terkh White Lake'},
   {id: 5, src: "/c01.jpg", title: 'Day 6. Tsenkher Hot Spring'},
   {id: 6, src: "/c00.jpg", title: 'Day 7. Mini Gobi'},
@@ -205,7 +205,7 @@ export const KhangaiTour = [
   {id: 7, src: "/c02.jpg", title: 'Day 7. Kharkhorin - Ancient capital city of Mongolia', description: "The historians know much about Kharkhorin city, a destination that situated on the Silk Road. In 1206, Chinggis Khaan established the Mongolian Great Empire and built the capital city of Kharkhorin."},
   {id: 8, src: "/c01.jpg", title: 'Day 8. Tsenkher Hot Spring', description: "This spring lies south of Tsetserleg town in Arkhangai province and the pressure comes out from far deep part of the ground and its water is not mixed with soil waters because it is hot. Also, the spring is kept in high pressure under the ground and the flow rate is high as 10 liters per second."},
   {id: 9, src: "/tn.jpg", title: 'Day 9. Terkh White Lake and Khorgo Volcano', description: "Terkhiin Tsagaan Lake is an astonishingly beautiful lake with a relatively pure fresh water. Torrents of lava flowed from the Khorgo volcano blocked the north and south Terkh Rivers, forming the lake of Terkhiin Tsagaan Lake at an altitude of 2060 meters above the sea level. The lake is 16 km long, 4-10 meters wide, 20 m deep with and its deepest point is at 28 meters and over 20 kilometers in surface evaluation."},
-  {id: 10, src: "/zn.jpg", title: 'Day 10. Zuun Nuur', description: "This large lake is the scenic highlight of Khuvsgul's far south. There is an excellent camping all around, or you can choose stay in the Ger to experience the nomadic day to day life."},
+  {id: 10, src: "/zn.jpg", title: 'Day 10. Shine-ider', description: "This large lake is the scenic highlight of Khuvsgul's far south. There is an excellent camping all around, or you can choose stay in the Ger to experience the nomadic day to day life."},
   {id: 11, src: "/kn.jpg", title: 'Day 11 and 12. Khuvsgul Lake', description: "​Over 46 streams pour into Khuvsgul Lake. There are 12 species of fish, 4 large islands, and the 70 percent of the lake is more than 100 m deep, and the clear water reaches 24 m. By the end of  November, water freezes completely to form 1 m thick ice. Surrounded by 3000-3200 m high mountains, Khuvsgul Lake has a legend about the lifted “sea”. There is a legend that says Khuvsgul was once an ocean."},
   {id: 12, src: "/bl.jpg", title: 'Day 13. Uran Togoo - Volcanic Mountain', description: "Uran is an extinct volcano in the western side of Uran-Togoo Natural Monument in Bulgan province, 80 km west of Bulgan town. Uran means /\"Artistic/\", Mongols gave this name because its ridge of the crater is one of many examples of circles that arise in nature, resembling a nice creation of a craftsman."},
   {id: 13, src: "/as.jpg", title: 'Day 14. Amarbayasgalant Monastery', description: "Enjoy a bumpy ride out to the Amarbayasgalant Monastery, the second most important monastery in Mongolia, located in the beautiful Iven Gol Valley."},

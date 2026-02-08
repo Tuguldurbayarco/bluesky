@@ -22,7 +22,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt0.jpg'
+              src='/tours/tour-khangai/day1.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -41,7 +41,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gobi day 1.jpeg'
+              src='/tours/tour-khangai/day2.jpg'
               alt='Gobi landscape - Tsagaan Suvarga'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -60,7 +60,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt2.jpg'
+              src='/tours/tour-khangai/day3.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -79,7 +79,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt3.jpg'
+              src='/tours/tour-khangai/day4.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -98,7 +98,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gobi day 4.jpg'
+              src='/tours/tour-khangai/day5.jpg'
               alt='Bayanzag Flaming Cliffs'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -117,7 +117,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/ongi.jpg'
+              src='/tours/tour-khangai/day6.webp'
               alt='Ongi Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -136,7 +136,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/central day 3.png'
+              src='/tours/tour-khangai/day7.avif'
               alt='Kharkhorin - Erdene Zuu Monastery'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -178,7 +178,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt9.jpg'
+              src='/tours/tour-khangai/day9.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -197,8 +197,8 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/tsagaan nuur.jpg'
-              alt='Zuun Nuur - Tsagaan Nuur'
+              src='/tours/tour-khangai/day10.png'
+              alt='Shine-ider - Tsagaan Nuur'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -216,7 +216,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/gkt11.jpg'
+              src='/tours/tour-khangai/day12.png'
               alt='Khuvsgul Lake - Day 11, 12'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -235,7 +235,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/uran togoo.webp'
+              src='/tours/tour-khangai/day13.jpg'
               alt='Uran Togoo - Volcanic Mountain'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -254,7 +254,7 @@ const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
         <div>
           <div style={{position: 'relative', marginTop: 0}}>
             <img
-              src='/tours/central day 5.jpg'
+              src='/tours/tour-khangai/day14.webp'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
