@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Lightbox from "./Lightbox";
-import type { GalleryMediaItem } from "@/app/[locale]/(pages)/gallery/page";
+import type { GalleryMediaItem } from "@/lib/gallery";
 import styles from "./ImageGallery.module.css";
 
 interface ImageGalleryProps {

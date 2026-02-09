@@ -21,12 +21,12 @@ const Navbar = () => {
   }
 
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isSubmenuOpen, setSubmenuOpen] = useState(false);
+  const [openSubmenuKey, setOpenSubmenuKey] = useState<'tours' | 'why-we' | null>(null);
 
   const handleBurgerClick = () => {
     setMenuOpen(!isMenuOpen);
     if (isMenuOpen) {
-      setSubmenuOpen(false);
+      setOpenSubmenuKey(null);
     }
   };
 
@@ -54,27 +54,25 @@ const Navbar = () => {
   // Close submenu when clicking outside or on other menu items
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (!isSubmenuOpen) return;
-      
+      if (openSubmenuKey === null) return;
+
       const target = e.target as HTMLElement;
-      // Check if click is inside the submenu or the "Why WE?" link
       const submenu = target.closest(`.${styles.submenu}`);
-      const whyWeLink = target.closest(`.${styles.has_submenu}`);
-      
-      // Close submenu if click is NOT inside the submenu or the "Why WE?" link
-      if (!submenu && !whyWeLink) {
-        setSubmenuOpen(false);
+      const parentWithSubmenu = target.closest(`.${styles.has_submenu}`);
+
+      if (!submenu && !parentWithSubmenu) {
+        setOpenSubmenuKey(null);
       }
     };
 
-    if (isSubmenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+    if (openSubmenuKey !== null) {
+      document.addEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
-  }, [isSubmenuOpen, styles]);
+  }, [openSubmenuKey, styles]);
 
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
@@ -88,7 +86,7 @@ const Navbar = () => {
         return t("Index.menu.3.label");
       case "gallery":
         return t("Index.galleryLabel");
-      case "contact":
+      case "guest-house":
         return t("Index.menu.4.label");
       default:
         return "";
@@ -100,37 +98,42 @@ const Navbar = () => {
     if (link.key === 'home') {
       return pathnameStr === base || pathnameStr === `${base}/`;
     }
-    if (link.key === 'why-we') {
+    if (link.key === "why-we") {
       return pathnameStr.startsWith(`${base}/about`) || pathnameStr.startsWith(`${base}/about-us`) ||
-        pathnameStr.startsWith(`${base}/travel-tools`);
+        pathnameStr.startsWith(`${base}/travel-tools`) || pathnameStr.startsWith(`${base}/contacts`);
+    }
+    if (link.key === "tours") {
+      return pathnameStr.startsWith(`${base}/tours`);
     }
     return pathnameStr.startsWith(`${base}${link.href}`);
   }
 
   function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {
-    const isWhyWe = link.key === 'why-we';
+    const isTours = link.key === "tours";
+    const isWhyWe = link.key === "why-we";
+    const hasSubmenu = isTours || isWhyWe;
     const isActive = isLinkActive(link);
-    
-    const submenuItems = isWhyWe ? [
-      { href: '/about-us', label: t("Index.submenuAboutUs") },
-      { href: '/travel-tools', label: t("Index.submenuTravelTools") }
-    ] : [];
+    const isSubmenuOpen = (isTours && openSubmenuKey === "tours") || (isWhyWe && openSubmenuKey === "why-we");
 
-    const handleWhyWeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      // const disabledLinks = [''];
-      // if (disabledLinks.includes(link.key)) {
-      //   e.preventDefault();
-      //   return;
-      // }
-      
-      if (isWhyWe) {
-        // Toggle submenu on click for "Why WE?" link
+    const submenuItems = isWhyWe
+      ? [
+          { href: "/about-us", label: t("Index.submenuAboutUs") },
+          { href: "/travel-tools", label: t("Index.submenuTravelTools") },
+          { href: "/contacts", label: t("Index.submenuContacts") },
+        ]
+      : isTours
+        ? [
+            { href: "/tours", label: t("Index.submenuSummerTours") },
+            { href: "/tours/winter", label: t("Index.submenuWinterTours") },
+          ]
+        : [];
+
+    const handleMenuClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (hasSubmenu) {
         e.preventDefault();
-        setSubmenuOpen(!isSubmenuOpen);
+        setOpenSubmenuKey(isSubmenuOpen ? null : (isTours ? "tours" : "why-we"));
       } else {
-        // Close submenu when clicking other menu items
-        setSubmenuOpen(false);
-        // Close menu when clicking other links on mobile
+        setOpenSubmenuKey(null);
         if (isMenuOpen) {
           setMenuOpen(false);
         }
@@ -138,35 +141,33 @@ const Navbar = () => {
     };
 
     return (
-      <li 
-        className={styles.navbar_menu_item}
-      >
-        <Link 
-          href={addLocaleToHref(link.href)} 
-          key={link.key} 
-          className={`${styles.navbar_menu_buttons} ${isWhyWe ? styles.has_submenu : ''} ${isActive ? styles.navbar_menu_buttons_active : ''}`}
-          onClick={handleWhyWeClick}
+      <li className={styles.navbar_menu_item}>
+        <Link
+          href={addLocaleToHref(link.href)}
+          key={link.key}
+          className={`${styles.navbar_menu_buttons} ${hasSubmenu ? styles.has_submenu : ""} ${isActive ? styles.navbar_menu_buttons_active : ""}`}
+          onClick={handleMenuClick}
         >
           {menuLabel(link)}
-          {isWhyWe && (
-            <span className={`${styles.submenu_icon} ${isSubmenuOpen ? styles.submenu_icon_open : ''}`}>
+          {hasSubmenu && (
+            <span className={`${styles.submenu_icon} ${isSubmenuOpen ? styles.submenu_icon_open : ""}`}>
               ▼
             </span>
           )}
         </Link>
-        {isWhyWe && submenuItems.length > 0 && (
-          <ul 
-            className={`${styles.submenu} ${isSubmenuOpen ? styles.submenu_open : ''}`}
+        {hasSubmenu && submenuItems.length > 0 && (
+          <ul
+            className={`${styles.submenu} ${isSubmenuOpen ? styles.submenu_open : ""}`}
             onClick={(e) => e.stopPropagation()}
           >
             {submenuItems.map((item) => (
               <li key={item.href}>
-                <Link 
+                <Link
                   href={addLocaleToHref(item.href)}
                   className={styles.submenu_item}
                   onClick={() => {
                     setMenuOpen(false);
-                    setSubmenuOpen(false);
+                    setOpenSubmenuKey(null);
                   }}
                 >
                   {item.label}

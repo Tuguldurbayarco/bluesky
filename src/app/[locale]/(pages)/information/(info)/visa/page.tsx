@@ -1,5 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import Image from "next/image";
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./visa.module.css";
 
 const Visa = ({params: {locale}}: {params: {locale: string}}) => {
@@ -15,14 +16,12 @@ const Visa = ({params: {locale}}: {params: {locale: string}}) => {
       }}>
         <Image
           src="/travel-tools/visa-page-header.png"
-          alt="Visa Header"
+          alt="Visa"
           fill
           style={{objectFit: "cover", zIndex: 0}}
           priority
         />
-        <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
-          <h1 className='header_on_picture'>{t('Information.visa.pageTitle')}</h1>
-        </div>
+        <ScrollDownHint />
       </div>
       <div className='visibility_area'>
         <div style={{textAlign: "center"}}>

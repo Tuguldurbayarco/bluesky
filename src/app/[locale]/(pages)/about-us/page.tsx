@@ -1,5 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import CertificatesSection from "@/components/UI/CertificatesSection";
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./about-us.module.css";
 
 const CERTIFICATE_IMAGES = [
@@ -14,12 +15,12 @@ const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {
   
   return (
     <div>
-      <div className={styles.about_us_hero_container}>
-        <h1 className='header_on_picture' style={{margin: 0, padding: 0}}>{t("AboutUs.pageTitle")}</h1>
+      <div className={styles.about_us_hero_container} aria-hidden="true">
+        <ScrollDownHint lightBackground />
       </div>
       <div className='visibility_area'>
         <div style={{justifyContent: "center", textAlign: "center"}}>
-          <h2 className="pageTitle" style={{marginTop: '8rem', marginBottom: '5rem'}}>{t("AboutUs.sectionTitle")}</h2>
+          <h2 className="pageTitle" style={{marginTop: '8rem', marginBottom: '5rem', fontWeight: 'bold'}}>{t("AboutUs.sectionTitle")}</h2>
           <div className={styles.about_us_content}>
             <p className="pageDescription">{t("AboutUs.paragraph1")}</p>
             <p className="pageDescription">{t("AboutUs.paragraph2")}</p>
@@ -31,6 +32,7 @@ const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <section className={styles.certificates_section} aria-label={t("AboutUs.certificatesAriaLabel")}>
         <h2 className={styles.certificates_title}>
+          <span className={styles.certificates_title_red}>{t("AboutUs.certificateTitleRed")}</span>
           <span className={styles.certificates_title_blue}>{t("AboutUs.certificateTitleBlue")}</span>
           <span className={styles.certificates_title_gray}>{t("AboutUs.certificateTitleGray")}</span>
         </h2>

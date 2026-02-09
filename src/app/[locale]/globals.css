@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,18 +8,17 @@
   --color-main-dark: #1c6ab3;
 }
 
-/* Global Font Styles */
-.trocchi-regular {
-  font-family: "Trocchi", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Simple, clear sans-serif for entire site (system UI font stack) */
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Global Layout Utilities */
@@ -30,6 +27,11 @@
   margin-right: 15%;
   margin-bottom: 0%;
   margin-left: 15%;
+}
+
+/* Reduced top gap (50% of previous 8rem) for first section title in content area */
+.visibility_area .pageTitle {
+  margin-top: 4rem !important;
 }
 
 .container {

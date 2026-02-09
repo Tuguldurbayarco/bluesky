@@ -1,4 +1,14 @@
 /* Main Page Styles */
+.heroTitleWrapper {
+  top: 36% !important; /* Higher so title sits above center */
+  min-width: 85%; /* Wider so title has room and does not wrap */
+}
+
+.heroTitleOnPicture {
+  font-size: 400%; /* Slightly reduced from 450% */
+  white-space: nowrap; /* Keep "Travel to Mongolia" on one line */
+}
+
 .heroVideo {
   display: block;
   width: 100%;
@@ -11,21 +21,29 @@
   text-align: center;
   padding: 3rem 2rem;
   max-width: 1200px;
-  margin: 120px auto 0;
+  margin: 80px auto 0; /* Reduced from 120px to lessen upper white space */
 }
 
 .welcomeSectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #b91c3c; /* Pleasant warm red */
+}
+
+.welcomeSectionTitle_red {
+  color: #b91c3c; /* Pleasant warm red - Eternal only */
+}
+
+.welcomeSectionTitle_blue {
+  color: #1e40af; /* Pleasant blue - Welcome to / Sky Tour */
 }
 
 .welcomeSectionDescription {
   font-size: 1.2rem;
   line-height: 1.6;
   margin: 0 0 1.5rem 0;
-  color: #1e40af; /* Pleasant blue */
+  padding: 20px;
+  color: #374151; /* Neutral dark gray, not blue */
 }
 
 .welcomeTitle {
@@ -46,7 +64,6 @@
 .mainpage_header_on_pictute {
   font-size: 120%;
   font-weight: 500;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .mainpage_link_on_pictute {
@@ -250,6 +267,12 @@
 
   .seasons_slider_text {
     font-size: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTitleOnPicture {
+    white-space: normal; /* Allow wrap on small screens to avoid overflow */
   }
 }
 

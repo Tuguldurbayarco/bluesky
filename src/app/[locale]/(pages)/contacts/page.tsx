@@ -1,5 +1,6 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import InputForm from '@/components/UI/InputForm';
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./contacts.module.css";
 import formStyles from "@/components/footer.module.css";
 import { Suspense } from "react";
@@ -23,9 +24,7 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
           preload="metadata"
           aria-label="Contacts header"
         />
-        <div className='header_container_for_picture' style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 1}}>
-          <h1 className='header_on_picture'>{t('Contacts.title')}</h1>
-        </div>
+        <ScrollDownHint lightBackground />
       </div>
       <div style={{width: "100%", height: "100%", textAlign: "center"}}>
         <div style={{width: "100%", height: "100%"}}>

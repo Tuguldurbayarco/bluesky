@@ -1,4 +1,5 @@
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./what-to-bring.module.css";
 
 const WhatToBring = ({params: {locale}}: {params: {locale: string}}) => {
@@ -11,8 +12,8 @@ const WhatToBring = ({params: {locale}}: {params: {locale: string}}) => {
 
   return (
     <div>
-      <div className={styles.what_to_bring_hero_container}>
-        <h1 className='header_on_picture' style={{margin: 0, padding: 0}}>{t("WhatToBring.pageTitle")}</h1>
+      <div className={styles.what_to_bring_hero_container} aria-hidden="true">
+        <ScrollDownHint />
       </div>
       <div className='visibility_area'>
         <div style={{textAlign: "center"}}>

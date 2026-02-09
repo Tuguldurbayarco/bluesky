@@ -1,8 +1,10 @@
+import { Suspense } from "react";
 import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import { TOURS_LINK } from '@/constants';
 import TourCard from "@/components/UI/TourCard";
 import Tabs from "@/components/Tabs";
 import SouthNorthTour from "@/components/UI/SouthNorthTour";
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import tourStyles from "./tours.module.css";
 import tabStyles from "@/components/tabs.module.css";
 
@@ -78,14 +80,21 @@ const Tours = ({ params: { locale } }: { params: { locale: string } }) => {
 
   return (
     <div>
-      <div className={tourStyles.tours_hero_container}>
-        <h1 className='header_on_picture'>{t('Tours.title_on_picture')}</h1>
+      <div className={tourStyles.tours_hero_container} aria-hidden="true">
+        <ScrollDownHint lightBackground />
       </div>
       <div className='visibility_area' style={{ marginTop: "5%" }}>
-        <Tabs locale={validLocale as Locale} tabLabels={tabLabels}>
-          {GroupToursContent}
-          {ClassicToursContent}
-        </Tabs>
+        <Suspense fallback={<div className={tabStyles.tabs_container} />}>
+          <Tabs
+            locale={validLocale as Locale}
+            tabLabels={tabLabels}
+            syncWithUrl
+            tabSlugs={["group", "classic"]}
+          >
+            {GroupToursContent}
+            {ClassicToursContent}
+          </Tabs>
+        </Suspense>
       </div>
     </div>
   );

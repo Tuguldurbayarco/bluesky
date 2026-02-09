@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./travel-tools.module.css";
 
 const TravelTools = ({params: {locale}}: {params: {locale: string}}) => {
@@ -25,8 +26,8 @@ const TravelTools = ({params: {locale}}: {params: {locale: string}}) => {
   
   return (
     <div>
-      <div className={styles.travel_tools_hero_container}>
-        <h1 className='header_on_picture' style={{margin: 0, padding: 0}}>{t("TravelTools.pageTitle")}</h1>
+      <div className={styles.travel_tools_hero_container} aria-hidden="true">
+        <ScrollDownHint lightBackground />
       </div>
       <div className='visibility_area'>
         <div className={styles.travel_tools_header} style={{textAlign: "center"}}>

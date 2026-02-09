@@ -1,0 +1,338 @@
+/* Guest House Page Styles */
+.guest_house_welcome {
+  margin-top: 140px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.guest_house_title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 1rem 0;
+}
+
+.guest_house_description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1492 / 721.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gallery: 1 big (left), 2 medium stacked (right), 5 small (bottom row) */
+.gallery_layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1.25fr 1.25fr 0.85fr 0.85fr;
+  grid-template-rows: 280px 280px 100px;
+  gap: 8px;
+  margin-top: 1.5rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery_big {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 320px;
+}
+
+.gallery_medium_top {
+  grid-column: 4 / 6;
+  grid-row: 1;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 0;
+}
+
+.gallery_medium_bottom {
+  grid-column: 4 / 6;
+  grid-row: 2;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 0;
+}
+
+.gallery_small {
+  grid-row: 3;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 0;
+}
+
+.gallery_layout .gallery_small:nth-child(4) { grid-column: 1; }
+.gallery_layout .gallery_small:nth-child(5) { grid-column: 2; }
+.gallery_layout .gallery_small:nth-child(6) { grid-column: 3; }
+.gallery_layout .gallery_small:nth-child(7) { grid-column: 4; }
+.gallery_layout .gallery_small:nth-child(8) { grid-column: 5; }
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.gallery_big:hover .gallery_img,
+.gallery_medium_top:hover .gallery_img,
+.gallery_medium_bottom:hover .gallery_img,
+.gallery_small:hover .gallery_img {
+  transform: scale(1.05);
+}
+
+/* About this property */
+.about_section {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #111;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about_item {
+  margin: 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Most popular facilities */
+.facilities_section {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.facilities_title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #111;
+}
+
+.facilities_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.facilities_item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.facilities_icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.facilities_icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Room Type */
+.room_types_section {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.room_types_header {
+  background: #1e40af;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  margin: 0 0 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.room_types_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  background: #fff;
+}
+
+.room_types_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.room_types_item:last-child {
+  border-bottom: none;
+}
+
+.room_types_arrow {
+  color: #ea580c;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.room_types_content {
+  flex: 1;
+  min-width: 0;
+}
+
+.room_types_link {
+  color: #1e40af;
+  text-decoration: underline;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.room_types_link:hover {
+  color: #1d4ed8;
+}
+
+.room_types_bed_row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.room_types_bed_text {
+  flex: 1;
+}
+
+.room_types_bed_icon {
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+
+/* Booking.com link */
+.booking_section {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* Keep section visible below 100px fixed menu when jumping to #booking */
+  scroll-margin-top: 100px;
+}
+
+.booking_link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #003580;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.booking_link:hover {
+  background: #0046a8;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .gallery_layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 6px;
+  }
+
+  .gallery_big {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    aspect-ratio: 16 / 10;
+    min-height: 180px;
+  }
+
+  .gallery_medium_top,
+  .gallery_medium_bottom {
+    grid-column: span 1;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 120px;
+  }
+
+  .gallery_small {
+    grid-row: auto;
+    grid-column: span 1;
+    aspect-ratio: 4 / 3;
+    min-height: 80px;
+  }
+
+  .gallery_layout .gallery_small:nth-child(4),
+  .gallery_layout .gallery_small:nth-child(5),
+  .gallery_layout .gallery_small:nth-child(6),
+  .gallery_layout .gallery_small:nth-child(7),
+  .gallery_layout .gallery_small:nth-child(8) {
+    grid-column: span 1;
+  }
+}

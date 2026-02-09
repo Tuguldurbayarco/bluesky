@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useMemo } from "react";
 import styles from "./Lightbox.module.css";
-import type { GalleryMediaItem } from "@/app/[locale]/(pages)/gallery/page";
+import type { GalleryMediaItem } from "@/lib/gallery";
 
 export type LightboxImage = { src: string; alt: string };
 

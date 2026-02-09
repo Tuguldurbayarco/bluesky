@@ -5,7 +5,7 @@ export const NAV_LINKS = [
   {href: '/events', key: 'events', title: 'Events'},
   {href: '/gallery', key: 'gallery', title: 'Gallery'},
   {href: '/about', key: 'why-we', title: 'Why WE?'},
-  {href: '/contacts', key: 'contact', title: 'Contact'},
+  {href: '/guest-house', key: 'guest-house', title: 'Guest House'},
 ];
 
 export const links = [
@@ -79,7 +79,7 @@ export const FOOTER_CTA_SOCIALS: { name: string; url: string; icon: string }[] =
 export const FOOTER_CTA_BIG_ICONS: { name: string; url: string; icon: string }[] = [
   { name: 'KakaoTalk', url: 'https://open.kakao.com/o/seK7AIah', icon: '/icons/kakaoTalkIcon.png' },
   { name: 'Naver', url: 'https://blog.naver.com/eternalskytour', icon: '/icons/naverIcon.png' },
-  { name: 'WhatsApp', url: 'https://wa.me/97699902202', icon: '/icons/whatsup.png' },
+  { name: 'WhatsApp', url: 'https://wa.me/97689806669', icon: '/icons/whatsup.png' },
 ];
 
 export const QUESTION_FORM = {
@@ -95,7 +95,7 @@ export const images = [
 export const TOURS_IMAGES = [
   {id: 1, href: '/tours/city', src: "/tours/ctmcity.jpg"}, 
   {id: 2, href: '/tours/central', src: "/tours/ctmcentral.jpg"},
-  {id: 3, href: '/tours/khuvsgul1', src: "/tours/ctmkhuvsgul1.jpg"},
+  {id: 3, href: '/tours/khuvsgul1', src: "/tours/tour-khuvsgul1/day1.png"},
 ]
 
 export const TOURS_IMAGES_2 = [
@@ -104,12 +104,12 @@ export const TOURS_IMAGES_2 = [
 ]
 
 export const TOURS_LINK = [
-  {id: 1, href: '/tours/city', src: "/tours/Ulaanbaatar.webp", tourKey: "city"}, 
+  {id: 1, href: '/tours/city', src: "/tours/tour-central/day5.webp", tourKey: "city"}, 
   {id: 2, href: '/tours/gobi', src: "/tours/gobi.jpg", tourKey: "gobi"},
   {id: 3, href: '/tours/central', src: "/tours/central.jpg", tourKey: "central"},
   {id: 4, href: '/tours/khangai', src: "/tours/gobiKhangai.jpg", tourKey: "khangai"},
-  {id: 5, href: '/tours/khuvsgul1', src: "/tours/tmkhuvsgul1.jpg", tourKey: "khuvsgul1"},
-  {id: 6, href: '/tours/khuvsgul2', src: "/tours/khuvsgul2.jpg", tourKey: "khuvsgul2"},
+  {id: 5, href: '/tours/khuvsgul1', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul1"},
+  {id: 6, href: '/tours/khuvsgul2', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul2"},
 ]
 
 export const INDIVIDUAL = [

@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./[locale]/globals.css";
 import NavBarServer from "@/components/NavBarServer";
 import SocialIcons from "@/components/UI/SocialIcons";
-
-const inter = Roboto({
-  subsets: ["latin"],
-  weight: "100"
-});
 
 export const metadata: Metadata = {
   title: "Eternal Sky Tours",

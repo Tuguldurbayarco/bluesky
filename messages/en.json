@@ -5,6 +5,9 @@
     "subtitle": "Create a custom trip & get a price quote within 24 hours.",
     "link": "MORE ABOUT CUSTOM TRIP",
     "welcomeTitle": "Welcome to Eternal Sky Tour",
+    "welcomeTitlePrefix": "Welcome to ",
+    "welcomeTitleRed": "Eternal",
+    "welcomeTitleSuffix": " Sky Tour",
     "pageDescription": "Set aside the standards of the city for a moment and surrender to the rhythm of nature. Experience the value of a simple yet profound daily life while feeling the nomadic way of life up close. Everything is new and unfamiliar, and that is why it stays in your memory longer.\n\nNot tourism but experience, not travel but a story to remember. We will bring you the emotions that can only be found in Mongolia, into your journey.",
     "header": "FESTIVALS",
     "menu": [
@@ -21,14 +24,17 @@
         "label": "Why WE?"
       },
       {
-        "label": "Contact"
+        "label": "Guest House"
       }
     ],
     "language1": "ENGLISH",
     "language2": "KOREAN",
     "galleryLabel": "Gallery",
     "submenuAboutUs": "About Us",
-    "submenuTravelTools": "Travel Tools"
+    "submenuTravelTools": "Travel Tools",
+    "submenuContacts": "Contacts",
+    "submenuSummerTours": "Summer Tours",
+    "submenuWinterTours": "Winter Tours"
   },
   "About": {
     "title": "ABOUT US",
@@ -903,9 +909,44 @@
     "paragraph3": "Whether you're seeking adventure in the great outdoors, cultural encounters with nomadic tribes, or a tranquil retreat amidst nature, we have the perfect itinerary for you. Our team of experienced guides and local experts are committed to ensuring that your journey is not only memorable but also deeply enriching.",
     "paragraph4": "At the core of our philosophy lies a deep respect for the land and its people. We are dedicated to sustainable tourism practices that preserve Mongolia's natural beauty and support local communities. By traveling with Eternal Sky Tour, you are not only embarking on a remarkable adventure but also contributing to the preservation of Mongolia's heritage for future generations.",
     "paragraph5": "Join us and discover the magic of Mongolia with Eternal Sky Tour. Let us be your companions as you embark on a journey of a lifetime amidst the timeless landscapes and boundless skies of this extraordinary land.",
-    "certificateTitleBlue": "ETERNAL SKY TOUR",
+    "certificateTitleRed": "ETERNAL",
+    "certificateTitleBlue": " SKY TOUR",
     "certificateTitleGray": "CERTIFICATE",
     "certificatesAriaLabel": "Certificates"
+  },
+  "GuestHouse": {
+    "pageTitle": "Guest House",
+    "welcomeTitle": "Welcome to Our Guest House",
+    "welcomeDescription": "A nice, pleasant place to stay in the heart of Ulaanbaatar. Enjoy a comfortable and welcoming atmosphere, convenient facilities, and a peaceful base for your Mongolian adventure.",
+    "aboutTitle": "About this property",
+    "comfortableTitle": "Comfortable Accommodations:",
+    "comfortableText": "Eternal Sky Tour & Guest house in Ulaanbaatar offers family rooms with garden or inner courtyard views. Each room includes a kitchenette, washing machine, and free WiFi.",
+    "facilitiesTitle": "Exceptional Facilities:",
+    "facilitiesText": "Guests can relax on the terrace or enjoy a drink at the bar. The property features a lounge, elevator, shared kitchen, minimarket, laundry service, and free on-site parking.",
+    "locationTitle": "Prime Location:",
+    "locationText": "Located 29 mi from New Ulaanbaatar International Airport, the guest house is near attractions such as the National Museum of Mongolian History (1.1 mi) and Ulaanbaatar Opera House (18-minute walk). An ice-skating rink is also nearby.",
+    "satisfactionTitle": "Guest Satisfaction:",
+    "satisfactionText": "Highly rated for room cleanliness, kitchen, and attentive staff, the guest house ensures a pleasant stay.",
+    "facilitiesSectionTitle": "Most popular facilities",
+    "facilityFreeWifi": "Free Wifi",
+    "facilityAirportShuttle": "Airport shuttle",
+    "facilityFreeParking": "Free parking",
+    "facilityFamilyRooms": "Family rooms",
+    "facilityNonSmoking": "Non-smoking rooms",
+    "facilityBar": "Bar",
+    "roomTypeSectionTitle": "Room Type",
+    "room1Name": "Bed in 8-Bed Dormitory Room",
+    "room1Bed": "1 bunk bed",
+    "room2Name": "Bed in 4-Bed Dormitory Room",
+    "room2Bed": "1 bunk bed",
+    "room3Name": "Double Room",
+    "room3Bed": "1 bunk bed",
+    "room4Name": "Double Room",
+    "room4Bed": "1 full bed",
+    "room5Name": "Bed in 4-Bed Dormitory Room",
+    "room5Bed": "1 bunk bed",
+    "bookingLinkText": "Book on Booking.com",
+    "bookingLinkAria": "Book Eternal Sky Tour & Guest house on Booking.com (opens in new tab)"
   },
   "Footer": {
     "contactTitle": "CONTACT",
@@ -921,7 +962,7 @@
     "phone1": "+976 99902202",
     "phone2": "+976 80845684",
     "phone3": "+976 80303997",
-    "phone4": "+976 99902202",
+    "phone4": "+976 89806669",
     "kakao": "Kakao Talk ID:",
     "kakao1": "1. Ankhaa8899.",
     "kakao2": "2. narangarav",
@@ -1152,7 +1193,7 @@
     "schedule2-7": "16:00 - Hiking and outdoor activities",
     "schedule2-8": "18:00 - Dinner",
     "day3": "Day 3. Chinggis Khaan Statue",
-    "day3text": "The Chinggis Khan Statue Complex, also known as the Genghis Khan Statue Complex, is a monumental statue of Genghis Khan located in Tsonjin Boldog, about 54 kilometers (33 miles) east of Ulaanbaatar, the capital of Mongolia. This impressive statue stands on the bank of the Tuul River and overlooks the surrounding countryside.",
+    "day3text": "The Chinggis Khan Statue Complex, also known as the Genghis Khan Statue Complex, is a monumental statue of Genghis Khan located in Tsonjin Boldog. This impressive statue stands on the bank of the Tuul River and overlooks the surrounding countryside.",
     "schedule3-1": "08:00 - Breakfast",
     "schedule3-2": "09:00 - Drive to Chinggis Khaan Statue Complex",
     "schedule3-3": "10:30 - Arrival and visit the statue",
