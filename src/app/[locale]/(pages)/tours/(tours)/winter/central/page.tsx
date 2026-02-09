@@ -22,7 +22,7 @@ const CentralWinter = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Central  3shunu 4 udur/1미니사막/34547640-8ace-4cb6-9a3d-0f90847b9641.jpg'
+              src='/tours/tour-central-winter/day1.jpg'
               alt='Central Mongolia - Mini Gobi'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -41,7 +41,7 @@ const CentralWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div> 
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Central  3shunu 4 udur/2쳉헤르온천/b90f4863-ff34-444a-9b18-9a9a2d1e6d9f.jpg'
+              src='/tours/tour-central-winter/day2.jpg'
               alt='Tsenkher Hot Spring'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -64,7 +64,7 @@ const CentralWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Central  3shunu 4 udur/3테를지/f2b9e404-d5f7-4b72-ab4c-ed87b93fc93f.jpg'
+              src='/tours/tour-central-winter/day3.jpg'
               alt='Terelj National Park'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -83,7 +83,7 @@ const CentralWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div> 
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Central  3shunu 4 udur/4UB/7aecb03999e8d6109a5cd7803211bc3f060ef83ce06509ff441d5e018c3cfbb5.avif'
+              src='/tours/tour-central-winter/day4.avif'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

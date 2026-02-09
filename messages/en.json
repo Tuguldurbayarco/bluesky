@@ -796,6 +796,16 @@
         "title": "KHUVSGUL LAKE TOUR",
         "duration": "7 days 6 nights",
         "description": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world."
+      },
+      "khuvsgulTaiga6Days": {
+        "title": "KHUVSGUL-TAIGA TOUR",
+        "duration": "6 days 7 nights",
+        "description": "Experience the pristine beauty of northern Mongolia on this winter journey through Khuvsgul Province and the remote Taiga region. Discover the unique culture of the Tsaatan reindeer herders, explore the stunning Khuvsgul Lake, and immerse yourself in Mongolia's untouched wilderness."
+      },
+      "khuvsgulTaiga5Days": {
+        "title": "KHUVSGUL-TAIGA TOUR",
+        "duration": "5 days 6 nights",
+        "description": "A shorter winter journey through Khuvsgul Province and the remote Taiga region. Experience the unique culture of the Tsaatan reindeer herders and explore the pristine beauty of northern Mongolia's wilderness."
       }
     },
     
@@ -1520,6 +1530,42 @@
     "day6text": "With a population of 13,000 at an elevation of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khovsgol Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers.",
     "day7": "Day 7. Back to Ulaanbaatar",
     "day7text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
+    "button": "Go to Booking"
+  },
+  "KhuvsgulTaiga6Days": {
+    "picture_text": "KHUVSGUL-TAIGA TOUR - 6 days 7 nights",
+    "description": "Experience the pristine beauty of northern Mongolia on this winter journey through Khuvsgul Province and the remote Taiga region. Discover the unique culture of the Tsaatan reindeer herders, explore the stunning Khuvsgul Lake, and immerse yourself in Mongolia's untouched wilderness.",
+    "day1": "Day 1. Bulgan Province",
+    "day1text": "With a population of 13,000 at an elevation of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khovsgol Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers.",
+    "day2": "Day 2. Ulaanbaatar",
+    "day2text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
+    "day3": "Day 3. Tsagaan Nuur - Taiga",
+    "day3text": "Tsagaan Nuur, meaning White Lake, is located in the remote Taiga region of northern Mongolia. This pristine area is home to the Tsaatan people, nomadic reindeer herders who have preserved their unique way of life for centuries. The Tsaatan are among the last remaining nomadic reindeer herders in the world, living deep in the remote forests near Lake Khuvsgul. They speak Tuvan language among themselves and practice shamanism. Their main livelihood is herding reindeer and hunting, maintaining a deep connection with nature and preserving traditions passed down through generations.",
+    "day4": "Day 4. Renchinlkhumbe - Tsaatan Community",
+    "day4text": "Renchinlkhumbe is a district in Khuvsgul Province that serves as a gateway to the Taiga region and the Tsaatan communities. Here, you'll have the opportunity to meet the Tsaatan people, learn about their customs, experience their traditional way of life, and even ride a reindeer through Mongolia's untouched wilderness. This is a rare opportunity to connect with one of the world's most unique cultures.",
+    "day5": "Day 5. Khuvsgul Lake",
+    "day5text": "Khuvsgul is a land of thick forests, rushing rivers, sparkling lakes and rugged mountains. It's Mongolia's most beautiful province and seemingly every river bend or lake cove offers new and wonderful surprises. Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth.",
+    "day6": "Day 6. Erdenet",
+    "day6text": "Erdenet is Mongolia's second-largest city, located in the northern part of the country. Known for its copper mining industry, Erdenet offers a glimpse into modern Mongolia while serving as a convenient stopover on the journey back to the capital.",
+    "day7": "Day 7. Back to Ulaanbaatar",
+    "day7text": "We'll drive back to Ulaanbaatar, stopping for lunch along the way. Arrival is expected around 15:00 in the afternoon, depending on traffic. The rest of the day is free to relax or explore the city at your own pace. In the evening, we'll gather for a farewell dinner to celebrate the journey.",
+    "button": "Go to Booking"
+  },
+  "KhuvsgulTaiga5Days": {
+    "picture_text": "KHUVSGUL-TAIGA TOUR - 5 days 6 nights",
+    "description": "A shorter winter journey through Khuvsgul Province and the remote Taiga region. Experience the unique culture of the Tsaatan reindeer herders and explore the pristine beauty of northern Mongolia's wilderness.",
+    "day1": "Day 1. Murun",
+    "day1text": "Depart from Ulaanbaatar by flight to Murun, the capital of Khuvsgul Province. Upon arrival in Murun, meet your guide and driver and begin your journey into the northern wilderness of Mongolia.",
+    "day2": "Day 2. Ulaanbaatar",
+    "day2text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
+    "day3": "Day 3. Tsagaan Nuur - Taiga",
+    "day3text": "Tsagaan Nuur, meaning White Lake, is located in the remote Taiga region of northern Mongolia. This pristine area is home to the Tsaatan people, nomadic reindeer herders who have preserved their unique way of life for centuries. The Tsaatan are among the last remaining nomadic reindeer herders in the world, living deep in the remote forests near Lake Khuvsgul. They speak Tuvan language among themselves and practice shamanism. Their main livelihood is herding reindeer and hunting, maintaining a deep connection with nature and preserving traditions passed down through generations.",
+    "day4": "Day 4. Renchinlkhumbe - Tsaatan Community",
+    "day4text": "Renchinlkhumbe is a district in Khuvsgul Province that serves as a gateway to the Taiga region and the Tsaatan communities. Here, you'll have the opportunity to meet the Tsaatan people, learn about their customs, experience their traditional way of life, and even ride a reindeer through Mongolia's untouched wilderness. This is a rare opportunity to connect with one of the world's most unique cultures.",
+    "day5": "Day 5. Murun",
+    "day5text": "Return to Murun, the capital of Khuvsgul Province. This small city serves as the administrative center for the region and offers a comfortable base before your return journey.",
+    "day6": "Day 6. Back to Ulaanbaatar",
+    "day6text": "After breakfast, catch your return flight to Ulaanbaatar. Depending on your flight schedule, you may have time for some last-minute sightseeing in Ulaanbaatar before departing for your onward journey.",
     "button": "Go to Booking"
   },
   "EightLakesEquestrian": {

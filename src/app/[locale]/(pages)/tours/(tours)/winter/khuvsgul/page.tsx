@@ -22,7 +22,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/1미니사막/34547640-8ace-4cb6-9a3d-0f90847b9641.jpg'
+              src='/tours/tour-khuvsgul-winter/day1.jpg'
               alt='Khuvsgul Winter Day 1 - Mini Gobi'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -41,7 +41,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div> 
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/2쳉헤르온천/b90f4863-ff34-444a-9b18-9a9a2d1e6d9f.jpg'
+              src='/tours/tour-khuvsgul-winter/day2.jpg'
               alt='Tsenkher Hot Spring'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -60,7 +60,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/3테르힝차강호수/e7624580-3d2e-4a38-992b-cb6e8a37c21b.jpg'
+              src='/tours/tour-khuvsgul-winter/day3.jpg'
               alt='Terkhiin Tsagaan Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -79,7 +79,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/4신이데르/SE-e1ef2cfb-65fb-4218-b150-a6d1990a6c71.jpg'
+              src='/tours/tour-khuvsgul-winter/day4.jpg'
               alt='Shine Ider'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -98,7 +98,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/5홉스골(장하이)/DJI_0918.jpg'
+              src='/tours/tour-khuvsgul-winter/day5.jpg'
               alt='Khuvsgul Lake'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -117,7 +117,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/6볼강/4f5d3fb4ccf5604efe018f125d9cf6bb8b5ef78bf8bbf8633f7e85598718bd0d.avif'
+              src='/tours/tour-khuvsgul-winter/day6.avif'
               alt='Bulgan'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -136,7 +136,7 @@ const KhuvsgulWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Khuvsgul 6 shunu 7 udur/7UB/7aecb03999e8d6109a5cd7803211bc3f060ef83ce06509ff441d5e018c3cfbb5.avif'
+              src='/tours/tour-khuvsgul-winter/day7.avif'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

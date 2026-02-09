@@ -22,7 +22,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
           </div>
           <div style={{position: 'relative', marginTop: '1rem'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /1(차강소브라가)달란자드가드/d2054de7-97af-4c61-8828-c2a1419ed074.jpg'
+              src='/tours/tour-gobi-winter/day1.jpg'
               alt='Gobi Day 1 - Tsagaan Suvarga'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -41,7 +41,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /2욜링암/5bc1f25638faddb434a47add87b72edd0cc923b2aeb03b389c37d1ad5f999a2f.avif'
+              src='/tours/tour-gobi-winter/day2.avif'
               alt='Gobi Day 2 - Yoliin Am'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -60,7 +60,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /3홍고링엘스/34547640-8ace-4cb6-9a3d-0f90847b9641.jpg'
+              src='/tours/tour-gobi-winter/day3.jpg'
               alt='Gobi Day 3 - Hongoriin Els'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -79,7 +79,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /4바얀작/6aba655f-8ac4-4d40-8956-b830e91174a7.jpg'
+              src='/tours/tour-gobi-winter/day4.jpg'
               alt='Gobi Day 4 - Bayanzag'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -98,7 +98,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /5달란자드가드/c2c2df6a-d824-4507-a4bf-e74a2c57b2c5.jpg'
+              src='/tours/tour-gobi-winter/day5.jpg'
               alt='Gobi Day 5 - Dalanzadgad'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -117,7 +117,7 @@ const GobiWinter = ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/AWORK/Gobi  5shunu6udur /6UB/7aecb03999e8d6109a5cd7803211bc3f060ef83ce06509ff441d5e018c3cfbb5.avif'
+              src='/tours/tour-gobi-winter/day6.avif'
               alt='Gobi Day 6 - Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

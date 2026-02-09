@@ -18,20 +18,32 @@ const WinterTours = ({ params: { locale } }: { params: { locale: string } }) => 
     {
       id: 1,
       tourKey: "centralWinter",
-      src: "/AWORK/Central  3shunu 4 udur/1미니사막/34547640-8ace-4cb6-9a3d-0f90847b9641.jpg",
+      src: "/tours/tour-central-winter/day1.jpg",
       href: "/tours/winter/central"
     },
     {
       id: 2,
       tourKey: "gobiWinter",
-      src: "/AWORK/Gobi  5shunu6udur /1(차강소브라가)달란자드가드/d2054de7-97af-4c61-8828-c2a1419ed074.jpg",
+      src: "/tours/tour-gobi-winter/day1.jpg",
       href: "/tours/winter/gobi"
     },
     {
       id: 3,
       tourKey: "khuvsgulWinter",
-      src: "/AWORK/Khuvsgul 6 shunu 7 udur/5홉스골(장하이)/DJI_0918.jpg",
+      src: "/tours/tour-khuvsgul-winter/day5.jpg",
       href: "/tours/winter/khuvsgul"
+    },
+    {
+      id: 4,
+      tourKey: "khuvsgulTaiga6Days",
+      src: "/tours/tour-khuvsgul-taiga-6days/day1.jpg",
+      href: "/tours/winter/khuvsgul-taiga-6days"
+    },
+    {
+      id: 5,
+      tourKey: "khuvsgulTaiga5Days",
+      src: "/tours/tour-khuvsgul-taiga-5days/day1.jpg",
+      href: "/tours/winter/khuvsgul-taiga-5days"
     }
   ];
 
