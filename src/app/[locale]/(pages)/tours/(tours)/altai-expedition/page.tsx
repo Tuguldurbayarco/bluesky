@@ -15,7 +15,7 @@ const AltaiExpedition = ({params: {locale}}: {params: {locale: string}}) => {
         mapSrc="/group-altai/map.jpg"
         mapAlt="Altai Expedition route map"
         dateRanges={["07/11 – 07/26", "08/08 – 08/23"]}
-        title={`${t("Tours.altaiExpedition.title")} - ${t("Tours.altaiExpedition.duration")}`}
+        title={t("Tours.altaiExpedition.title")}
       >
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.altaiExpedition.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>

@@ -15,7 +15,7 @@ const SouthNorth = ({params: {locale}}: {params: {locale: string}}) => {
         mapSrc="/group-south-north/map.jpg"
         mapAlt="South North Tour route map"
         dateRanges={["07/11 – 07/23", "08/02 – 08/14"]}
-        title={`${t("Tours.southNorthTour.title")} - ${t("Tours.southNorthTour.duration")}`}
+        title={t("Tours.southNorthTour.title")}
       >
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.southNorthTour.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>

@@ -15,7 +15,7 @@ const EightLakesTrekking = ({params: {locale}}: {params: {locale: string}}) => {
         mapSrc="/group-eight-lake-trekk/map.jpg"
         mapAlt="Naiman Lakes Trekking route map"
         dateRanges={["07/11 – 07/22", "08/04 – 08/15"]}
-        title={`${t("Tours.eightLakesTrekking.title")} - ${t("Tours.eightLakesTrekking.duration")}`}
+        title={t("Tours.eightLakesTrekking.title")}
       >
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.eightLakesTrekking.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>

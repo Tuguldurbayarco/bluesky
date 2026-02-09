@@ -37,7 +37,7 @@
 }
 
 .navbar_menu_buttons_active {
-  color: #e60023; /* web red for active nav item */
+  color: #d1101a; /* web red for active nav item */
   font-weight: 600;
 }
 
@@ -311,7 +311,7 @@
   }
 
   .navbar_menu_container .navbar_menu_buttons_active {
-    color: #e60023; /* web red for active nav item on mobile */
+    color: #d1101a; /* web red for active nav item on mobile */
   }
 
   .navbar_menu_buttons.has_submenu {

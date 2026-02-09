@@ -72,6 +72,18 @@ const GuestHouse = ({ params: { locale } }: { params: { locale: string } }) => {
           >
             {t("GuestHouse.bookingLinkText")}
           </a>
+          <div className={styles.map_container}>
+            <iframe
+              src="https://www.google.com/maps?q=Eternal+Sky+Tour+%26+Guesthouse,+Ulaanbaatar&hl=en&z=17&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Eternal Sky Tour & Guesthouse Location"
+            />
+          </div>
         </section>
       </div>
     </div>

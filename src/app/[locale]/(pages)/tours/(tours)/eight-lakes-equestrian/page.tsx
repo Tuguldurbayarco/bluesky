@@ -15,7 +15,7 @@ const EightLakesEquestrian = ({params: {locale}}: {params: {locale: string}}) =>
         mapSrc="/group-eight-lake-equestrian/map.jpg"
         mapAlt="Naiman Lakes Equestrian route map"
         dateRanges={["07/11 – 07/20", "08/06 – 08/15"]}
-        title={`${t("Tours.eightLakesEquestrian.title")} - ${t("Tours.eightLakesEquestrian.duration")}`}
+        title={t("Tours.eightLakesEquestrian.title")}
       >
           <p className="pageDescription" style={{ textAlign: "justify", marginBottom: 0 }}>{t("Tours.eightLakesEquestrian.detail_description")}</p>
           <div style={{position: 'relative', marginTop: '2rem'}}>
