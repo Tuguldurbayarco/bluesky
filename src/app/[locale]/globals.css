@@ -80,7 +80,8 @@ body {
 }
 
 .header_on_picture {
-  font-size: 400%;
+  /* Fluid font size: scales with viewport width between 1rem and 4rem */
+  font-size: clamp(1rem, 5vw + 1.5rem, 4rem);
   font-weight: 500;
   color: #fff;
   padding-bottom: 8%;
@@ -188,9 +189,7 @@ tbody {
     margin-left: 10%;
   }
 
-  .header_on_picture {
-    font-size: 300%;
-  }
+  /* .header_on_picture uses fluid clamp() - no override needed */
 
   .header_for_divede {
     font-size: 180%;
@@ -224,9 +223,7 @@ tbody {
     margin-left: 7%;
   }
 
-  .header_on_picture {
-    font-size: 260%;
-  }
+  /* .header_on_picture uses fluid clamp() - no override needed */
 
   .header_for_divede {
     font-size: 160%;
@@ -257,7 +254,6 @@ tbody {
   }
 
   .header_on_picture {
-    font-size: 150%;
     padding-bottom: 0;
     padding-top: 18%;
   }
@@ -284,7 +280,6 @@ tbody {
   }
 
   .header_on_picture {
-    font-size: 100%;
     padding-bottom: 0;
     padding-top: 18%;
   }

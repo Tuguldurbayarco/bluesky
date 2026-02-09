@@ -5,7 +5,7 @@
 }
 
 .heroTitleOnPicture {
-  font-size: 400%; /* Slightly reduced from 450% */
+  /* Font size scales with viewport via .header_on_picture clamp() */
   white-space: nowrap; /* Keep "Travel to Mongolia" on one line */
 }
 
@@ -267,6 +267,12 @@
 
   .seasons_slider_text {
     font-size: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroTitleOnPicture {
+    display: none; /* Hide hero title on mobile */
   }
 }
 
