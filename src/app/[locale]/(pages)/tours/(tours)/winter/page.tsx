@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import ScrollDownHint from "@/components/UI/ScrollDownHint";
+import TourCard from "@/components/UI/TourCard";
 import "../../../../../../components/UI/button.css";
 import styles from "../../tours.module.css";
 
@@ -12,6 +13,27 @@ const WinterTours = ({ params: { locale } }: { params: { locale: string } }) => 
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
   }
+
+  const winterTours = [
+    {
+      id: 1,
+      tourKey: "centralWinter",
+      src: "/AWORK/Central  3shunu 4 udur/1미니사막/34547640-8ace-4cb6-9a3d-0f90847b9641.jpg",
+      href: "/tours/winter/central"
+    },
+    {
+      id: 2,
+      tourKey: "gobiWinter",
+      src: "/AWORK/Gobi  5shunu6udur /1(차강소브라가)달란자드가드/d2054de7-97af-4c61-8828-c2a1419ed074.jpg",
+      href: "/tours/winter/gobi"
+    },
+    {
+      id: 3,
+      tourKey: "khuvsgulWinter",
+      src: "/AWORK/Khuvsgul 6 shunu 7 udur/5홉스골(장하이)/DJI_0918.jpg",
+      href: "/tours/winter/khuvsgul"
+    }
+  ];
 
   return (
     <div>
@@ -33,12 +55,25 @@ const WinterTours = ({ params: { locale } }: { params: { locale: string } }) => 
         <ScrollDownHint lightBackground />
       </div>
       <div className={styles.tours_and_events_margin_top}>
-        <div className="visibility_area" style={{ padding: "2rem", textAlign: "center" }}>
-          <p style={{ fontSize: "1.5rem", marginBottom: "1.5rem" }}>Coming soon</p>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link href={addLocaleToHref("/contacts")} className="myButton">
-              Contact us
-            </Link>
+        <div className="visibility_area" style={{ padding: "2rem" }}>
+          <div style={{ marginBottom: "2rem" }}>
+            <h2 className="pageTitle" style={{ textAlign: "center", marginBottom: "1rem" }}>
+              {t("WinterTours.title")}
+            </h2>
+            <p className="pageDescription" style={{ textAlign: "center" }}>
+              {t("WinterTours.description")}
+            </p>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '2rem' }}>
+            {winterTours.map((tour) => (
+              <TourCard
+                key={tour.id}
+                locale={validLocale as Locale}
+                tourKey={tour.tourKey}
+                imageSrc={tour.src}
+                tourHref={tour.href}
+              />
+            ))}
           </div>
         </div>
       </div>

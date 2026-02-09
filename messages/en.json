@@ -93,6 +93,9 @@
     "tour4": "Gobi-khangai tour",
     "tour5": "Khuvsgul tour (flight)",
     "tour6": "Khuvsgul tour (car)",
+    "tour7": "Central tour (winter)",
+    "tour8": "Gobi tour (winter)",
+    "tour9": "Khuvsgul tour (winter)",
     "event1": "Camel Festival",
     "event2": "Eagle Festival",
     "event3": "Ice Festival",
@@ -690,6 +693,10 @@
       "text5": "Overall, Mongolia’s climate is defined by contrast—icy winters, hot summers, and rapid shifts in weather. These conditions shape not only the land but also the resilient spirit of its people. For travelers seeking raw natural beauty and a sense of true adventure, Mongolia offers a climate as bold and unforgettable as the landscapes it shapes."
     }
   },
+  "WinterTours": {
+    "title": "WINTER TOURS",
+    "description": "Experience the beauty of Mongolia in winter with our specially curated winter tours."
+  },
   "Tours": {
     "title": "CLASSIC TOURS",
     "title_on_picture": "TOURS",
@@ -773,6 +780,21 @@
       "khuvsgul2": {
         "title": "KHUVSGUL LAKE TOUR 2 (by car)",
         "duration": "8 days 7 nights",
+        "description": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world."
+      },
+      "centralWinter": {
+        "title": "CENTRAL TOUR",
+        "duration": "4 days 3 nights",
+        "description": "This central tour of Mongolia provides a comprehensive overview of the country's cultural heritage, historical landmarks, and natural beauty, offering travelers a memorable and immersive experience in the heart of Mongolia."
+      },
+      "gobiWinter": {
+        "title": "GOBI TOUR",
+        "duration": "6 days 5 nights",
+        "description": "The Gobi is renowned for its vast sand dunes, rugged mountains, and rare wildlife, including snow leopards and two-humped Bactrian camels. In Gobi Gurvansaikhan National Park, the towering Khongoryn Els dunes are known to \"SING\" as the wind moves across them, while the Yolyn Am canyon surprises visitors with its deep ice fields even in summer."
+      },
+      "khuvsgulWinter": {
+        "title": "KHUVSGUL LAKE TOUR",
+        "duration": "7 days 6 nights",
         "description": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world."
       }
     },
@@ -1447,6 +1469,57 @@
     "schedule5-2": "11:00 - Drive to Ulaanbaatar",
     "schedule5-3": "Around 12:30 - Lunch",
     "schedule5-4": "Around 15:00 - Arrival at the accommodation",
+    "button": "Go to Booking"
+  },
+  "CentralWinter": {
+    "picture_text": "CENTRAL TOUR - 4 days 3 nights",
+    "description": "This central tour of Mongolia provides a comprehensive overview of the country's cultural heritage, historical landmarks, and natural beauty, offering travelers a memorable and immersive experience in the heart of Mongolia.",
+    "day1": "Day 1. Elsen Tasarkhai-Mini Gobi",
+    "day1text": "The Mini Gobi Desert, located in Mongolia, is a smaller version of the larger Gobi Desert. Despite its size, it offers a similar landscape of vast expanses of sand dunes, rocky terrain, and sparse vegetation. The Mini Gobi provides travelers with a taste of Mongolia's renowned desert scenery, offering opportunities for camel rides, desert camping, and exploration of its unique ecosystem. While not as expansive as the main Gobi Desert, the Mini Gobi still captures the essence of Mongolia's rugged beauty and nomadic culture.",
+    "day2": "Day 2. Tsenkher Hot Spring",
+    "day2text": "Mongolia is home to several hot springs, offering travelers a relaxing escape amidst its rugged landscapes. One popular hot spring destination is Tsenkher Hot Spring, located in the Arkhangai Province. Tsenkher Hot Spring is renowned for its mineral-rich waters, which are believed to have healing properties. Visitors can soak in the natural pools surrounded by beautiful mountain scenery, making it a popular stop on many tours through central Mongolia.",
+    "attention2": "★Note★",
+    "att_desc2": "Pack the essentials for the hot springs—swimsuit and beachwear.",
+    "day3": "Day 3. Terelj National Park",
+    "day3text": "Terelj National Park is a scenic and popular destination located northeast of Mongolia's capital city, Ulaanbaatar. It's known for its stunning natural landscapes, including rock formations, forests, and rivers, making it a favorite spot for outdoor enthusiasts and nature lovers. One of the most iconic features of Terelj is the Turtle Rock (Melkhii Khad), a giant rock formation resembling a turtle, which is a symbol of longevity in Mongolian culture. Visitors often climb up to get a closer look and take photos of this unique natural wonder.",
+    "day4": "Day 4. Back to Ulaanbaatar",
+    "day4text": "Ulaanbaatar, the capital and largest city of Mongolia, is a vibrant and bustling metropolis situated in the heart of the country. Despite its relatively small population compared to other capital cities, Ulaanbaatar serves as Mongolia's political, economic, and cultural center.",
+    "button": "Go to Booking"
+  },
+  "GobiWinter": {
+    "picture_text": "GOBI TOUR - 6 days 5 nights",
+    "description": "The Gobi is renowned for its vast sand dunes, rugged mountains, and rare wildlife, including snow leopards and two-humped Bactrian camels. In Gobi Gurvansaikhan National Park, the towering Khongoryn Els dunes are known to \"SING\" as the wind moves across them, while the Yolyn Am canyon surprises visitors with its deep ice fields even in summer. The region is also famous for the Flaming Cliffs of Bayanzag, where groundbreaking dinosaur fossils were first discovered. This route is one of Mongolia's most iconic and popular journeys among travelers.",
+    "day1": "Day 1. Tsagaan Suvarga",
+    "day1text": "Tsagaan Suvarga, or The White Stupa, is a stunning natural formation in the Gobi Desert, known for its dramatic, eroded limestone cliffs that resemble ancient city ruins. Standing up to 30 meters high and stretching over 400 meters, the cliffs display beautiful layers of white, pink, and orange hues, especially vibrant at sunrise and sunset. Shaped by millions of years of wind and weather, Tsagaan Suvarga offers a surreal and unforgettable landscape that captures the quiet majesty of the Mongolian desert.",
+    "day2": "Day 2. Yoliin Am",
+    "day2text": "Yoliin Am, or the Yol Valley, nestled in the Gobi Gurvansaikhan Mountains, is a deep, narrow gorge famous for its year-round ice field and dramatic cliffs. It's a great place to spot wildlife, including ibex, wild argali sheep, golden eagles, and eagles, offering a stunning and peaceful escape in the heart of the Gobi Desert.",
+    "day3": "Day 3. Hongoriin Els",
+    "day3text": "Hongoriin Els, famously known as the \"Singing Dunes,\" are among Mongolia's largest and most impressive sand formations. Rising up to 300 meters high and stretching for miles across the Gobi Desert, these vast dunes create a breathtaking landscape. When the wind blows, the sands produce a unique humming sound, adding a magical touch to this natural wonder. Visitors can explore the dunes by camel or on foot, making it a must-see destination in Mongolia.",
+    "day4": "Day 4. Bayanzag",
+    "day4text": "Bayanzag, also known as the Flaming Cliffs, is a striking red sandstone formation stretching 5 km wide and about 8 km long. Its fiery hues glow brilliantly at sunrise and sunset. In 1922, American paleontologist Roy Chapman Andrews made groundbreaking discoveries here, unearthing dinosaur bones and eggs that revealed ancient life hidden within Mongolia's desert sands.",
+    "day5": "Day 5. Baga Gazriin Chuluu",
+    "day5text": "Baga Gazriin Chuluu is a rugged granite massif rising dramatically from the surrounding steppe in southern Mongolia. Known for its striking rock formations, caves, and ancient petroglyphs, it offers a unique blend of natural beauty and cultural history. There is much to explore, including the nearby Poplar Rock Valley, known locally as Sudutyn. The area is popular for hiking, rock climbing, and discovering peaceful wilderness.",
+    "day6": "Day 6. Back to Ulaanbaatar",
+    "day6text": "We'll drive back to Ulaanbaatar, stopping to visit the impressive Chinggis Khan Equestrian Statue along the way. Depending on traffic, we expect to arrive in the city right around lunchtime for a meal. This marks the end of the tour, leaving the rest of the day free to relax or explore. In the evening, we'll gather for a farewell dinner to celebrate the journey.",
+    "button": "Go to Booking"
+  },
+  "KhuvsgulWinter": {
+    "picture_text": "KHUVSGUL LAKE TOUR - 7 days 6 nights",
+    "description": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world.",
+    "day1": "Day 1. Mini Gobi",
+    "day1text": "Elsentasarkhai is a part of the Mongol Els sand dunes, which stretch from the Tuv, Uvurkhangai, and Bulgan provinces all the way to the west to become part of the Khugnu Khan mountain range. The sand dunes are 80 km long in total.",
+    "day2": "Day 2. Tsenkher Hot Spring",
+    "day2text": "Tsenkher Hot Spring is a popular natural hot spring located in the Arkhangai Province of central Mongolia. Renowned for its mineral-rich waters and therapeutic properties, Tsenkher Hot Spring is a favorite destination for locals and tourists seeking relaxation and rejuvenation amidst the stunning Mongolian landscape.",
+    "day3": "Day 3. Terkh White Lake",
+    "day3text": "Terkh White lake is located 648 km from Ulaanbaatar city in Arkhangai province. Fresh water and volcanogenic Terkh White lake is 16 km long and it runs from the west to the east, and 6km wide from north to south. This lake was created as a result of a 4050 cm thick basaltic blockage of Terkhiin River, following the eruption of Khorhiintogoo and some other volcanoes.",
+    "day4": "Day 4. Shine-ider",
+    "day4text": "Shine-ider is a district in the Zavkhan region of western Mongolia. The area features scenic valleys, traditional nomadic herding life, and access to the natural beauty of the Khangai mountain range and surrounding landscapes.",
+    "day5": "Day 5. Khuvsgul Lake",
+    "day5text": "Khuvsgul is a land of thick forests, rushing rivers, sparkling lakes and rugged mountains. It's Mongolia's most beautiful province and seemingly every river bend or lake cove offers new and wonderful surprises.",
+    "day6": "Day 6. Bulgan Province",
+    "day6text": "With a population of 13,000 at an elevation of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khovsgol Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers.",
+    "day7": "Day 7. Back to Ulaanbaatar",
+    "day7text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
     "button": "Go to Booking"
   },
   "EightLakesEquestrian": {

@@ -15,26 +15,21 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const BASE_PATH = "/mail-service"; // Base path for subdirectory deployment
 
-// SMTP configuration using environment variables
+// SMTP for eternalskytour.com: send from info@; business receives at eternalskytour@gmail.com (set in app)
 const SMTP_CONFIG = {
-  host: "bizmail22.itools.mn",
-  //host: "mail.saibaitour.mn",
-  port: 465, // Standard SMTP port, adjust if needed
-  secure: true, // true for 465, false for other ports
+  host: "bizmail6.itools.mn",
+  port: 587,
+  secure: false,
   auth: {
-    user: "no-reply@saibaitour.mn",
-    pass: process.env.SMTP_PASSWORD, // Get password from environment variable
+    user: "info@eternalskytour.com",
+    pass: process.env.SMTP_PASSWORD,
   },
 };
 
-// Validate SMTP configuration
 if (!process.env.SMTP_PASSWORD) {
-  console.error("❌ SMTP_PASSWORD environment variable is not set!");
+  console.error("❌ SMTP_PASSWORD environment variable is not set.");
   console.error(
-    "Please set SMTP_PASSWORD in your cPanel Node.js app environment variables."
-  );
-  console.error(
-    "For local development, create a .env file with SMTP_PASSWORD=your_password"
+    "Set SMTP_PASSWORD in cPanel Node.js app environment variables, or in .env for local development."
   );
   process.exit(1);
 }
@@ -96,13 +91,13 @@ app.post(BASE_PATH + "/send-email", async (req, res) => {
       });
     }
 
-    // Email content
+    // Email content: use authenticated user as from (ignore body.from for security)
     const mailOptions = {
       from: SMTP_CONFIG.auth.user,
       to: to,
       subject,
       html,
-      text: html,
+      text: html.replace(/<[^>]*>/g, ""),
     };
 
     // Send email

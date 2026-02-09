@@ -1,39 +1,42 @@
-// Updated to use mail service instead of nodemailer
+// Sends confirmation email to customer via mail service (itools.mn / cPanel)
+import { SEND_EMAIL_URL, FROM_EMAIL, SITE_NAME } from "@/lib/mailConfig";
 
-function emailBody(body: any) {
+function emailBody(body: { name: string; last: string }) {
   return `
 Dear ${body.name} ${body.last},<br>
-Thank you for reaching out to Saibaitour in Mongolia! We appreciate you taking the time to contact us.<br>
-Your message has been received, and we will get back to you as soon as possible.
+Thank you for reaching out to ${SITE_NAME} in Mongolia! We appreciate you taking the time to contact us.<br>
+Your message has been received.
 <br><br>
-Warm regards,
-Saibaitour team
+This is an automated email. We will contact you very soon.
 <br><br>
-info@saibaitour.mn
-<br>
-www.saibaitour.mn
-<br><br>
-Please refrain from replying directly to this email, as it is sent from a no-reply address.
+Warm regards,<br>
+${SITE_NAME} team
 `;
 }
 
-export default async function sendFormReceivedEmail(body: any) {
+export default async function sendFormReceivedEmail(body: {
+  name: string;
+  last: string;
+  email: string;
+}) {
+  if (!SEND_EMAIL_URL) {
+    console.error("Mail service URL is not configured (NEXT_PUBLIC_MAIL_SERVICE_URL)");
+    return { success: false, error: "Mail service not configured" };
+  }
+
   try {
-    const response = await fetch(
-      "https://saibaitour.mn/mail-service/send-email",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "no-reply@saibaitour.mn",
-          to: body.email,
-          subject: "Thank you for contacting Saibaitour!",
-          html: emailBody(body),
-        }),
-      }
-    );
+    const response = await fetch(SEND_EMAIL_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: FROM_EMAIL,
+        to: body.email,
+        subject: `Thank you for contacting ${SITE_NAME}!`,
+        html: emailBody(body),
+      }),
+    });
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

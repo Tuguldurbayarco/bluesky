@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import sendFormReceivedEmail from "@/utils/sendFormReceivedEmail";
+import { SEND_EMAIL_URL, FROM_EMAIL, BUSINESS_EMAIL, SITE_NAME } from "@/lib/mailConfig";
 
 function emailBody(body: any) {
   return `
@@ -15,22 +16,26 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
+    if (!SEND_EMAIL_URL) {
+      return NextResponse.json(
+        { success: false, error: "Mail service not configured" },
+        { status: 503 }
+      );
+    }
+
     // Send contact email to business via mail service
-    const businessEmailResponse = await fetch(
-      "https://saibaitour.mn/mail-service/api/send-email",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "no-reply@saibaitour.mn", // FROM no-reply address
-          to: "info@saibaitour.mn", // TO business email
-          subject: `Saibaitour Send Message ашиглан хэрэглэгч холбогдсон байна.`,
-          html: emailBody(body),
-        }),
-      }
-    );
+    const businessEmailResponse = await fetch(SEND_EMAIL_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: FROM_EMAIL,
+        to: BUSINESS_EMAIL,
+        subject: `${SITE_NAME} – contact form submission`,
+        html: emailBody(body),
+      }),
+    });
 
     if (!businessEmailResponse.ok) {
       console.error(

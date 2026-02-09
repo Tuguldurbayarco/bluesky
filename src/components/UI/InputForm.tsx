@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Input from "./Input";
 import Button from "./Button";
 import TextArea from "./TextArea";
+import { SEND_EMAIL_URL, FROM_EMAIL, BUSINESS_EMAIL, SITE_NAME } from "@/lib/mailConfig";
 
 const InputForm = ({ ...props }: any) => {
   const searchParams = useSearchParams();
@@ -35,18 +36,22 @@ const InputForm = ({ ...props }: any) => {
 
     setIsLoading(true);
 
+    if (!SEND_EMAIL_URL) {
+      throw new Error("Mail service URL is not configured (NEXT_PUBLIC_MAIL_SERVICE_URL)");
+    }
+
     try {
       // Send both emails in parallel to reduce submission time
       const [businessEmailResponse, customerEmailResponse] = await Promise.all([
         // Send booking email to business via mail service
-        fetch("https://saibaitour.mn/mail-service/send-email", {
+        fetch(SEND_EMAIL_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "no-reply@saibaitour.mn", // FROM no-reply address
-            to: "info@saibaitour.mn", // TO business email
+            from: FROM_EMAIL,
+            to: BUSINESS_EMAIL,
             subject: `New Tour Booking: ${tour}`,
             html: `
             <h2>New Tour Booking Request</h2>
@@ -66,15 +71,15 @@ const InputForm = ({ ...props }: any) => {
           }),
         }),
         // Send confirmation email to customer
-        fetch("https://saibaitour.mn/mail-service/send-email", {
+        fetch(SEND_EMAIL_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "no-reply@saibaitour.mn", // FROM no-reply address
-            to: email, // TO user's email
-            subject: "Thank you for your tour booking request - Saibaitour",
+            from: FROM_EMAIL,
+            to: email,
+            subject: `Thank you for your tour booking request - ${SITE_NAME}`,
             html: `
             <h2>Thank you for your tour booking request!</h2>
             <p>Dear ${name} ${last},</p>
@@ -87,9 +92,9 @@ const InputForm = ({ ...props }: any) => {
               <li>Country: ${country}</li>
             </ul>
             <p>If you have any urgent questions, please don't hesitate to contact us directly.</p>
-            <p>Best regards,<br>The Saibaitour Team</p>
+            <p>Best regards,<br>The ${SITE_NAME} Team</p>
             <hr>
-            <p><small>This is an automated confirmation email. Please do not reply to this email.</small></p>
+            <p><small>This is an automated email. We have received your request and will contact you very soon.</small></p>
           `,
           }),
         }),
@@ -219,6 +224,9 @@ const InputForm = ({ ...props }: any) => {
                 <option value="khangai">{props.tour4}</option>
                 <option value="khuvsgul1">{props.tour5}</option>
                 <option value="khuvsgul2">{props.tour6}</option>
+                <option value="central-winter">{props.tour7}</option>
+                <option value="gobi-winter">{props.tour8}</option>
+                <option value="khuvsgul-winter">{props.tour9}</option>
               </optgroup>
               <optgroup label={props.eventsCategory}>
                 <option value="camel">{props.event1}</option>

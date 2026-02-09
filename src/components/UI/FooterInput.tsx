@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "../UI/button.css";
 import footerStyles from "../footer.module.css";
+import { SEND_EMAIL_URL, FROM_EMAIL, BUSINESS_EMAIL, SITE_NAME } from "@/lib/mailConfig";
 
 export default function FooterInput({
   title,
@@ -25,18 +26,24 @@ export default function FooterInput({
 
     setIsLoading(true);
 
+    if (!SEND_EMAIL_URL) {
+      setIsLoading(false);
+      alert("Mail service is not configured. Please set NEXT_PUBLIC_MAIL_SERVICE_URL.");
+      return;
+    }
+
     try {
       // Send both emails in parallel to reduce submission time
       const [businessEmailResponse, customerEmailResponse] = await Promise.all([
         // Send contact email to business via mail service
-        fetch("https://saibaitour.mn/mail-service/send-email", {
+        fetch(SEND_EMAIL_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "no-reply@saibaitour.mn", // FROM no-reply address
-            to: "info@saibaitour.mn", // TO business email
+            from: FROM_EMAIL,
+            to: BUSINESS_EMAIL,
             subject: `New Contact Form Submission from ${name} ${last}`,
             html: `
             <h2>New Contact Form Submission</h2>
@@ -52,15 +59,15 @@ export default function FooterInput({
           }),
         }),
         // Send confirmation email to customer
-        fetch("https://saibaitour.mn/mail-service/send-email", {
+        fetch(SEND_EMAIL_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "no-reply@saibaitour.mn", // FROM no-reply address
-            to: email, // TO user's email
-            subject: "Thank you for contacting Saibaitour",
+            from: FROM_EMAIL,
+            to: email,
+            subject: `Thank you for contacting ${SITE_NAME}`,
             html: `
             <h2>Thank you for contacting us!</h2>
             <p>Dear ${name} ${last},</p>
@@ -68,9 +75,9 @@ export default function FooterInput({
             <p><strong>Your message:</strong></p>
             <p>${message}</p>
             <p>If you have any urgent questions, please don't hesitate to contact us directly.</p>
-            <p>Best regards,<br>The Saibaitour Team</p>
+            <p>Best regards,<br>The ${SITE_NAME} Team</p>
             <hr>
-            <p><small>This is an automated confirmation email. Please do not reply to this email.</small></p>
+            <p><small>This is an automated email. We have received your message and will contact you very soon.</small></p>
           `,
           }),
         }),

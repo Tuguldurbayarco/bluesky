@@ -4,5 +4,10 @@ out/
 .DS_Store
 *.zip
 
+# Local env (keep env.example)
+.env
+.env.local
+.env.*.local
+
 # Large video files (host elsewhere or use LFS)
 public/tours/city-tour-video.mp4
