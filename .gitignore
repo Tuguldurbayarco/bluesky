@@ -1,6 +1,7 @@
 .next/
 node_modules/
 out/
+/public_html/
 .DS_Store
 *.zip
 
