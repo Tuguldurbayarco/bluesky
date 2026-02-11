@@ -34,14 +34,17 @@
   justify-content: center;
 }
 
-/* Gallery: 1 big (left), 2 medium stacked (right), 5 small (bottom row) */
+/* Gallery: 1 big (left), 2 medium stacked (right), 5 small (bottom row). Row heights by percentage. */
 .gallery_layout {
   display: grid;
   grid-template-columns: 1.25fr 1.25fr 1.25fr 0.85fr 0.85fr;
-  grid-template-rows: 280px 280px 100px;
+  /* Top two rows ~80%, bottom row ~20% (like reference crop) */
+  grid-template-rows: 1fr 1fr 0.75fr;
+  aspect-ratio: 1400 / 668;
+  width: 100%;
+  max-width: 1400px;
   gap: 8px;
   margin-top: 1.5rem;
-  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,7 +59,7 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
-  min-height: 320px;
+  min-height: 0;
 }
 
 .gallery_medium_top {
@@ -264,7 +267,7 @@
   text-align: center;
 }
 
-/* Booking.com link */
+/* Booking links */
 .booking_section {
   margin-top: 3rem;
   max-width: 800px;
@@ -273,6 +276,14 @@
   text-align: center;
   /* Keep section visible below 100px fixed menu when jumping to #booking */
   scroll-margin-top: 100px;
+}
+
+.booking_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .booking_link {
@@ -291,6 +302,22 @@
   color: #fff;
 }
 
+.booking_link_trip {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #e85d04;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.booking_link_trip:hover {
+  background: #dc2f02;
+  color: #fff;
+}
+
 .map_container {
   margin-top: 2rem;
   width: 100%;
@@ -306,15 +333,56 @@
   border: none;
 }
 
+/* Tablet: wrap to 2 columns so images don’t get too narrow; height from content */
+@media (max-width: 992px) {
+  .gallery_layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    aspect-ratio: auto;
+    gap: 8px;
+  }
+
+  .gallery_big {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 16 / 10;
+    min-height: 200px;
+  }
+
+  .gallery_medium_top,
+  .gallery_medium_bottom {
+    grid-column: span 1;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 140px;
+  }
+
+  .gallery_small {
+    grid-row: auto;
+    grid-column: span 1;
+    aspect-ratio: 4 / 3;
+    min-height: 100px;
+  }
+
+  .gallery_layout .gallery_small:nth-child(4),
+  .gallery_layout .gallery_small:nth-child(5),
+  .gallery_layout .gallery_small:nth-child(6),
+  .gallery_layout .gallery_small:nth-child(7),
+  .gallery_layout .gallery_small:nth-child(8) {
+    grid-column: span 1;
+  }
+}
+
 @media (max-width: 768px) {
   .gallery_layout {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    aspect-ratio: auto;
     gap: 6px;
   }
 
   .gallery_big {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
     grid-row: auto;
     aspect-ratio: 16 / 10;
     min-height: 180px;

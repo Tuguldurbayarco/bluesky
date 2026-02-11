@@ -3,7 +3,7 @@ const nextConfig = {
     // Only use static export for production builds
     ...(process.env.NODE_ENV === 'production' && {
         output: "export",
-        distDir: 'out',
+        distDir: 'public_html',
         trailingSlash: true,
     }),
     // Add production optimizations

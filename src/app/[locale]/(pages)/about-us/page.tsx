@@ -20,7 +20,11 @@ const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <div className='visibility_area'>
         <div style={{justifyContent: "center", textAlign: "center"}}>
-          <h2 className="pageTitle" style={{marginTop: '8rem', marginBottom: '5rem', fontWeight: 'bold'}}>{t("AboutUs.sectionTitle")}</h2>
+          <h2 className="pageTitle" style={{marginTop: '8rem', marginBottom: '5rem', fontWeight: 'bold'}}>
+            <span className={styles.section_title_red}>{t("AboutUs.sectionTitleEternal")}</span>
+            <span className={styles.section_title_blue}>{t("AboutUs.sectionTitleSkyTour")}</span>
+            <span className={styles.section_title_black}>{t("AboutUs.sectionTitleLLC")}</span>
+          </h2>
           <div className={styles.about_us_content}>
             <p className="pageDescription">{t("AboutUs.paragraph1")}</p>
             <p className="pageDescription">{t("AboutUs.paragraph2")}</p>

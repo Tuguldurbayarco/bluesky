@@ -93,11 +93,12 @@
 
 .tour_card_overlay {
   position: absolute;
-  bottom: 10px;
+  bottom: 1px;
   left: 0;
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   padding: 1.5rem 1rem 1rem;
+  padding-bottom: 33px;
   display: flex;
   align-items: flex-end;
   justify-content: center;

@@ -754,16 +754,19 @@
     "classicTours": {
       "city": {
         "title": "CITY TOUR",
+        "cardLabel": "CITY",
         "duration": "2 days 1 night",
         "description": "A city tour of Mongolia, particularly focusing on Ulaanbaatar, offers visitors a glimpse into the country's rich history, culture, and modern life."
       },
       "gobi": {
         "title": "GOBI TOUR",
+        "cardLabel": "GOBI",
         "duration": "7 days 6 nights",
         "description": "A tour of the Gobi Desert in Mongolia promises an unforgettable adventure through one of the world's most iconic and remote landscapes."
       },
       "central": {
         "title": "CENTRAL TOUR",
+        "cardLabel": "CENTRAL",
         "duration": "5 days 4 nights",
         "description": "This central tour of Mongolia provides a comprehensive overview of the country's cultural heritage, historical landmarks, and natural beauty, offering travelers a memorable and immersive experience in the heart of Mongolia."
       },
@@ -771,6 +774,12 @@
         "title": "GOBI KHANGAI",
         "duration": "14 days 13 nights",
         "description": "Getting from one province to another involves days of driving over some of the roughest terrain on the planet, often across vast stretches of empty space. Sometimes, the only company you will have on the road is the herds of horses, yaks and sheep found grazing on the plains. Other times, its vultures seen circling above. While the landlocked country is mostly covered by steppes, you also get to see marvels such as lakes, canyons, sand dunes, and cliffs along the way."
+      },
+      "zavkhan": {
+        "title": "ZAVKHAN TOUR",
+        "cardLabel": "ZAVKHAN",
+        "duration": "8 days 7 nights",
+        "description": "Zavkhan is one of Mongolia's most remote and undiscovered provinces in the west, with rugged landscapes linking the Gobi and the Khangai Mountains. Explore sacred peaks, crystal-clear lakes and rivers, sand dunes, and nomadic life in this unforgettable journey."
       },
       "khuvsgul1": {
         "title": "KHUVSGUL LAKE TOUR 1 (Flight)",
@@ -799,12 +808,12 @@
       },
       "khuvsgulTaiga6Days": {
         "title": "KHUVSGUL-TAIGA TOUR",
-        "duration": "6 days 7 nights",
+        "duration": "7 days 6 nights",
         "description": "Experience the pristine beauty of northern Mongolia on this winter journey through Khuvsgul Province and the remote Taiga region. Discover the unique culture of the Tsaatan reindeer herders, explore the stunning Khuvsgul Lake, and immerse yourself in Mongolia's untouched wilderness."
       },
       "khuvsgulTaiga5Days": {
         "title": "KHUVSGUL-TAIGA TOUR",
-        "duration": "5 days 6 nights",
+        "duration": "6 days 5 nights",
         "description": "A shorter winter journey through Khuvsgul Province and the remote Taiga region. Experience the unique culture of the Tsaatan reindeer herders and explore the pristine beauty of northern Mongolia's wilderness."
       }
     },
@@ -936,6 +945,9 @@
   "AboutUs": {
     "pageTitle": "About Us",
     "sectionTitle": "Eternal Sky Tour LLC",
+    "sectionTitleEternal": "Eternal",
+    "sectionTitleSkyTour": " Sky Tour",
+    "sectionTitleLLC": " LLC",
     "paragraph1": "Welcome to Eternal Sky Tour, your gateway to the enchanting landscapes and rich cultural tapestry of Mongolia. Nestled amidst the vast expanses of the Central Asian steppes, we are a premier travel agency dedicated to crafting unforgettable journeys through this land of eternal blue skies.",
     "paragraph2": "At Eternal Sky Tour, we believe that every traveler deserves an authentic and immersive experience. With our expert knowledge and passion for Mongolia, we curate bespoke itineraries that showcase the diverse wonders of this captivating country. From the rugged beauty of the Altai Mountains to the nomadic traditions of the Gobi Desert, our tours offer a glimpse into the heart and soul of Mongolia.",
     "paragraph3": "Whether you're seeking adventure in the great outdoors, cultural encounters with nomadic tribes, or a tranquil retreat amidst nature, we have the perfect itinerary for you. Our team of experienced guides and local experts are committed to ensuring that your journey is not only memorable but also deeply enriching.",
@@ -978,7 +990,9 @@
     "room5Name": "Bed in 4-Bed Dormitory Room",
     "room5Bed": "1 bunk bed",
     "bookingLinkText": "Book on Booking.com",
-    "bookingLinkAria": "Book Eternal Sky Tour & Guest house on Booking.com (opens in new tab)"
+    "bookingLinkAria": "Book Eternal Sky Tour & Guest house on Booking.com (opens in new tab)",
+    "tripLinkText": "Book on Trip.com",
+    "tripLinkAria": "Book Eternal Sky Tour & Guest house on Trip.com (opens in new tab)"
   },
   "Footer": {
     "contactTitle": "CONTACT",
@@ -1002,6 +1016,7 @@
     "mail": "E-mail:",
     "email1": "eternalskytour@gmail.com",
     "email2": "eternalskytour@naver.com",
+    "email3": "info@eternalskytour.com",
     "title2": "Travel Kit",
     "links": [
       {
@@ -1195,6 +1210,27 @@
     "schedule15-5": "19:00 - Farewell dinner",
     "button": "Go to Booking"
   },
+  "Zavkhan": {
+    "picture_text": "ZAVKHAN TOUR - 8 days 7 nights",
+    "description": "Zavkhan is one of Mongolia's most remote and undiscovered provinces in the west, with rugged landscapes that link the Gobi Desert with the Khangai Mountains. Explore sacred peaks like Otgontenger, crystal-clear lakes and rivers, vast sand dunes, and authentic nomadic life on this unforgettable journey through western Mongolia.",
+    "day1": "Day 1. Kharkhorin – Erdene Zuu Monastery",
+    "day1text": "Kharkhorin was the capital of the Mongol Empire under Chinggis Khaan. Erdene Zuu Monastery, built in 1585 on the ruins of the ancient capital, is one of Mongolia's oldest and most important Buddhist monasteries, surrounded by 108 stupas.",
+    "day2": "Day 2. Terkhiin Tsagaan Nuur (White Lake)",
+    "day2text": "Terkhiin Tsagaan Nuur is a stunning volcanic lake formed when lava from Khorgo volcano blocked the Terkh River. At 2,060 m altitude, the lake is 16 km long and is surrounded by pristine nature and the Khangai range.",
+    "day3": "Day 3. Khar Nuur (Black Lake)",
+    "day3text": "Khar Nuur, nicknamed the \"Pearl of Khangai\", is one of the beautiful lakes in the Zavkhan region. The area offers serene landscapes and a chance to experience the remote, untouched nature of western Mongolia.",
+    "day4": "Day 4. Mukhart",
+    "day4text": "Mukhart River creates a unique oasis in the Bor Khyar sand dunes of Zavkhan. This area showcases the diverse ecosystems of western Mongolia, where desert and river landscapes meet.",
+    "day5": "Day 5. Tosontsengel",
+    "day5text": "Tosontsengel is a sum (district) in Zavkhan province, gateway to the region's mountain passes and valleys. The area is known for its traditional herding life and access to the Khangai mountain range.",
+    "day6": "Day 6. Tsenkher Hot Spring",
+    "day6text": "Tsenkher Hot Spring is a popular natural hot spring located in the Arkhangai Province of central Mongolia. Renowned for its mineral-rich waters and therapeutic properties, Tsenkher Hot Spring is a favorite destination for locals and tourists seeking relaxation and rejuvenation amidst the stunning Mongolian landscape.",
+    "day7": "Day 7. Elsen Tasarkhai (Mini Gobi)",
+    "day7text": "Elsen Tasarkhai, often called the \"Mini Gobi\", is a unique combination of sand dunes and green steppe. It offers a taste of the Gobi landscape closer to Ulaanbaatar, with opportunities for camel riding and hiking.",
+    "day8": "Day 8. Back to Ulaanbaatar",
+    "day8text": "Return to the capital with memories of Zavkhan's remote lakes, rivers, and nomadic culture. Ulaanbaatar is Mongolia's political, economic, and cultural center, with museums, temples, and modern city life.",
+    "button": "Go to Booking"
+  },
   "City": {
     "picture_text": "CITY TOUR - 2 days 1 night",
     "description": "A city tour of Mongolia, particularly focusing on Ulaanbaatar, offers visitors a glimpse into the country's rich history, culture, and modern life.",
@@ -1256,6 +1292,7 @@
   },
   "KhuvsgulSelection": {
     "title": "KHUVSGUL LAKE TOURS",
+    "cardLabel": "KHUVSGUL",
     "description": "Choose your preferred way to experience Khuvsgul Lake - Mongolia's Blue Pearl. Select between a quick flight tour or an extended road journey through Mongolia's stunning landscapes.",
     "tour1_name": "Khuvsgul Lake 1 (Flight)",
     "tour1_description": "A three-day tour of Khuvsgul Lake in northern Mongolia allows you to experience the breathtaking beauty of one of the largest and deepest freshwater lakes in Asia.",
@@ -1507,8 +1544,8 @@
     "day3text": "Hongoriin Els, famously known as the \"Singing Dunes,\" are among Mongolia's largest and most impressive sand formations. Rising up to 300 meters high and stretching for miles across the Gobi Desert, these vast dunes create a breathtaking landscape. When the wind blows, the sands produce a unique humming sound, adding a magical touch to this natural wonder. Visitors can explore the dunes by camel or on foot, making it a must-see destination in Mongolia.",
     "day4": "Day 4. Bayanzag",
     "day4text": "Bayanzag, also known as the Flaming Cliffs, is a striking red sandstone formation stretching 5 km wide and about 8 km long. Its fiery hues glow brilliantly at sunrise and sunset. In 1922, American paleontologist Roy Chapman Andrews made groundbreaking discoveries here, unearthing dinosaur bones and eggs that revealed ancient life hidden within Mongolia's desert sands.",
-    "day5": "Day 5. Baga Gazriin Chuluu",
-    "day5text": "Baga Gazriin Chuluu is a rugged granite massif rising dramatically from the surrounding steppe in southern Mongolia. Known for its striking rock formations, caves, and ancient petroglyphs, it offers a unique blend of natural beauty and cultural history. There is much to explore, including the nearby Poplar Rock Valley, known locally as Sudutyn. The area is popular for hiking, rock climbing, and discovering peaceful wilderness.",
+    "day5": "Day 5. Dalanzadgad",
+    "day5text": "Dalanzadgad is the administrative center of Ömnögovi (South Gobi) Province and the main gateway to the Gobi Desert. This small desert town offers a chance to rest, resupply, and experience local Gobi life before the journey back to Ulaanbaatar. Visitors can explore the town's markets, sample local cuisine, and enjoy the stark beauty of the surrounding desert landscape.",
     "day6": "Day 6. Back to Ulaanbaatar",
     "day6text": "We'll drive back to Ulaanbaatar, stopping to visit the impressive Chinggis Khan Equestrian Statue along the way. Depending on traffic, we expect to arrive in the city right around lunchtime for a meal. This marks the end of the tour, leaving the rest of the day free to relax or explore. In the evening, we'll gather for a farewell dinner to celebrate the journey.",
     "button": "Go to Booking"
@@ -1524,7 +1561,7 @@
     "day3text": "Terkh White lake is located 648 km from Ulaanbaatar city in Arkhangai province. Fresh water and volcanogenic Terkh White lake is 16 km long and it runs from the west to the east, and 6km wide from north to south. This lake was created as a result of a 4050 cm thick basaltic blockage of Terkhiin River, following the eruption of Khorhiintogoo and some other volcanoes.",
     "day4": "Day 4. Shine-ider",
     "day4text": "Shine-ider is a district in the Zavkhan region of western Mongolia. The area features scenic valleys, traditional nomadic herding life, and access to the natural beauty of the Khangai mountain range and surrounding landscapes.",
-    "day5": "Day 5. Khuvsgul Lake",
+    "day5": "Day 5. Khuvsgul Lake (Khatgal, Jankhai)",
     "day5text": "Khuvsgul is a land of thick forests, rushing rivers, sparkling lakes and rugged mountains. It's Mongolia's most beautiful province and seemingly every river bend or lake cove offers new and wonderful surprises.",
     "day6": "Day 6. Bulgan Province",
     "day6text": "With a population of 13,000 at an elevation of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khovsgol Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers.",
@@ -1533,17 +1570,17 @@
     "button": "Go to Booking"
   },
   "KhuvsgulTaiga6Days": {
-    "picture_text": "KHUVSGUL-TAIGA TOUR - 6 days 7 nights",
+    "picture_text": "KHUVSGUL-TAIGA TOUR - 7 days 6 nights",
     "description": "Experience the pristine beauty of northern Mongolia on this winter journey through Khuvsgul Province and the remote Taiga region. Discover the unique culture of the Tsaatan reindeer herders, explore the stunning Khuvsgul Lake, and immerse yourself in Mongolia's untouched wilderness.",
     "day1": "Day 1. Bulgan Province",
     "day1text": "With a population of 13,000 at an elevation of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khovsgol Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers.",
-    "day2": "Day 2. Ulaanbaatar",
-    "day2text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
+    "day2": "Day 2. Ulaan-Uul",
+    "day2text": "Ulaan-Uul is a sum (district) in Khuvsgul Province, set in the northern Mongolian landscape. It serves as a stop on the way into the Taiga region, offering a glimpse of rural life and the vast wilderness before the journey to Tsagaan Nuur and the Tsaatan communities.",
     "day3": "Day 3. Tsagaan Nuur - Taiga",
     "day3text": "Tsagaan Nuur, meaning White Lake, is located in the remote Taiga region of northern Mongolia. This pristine area is home to the Tsaatan people, nomadic reindeer herders who have preserved their unique way of life for centuries. The Tsaatan are among the last remaining nomadic reindeer herders in the world, living deep in the remote forests near Lake Khuvsgul. They speak Tuvan language among themselves and practice shamanism. Their main livelihood is herding reindeer and hunting, maintaining a deep connection with nature and preserving traditions passed down through generations.",
     "day4": "Day 4. Renchinlkhumbe - Tsaatan Community",
     "day4text": "Renchinlkhumbe is a district in Khuvsgul Province that serves as a gateway to the Taiga region and the Tsaatan communities. Here, you'll have the opportunity to meet the Tsaatan people, learn about their customs, experience their traditional way of life, and even ride a reindeer through Mongolia's untouched wilderness. This is a rare opportunity to connect with one of the world's most unique cultures.",
-    "day5": "Day 5. Khuvsgul Lake",
+    "day5": "Day 5. Khuvsgul Lake (Khatgal, Jankhai)",
     "day5text": "Khuvsgul is a land of thick forests, rushing rivers, sparkling lakes and rugged mountains. It's Mongolia's most beautiful province and seemingly every river bend or lake cove offers new and wonderful surprises. Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth.",
     "day6": "Day 6. Erdenet",
     "day6text": "Erdenet is Mongolia's second-largest city, located in the northern part of the country. Known for its copper mining industry, Erdenet offers a glimpse into modern Mongolia while serving as a convenient stopover on the journey back to the capital.",
@@ -1552,12 +1589,12 @@
     "button": "Go to Booking"
   },
   "KhuvsgulTaiga5Days": {
-    "picture_text": "KHUVSGUL-TAIGA TOUR - 5 days 6 nights",
+    "picture_text": "KHUVSGUL-TAIGA TOUR - 6 days 5 nights",
     "description": "A shorter winter journey through Khuvsgul Province and the remote Taiga region. Experience the unique culture of the Tsaatan reindeer herders and explore the pristine beauty of northern Mongolia's wilderness.",
     "day1": "Day 1. Murun",
     "day1text": "Depart from Ulaanbaatar by flight to Murun, the capital of Khuvsgul Province. Upon arrival in Murun, meet your guide and driver and begin your journey into the northern wilderness of Mongolia.",
-    "day2": "Day 2. Ulaanbaatar",
-    "day2text": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park.",
+    "day2": "Day 2. Ulaan-Uul",
+    "day2text": "Ulaan-Uul is a sum (district) in Khuvsgul Province, set in the northern Mongolian landscape. It serves as a stop on the way into the Taiga region, offering a glimpse of rural life and the vast wilderness before the journey to Tsagaan Nuur and the Tsaatan communities.",
     "day3": "Day 3. Tsagaan Nuur - Taiga",
     "day3text": "Tsagaan Nuur, meaning White Lake, is located in the remote Taiga region of northern Mongolia. This pristine area is home to the Tsaatan people, nomadic reindeer herders who have preserved their unique way of life for centuries. The Tsaatan are among the last remaining nomadic reindeer herders in the world, living deep in the remote forests near Lake Khuvsgul. They speak Tuvan language among themselves and practice shamanism. Their main livelihood is herding reindeer and hunting, maintaining a deep connection with nature and preserving traditions passed down through generations.",
     "day4": "Day 4. Renchinlkhumbe - Tsaatan Community",

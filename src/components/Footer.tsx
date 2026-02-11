@@ -40,7 +40,8 @@ const Footer = ({locale}: {locale: Locale}) => {
                 </svg>
                 <div className={styles.footer_contact_text}>
                   {t('Footer.email1')}<br />
-                  {t('Footer.email2')}
+                  {t('Footer.email2')}<br />
+                  {t('Footer.email3')}
                 </div>
               </div>
               <div className={styles.footer_contact_item}>

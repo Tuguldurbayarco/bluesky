@@ -91,7 +91,7 @@
   padding: 10px 20px;
   color: #000;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: background-color 0.3s ease;
   white-space: nowrap;
 }
@@ -413,7 +413,7 @@
     display: block;
     width: 100%;
     padding: 15px 12% 15px 70px !important;
-    font-size: 15px;
+    font-size: 17px;
     border-bottom: none;
     color: #555;
     box-sizing: border-box;

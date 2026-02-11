@@ -19,7 +19,7 @@ const BASE_PATH = "/mail-service"; // Base path for subdirectory deployment
 const SMTP_CONFIG = {
   host: "bizmail6.itools.mn",
   port: 587,
-  secure: false,
+  secure: true,
   auth: {
     user: "info@eternalskytour.com",
     pass: process.env.SMTP_PASSWORD,
@@ -84,6 +84,12 @@ app.post(BASE_PATH + "/send-email", async (req, res) => {
     const { to, html, subject, from } = req.body;
 
     // Basic validation
+    if (!to || typeof to !== "string" || !to.trim()) {
+      return res.status(400).json({
+        error: "Recipient (to) is required",
+        status: "error",
+      });
+    }
     if (!subject || !html) {
       return res.status(400).json({
         error: "Subject and message are required",
@@ -94,10 +100,10 @@ app.post(BASE_PATH + "/send-email", async (req, res) => {
     // Email content: use authenticated user as from (ignore body.from for security)
     const mailOptions = {
       from: SMTP_CONFIG.auth.user,
-      to: to,
-      subject,
-      html,
-      text: html.replace(/<[^>]*>/g, ""),
+      to: to.trim(),
+      subject: String(subject).trim(),
+      html: String(html),
+      text: String(html).replace(/<[^>]*>/g, ""),
     };
 
     // Send email
@@ -110,7 +116,14 @@ app.post(BASE_PATH + "/send-email", async (req, res) => {
       timestamp: new Date().toISOString(),
     });
   } catch (error) {
-    console.error("Email sending error:", error);
+    // Log full error for debugging (SMTP often puts details in error.response)
+    console.error("Email sending error:", error.message);
+    if (error.response) {
+      console.error("SMTP response:", error.response);
+    }
+    if (error.responseCode) {
+      console.error("SMTP response code:", error.responseCode);
+    }
     res.status(500).json({
       error: "Failed to send email",
       status: "error",

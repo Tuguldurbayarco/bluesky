@@ -108,8 +108,9 @@ export const TOURS_LINK = [
   {id: 2, href: '/tours/gobi', src: "/tours/gobi.jpg", tourKey: "gobi"},
   {id: 3, href: '/tours/central', src: "/tours/central.jpg", tourKey: "central"},
   {id: 4, href: '/tours/khangai', src: "/tours/tour-khangai/day4.jpg", tourKey: "khangai"},
-  {id: 5, href: '/tours/khuvsgul1', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul1"},
-  {id: 6, href: '/tours/khuvsgul2', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul2"},
+  {id: 5, href: '/tours/zavkhan', src: "/tours/tour-zavkhan/day4.jpg", tourKey: "zavkhan"},
+  {id: 6, href: '/tours/khuvsgul1', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul1"},
+  {id: 7, href: '/tours/khuvsgul2', src: "/tours/tour-khuvsgul1/day1.png", tourKey: "khuvsgul2"},
 ]
 
 export const INDIVIDUAL = [

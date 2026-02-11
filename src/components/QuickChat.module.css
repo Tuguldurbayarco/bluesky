@@ -1,0 +1,35 @@
+/* Fixed quick chat circle at bottom-right – opens WhatsApp in new tab. Uses site main blue. */
+.quick_chat {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  border: 1px solid #25d366; /* WhatsApp green */
+  background: white; /* white gap between image and green border */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(34, 121, 199, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.quick_chat:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+}
+
+.quick_chat_logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-main, #2279c7); /* blue circle behind logo inside white gap */
+}

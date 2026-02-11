@@ -75,9 +75,24 @@
 
 .certificates_title_blue {
   color: #2175c1; /* Sky Tour - pleasant blue */
+  font-weight: bold;
 }
 
 .certificates_title_gray {
   display: block;
-  color: #6b7280;
+  color: black;
+  font-weight: bold;
+}
+
+/* Page title parts - same colors as home (Eternal / Sky Tour / LLC) */
+.section_title_red {
+  color: #d1101a; /* Eternal - same as home welcome */
+}
+
+.section_title_blue {
+  color: #2175c1; /* Sky Tour - same as home welcome */
+}
+
+.section_title_black {
+  color: black; /* LLC */
 }

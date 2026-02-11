@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp index.html out/",
-    "build:zip": "npm run build && cp index.html out/ && zip -r out.zip out/",
-    "build:lzip": "npm run build && cp index.html out/ && zip -r out.zip out/ -x '*.mp4' -x '*.webm' -x '*.mov' -x '*.avi' -x '*.mkv' -x '*.png' -x '*.jpeg' -x '*.jpg' -x '*.webp'",
+    "build": "rm -rf public_html public_html.zip && next build && cp index.html public_html/",
+    "build:zip": "rm -rf public_html public_html.zip && npm run build && zip -r public_html.zip public_html/",
+    "build:lzip": "rm -rf public_html public_html.zip && npm run build && zip -r public_html.zip public_html/ -x '*.mp4' -x '*.webm' -x '*.mov' -x '*.avi' -x '*.mkv' -x '*.png' -x '*.jpeg' -x '*.jpg' -x '*.webp'",
     "start": "NODE_ENV=production next start",
     "lint": "next lint"
   },

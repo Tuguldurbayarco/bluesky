@@ -63,15 +63,26 @@ const GuestHouse = ({ params: { locale } }: { params: { locale: string } }) => {
           ]}
         />
         <section id="booking" className={styles.booking_section}>
-          <a
-            href="https://www.booking.com/hotel/mn/nomuun-town.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.booking_link}
-            aria-label={t("GuestHouse.bookingLinkAria")}
-          >
-            {t("GuestHouse.bookingLinkText")}
-          </a>
+          <div className={styles.booking_links}>
+            <a
+              href="https://www.booking.com/hotel/mn/nomuun-town.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.booking_link}
+              aria-label={t("GuestHouse.bookingLinkAria")}
+            >
+              {t("GuestHouse.bookingLinkText")}
+            </a>
+            <a
+              href="https://www.trip.com/hotels/detail/?cityEnName=Ulaanbaatar&cityId=483&hotelId=130786269&checkIn=2026-02-09&checkOut=2026-02-10&adult=2&children=0&crn=1&ages=&cu="
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.booking_link_trip}
+              aria-label={t("GuestHouse.tripLinkAria")}
+            >
+              {t("GuestHouse.tripLinkText")}
+            </a>
+          </div>
           <div className={styles.map_container}>
             <iframe
               src="https://www.google.com/maps?q=Eternal+Sky+Tour+%26+Guesthouse,+Ulaanbaatar&hl=en&z=17&output=embed"

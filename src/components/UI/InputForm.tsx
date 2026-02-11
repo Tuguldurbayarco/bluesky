@@ -101,11 +101,15 @@ const InputForm = ({ ...props }: any) => {
       ]);
 
       if (!businessEmailResponse.ok) {
-        throw new Error("Failed to send business email");
+        const errBody = await businessEmailResponse.json().catch(() => ({}));
+        const details = (errBody as { details?: string })?.details;
+        throw new Error(details ? `Failed to send business email: ${details}` : "Failed to send business email");
       }
 
       if (!customerEmailResponse.ok) {
-        throw new Error("Failed to send confirmation email");
+        const errBody = await customerEmailResponse.json().catch(() => ({}));
+        const details = (errBody as { details?: string })?.details;
+        throw new Error(details ? `Failed to send confirmation email: ${details}` : "Failed to send confirmation email");
       }
 
       alert("Booking form submitted successfully!");

@@ -1,5 +1,6 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
+import QuickChat from "@/components/QuickChat";
 import { defaultLocale, isValidLocale, type Locale } from "@/lib/i18n";
 
 // Generate static params for all supported locales
@@ -23,6 +24,7 @@ export default function LocaleLayout({
     <>
       {children}
       <Footer locale={validLocale} />
+      <QuickChat />
     </>
   );
 }
