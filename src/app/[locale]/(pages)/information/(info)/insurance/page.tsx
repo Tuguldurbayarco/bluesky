@@ -20,16 +20,6 @@ const Insurance = ({params: {locale}}: {params: {locale: string}}) => {
             <p>
               {t('Information.insurance.pagePara2')}
             </p>
-            <br/>
-            <p>
-              {t('Information.insurance.pagePara3Part1')}
-              <a href="https://www.worldnomads.com/Turnstile/AffiliateLink?partnerCode=DM43994&source=&utm_source=DM43994&utm_content=link&path=https://www.worldnomads.com/travel-insurance/" target="_blank" rel="noopener noreferrer" style={{color: '#65deaa'}}>extend and claim online</a>
-              {t('Information.insurance.pagePara3Part2')}
-              <a href="https://www.worldnomads.com/Turnstile/AffiliateLink?partnerCode=DM43994&source=&utm_source=DM43994&utm_content=link&path=https://www.worldnomads.com" target="_blank" rel="noopener noreferrer" style={{color: '#65deaa'}}>WorldNomads.com</a>
-              {t('Information.insurance.pagePara3Part3')}
-              <a href="https://www.worldnomads.com/Turnstile/AffiliateLink?partnerCode=DM43994&source=&utm_source=DM43994&utm_content=link&path=https://www.worldnomads.com/adventure-travel-insurance" target="_blank" rel="noopener noreferrer" style={{color: '#65deaa'}}>adventure sports and activities</a>
-              {t('Information.insurance.pagePara3Part4')}
-            </p>
           </div>
         </div>
       </div>

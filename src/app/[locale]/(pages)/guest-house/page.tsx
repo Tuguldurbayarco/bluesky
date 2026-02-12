@@ -49,7 +49,6 @@ const GuestHouse = ({ params: { locale } }: { params: { locale: string } }) => {
             t("GuestHouse.facilityFreeParking"),
             t("GuestHouse.facilityFamilyRooms"),
             t("GuestHouse.facilityNonSmoking"),
-            t("GuestHouse.facilityBar"),
           ]}
         />
         <GuestHouseRoomTypes

@@ -186,7 +186,15 @@ const Navbar = () => {
         <nav className={styles.navbar} style={{position: 'fixed', top: 0, width: '100%'}}>
           <div className={styles.navbar_content}>
             <Link href={`/${validLocale}/`} className={styles.logo}>
-              <img src="/logo.png" alt="logo" height='auto'/>
+              <img
+                src="/brand/since.jpg"
+                alt="logo"
+                height="auto"
+                onError={(e) => {
+                  // Fallback to the previous logo if the new asset fails to load.
+                  e.currentTarget.src = "/logo.png";
+                }}
+              />
             </Link>
             <div className={`${styles.header_menu} ${isMenuOpen ? styles.open : ''}`}>
               <ul className={styles.navbar_menu_container}>

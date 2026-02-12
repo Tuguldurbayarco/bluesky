@@ -54,7 +54,7 @@ export default async function Index({ params: { locale } }: { params: { locale: 
         </p>
       </div>
       <TourCards locale={validLocale} />
-      <GroupToursHome locale={validLocale} sectionTitle={t("Tours.group_tours")} tours={groupTours} />
+      <GroupToursHome locale={validLocale} sectionTitle={`${t("Tours.group_tours")} (${t("Tours.popular_tours")})`} tours={groupTours} />
       <GallerySection locale={validLocale} images={galleryPreviewImages} />
       <TravelTools locale={validLocale} />
     </main>

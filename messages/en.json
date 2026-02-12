@@ -536,10 +536,6 @@
       "title": "Travel Insurance",
       "pagePara1": "Travel insurance for independent travelers and intrepid families. You'd rather not think about all of the things that might go wrong on your trip, but these things can and do happen.",
       "pagePara2": "World Nomads travel insurance has been designed by travelers for travelers, to cover your trip essentials. Even if you run out of travel insurance or leave without it, World Nomads can cover you. We don't just keep you and your family protected, with us, you'll travel smarter and safer.",
-      "pagePara3Part1": "You can buy, ",
-      "pagePara3Part2": ", even after you've left home. Travel insurance from ",
-      "pagePara3Part3": " is available to people from over 150 countries. It's designed for adventurous travelers with cover for overseas medical, evacuation, baggage and a range of ",
-      "pagePara3Part4": ".",
       "text1": "At Saibai Tour, we understand that unexpected situations can happen while traveling. Mongolia is one of the most sparsely populated countries in the world, with vast distances between towns and limited access to emergency services in remote areas.",
       "text2": "That’s why we highly recommend all travelers purchase comprehensive travel insurance that includes medical evacuation (medivac) and other relevant coverage for your trip.",
       "text3": "Having the right insurance gives you peace of mind and ensures you're protected in case of medical emergencies, trip interruptions, lost baggage, or delays.",
@@ -703,13 +699,16 @@
     "individual_title": "INDIVIDUAL TOURS",
     "subtitle": "TOURS & TRIPS",
     "group_tours": "Group Tours",
+    "popular_tours": "Popular Tours",
     "classic_tours": "Classic Tours",
-    "normal_tours": "Normal Tours",
+    "normal_tours": "Standard Tours",
+    "normal_tours_title": "Welcome to our Standard Tours!",
+    "normal_tours_description": "Our tour products are offered as Luxury Tours and Standard Tours depending on your travel style and budget, and every itinerary is tailor-made around the regions you want to visit and your preferred schedule. While the guide's experience, vehicle, accommodation, meals, and level of care vary by tour grade, we can align the core experiences and destinations to match what you want most. Standard Tours are designed to let you fully enjoy Mongolia's nature and culture at a reasonable cost. They include experienced local guides, safe tour vehicles, accommodation at tourist camps, traditional gers, or camping sites suited to your schedule, and basic meals, along with essential guidance and management throughout your journey. This is a tour that lets you experience Mongolia's charm in a balanced way while keeping costs manageable. Regardless of grade, you can also create a Mix Tour by freely combining accommodation, vehicles, meals, and experience programs, and we'll tailor everything flexibly to your travel style and priorities. Build your own custom tour around your desired destinations in Mongolia—start planning your personalized journey with us today.",
     "destinations": "Destinations",
     "group_tours_title": "Welcome to our Group Tours!",
     "group_tours_description": "Our Group Tours are designed for small groups of up to 8 travelers, offering a well-balanced, all-inclusive experience with fixed start dates and per-person pricing. Airport transfers, accommodation, meals, transportation, and guiding are all included—no hidden costs. Explore Mongolia's highlights such as the Gobi Desert, alpine lakes, nomadic culture, trekking routes, horseback adventures, and the Altai Mountains. Travel comfortably, meet like-minded explorers, and experience Mongolia's most iconic regions with expert local guides. Secure your place now and come explore Mongolia with us.",
     "classic_tours_title": "Welcome to our Tours!",
-    "classic_tours_description": "Our Classic Tours are designed for travelers who want to experience the very best of Mongolia in a balanced and comfortable way. These itineraries cover iconic regions such as the Gobi Desert, Khangai Mountains, Central Mongolia, Lake Khuvsgul, Taiga, and Altai Tavan Bogd. Each tour can be fully customized based on your travel dates, group size, interests, and preferred comfort level. Please contact us for a personalized itinerary and a detailed price estimate.",
+    "classic_tours_description": "Our tour products are offered as Luxury Tours and Standard Tours depending on your travel style and budget, and every itinerary is tailor-made around the regions you want to visit and your preferred schedule. While the guide’s experience, vehicle, accommodation, meals, and level of care vary by tour grade, we can align the core experiences and destinations to match what you want most. Luxury Tours are designed for travelers who want a more comfortable and secure journey, featuring highly experienced professional guides and premium vehicles suitable for long-distance travel. Accommodation can include top-tier tourist camps, hotels, or premium gers, with hygienic, quality meals and attentive pre-trip planning and support. Throughout your journey, you can experience Mongolia in depth with comfort and elegance. Regardless of grade, you can also create a Mix Tour by freely combining accommodation, vehicles, meals, and experience programs, and we’ll tailor everything flexibly to your travel style and priorities. Build your own custom tour around your desired destinations in Mongolia—start planning your personalized journey with us today.",
     "destinations_title": "Welcome to our Destinations Tours!",
     "destinations_description": "Our Destination Tours focus on a specific region or travel theme, allowing for deeper exploration and more meaningful experiences. Similar to our Classic Tours, these journeys are fully customizable and can be tailored to your schedule, group size, and interests. Whether you are exploring the Altai Mountains, traveling on horseback, or visiting the land of the reindeer herders, these tours offer authentic and immersive adventures. Contact us for a customized plan and cost estimate.",
     "pricing_info": {
@@ -752,6 +751,7 @@
     "main_tour_desc": "Although Mongolia is largely covered in endless steppes, the journey also reveals stunning landscapes—lakes, canyons, sand dunes, and dramatic cliffs. Traveling from one province to another often means days of driving across some of the Earth’s roughest and most remote terrain. At times, your only companions are herds of horses and yaks grazing the open plains. At others, eagles circle silently overhead.",
     "read_more": "Read more",
     "book_now": "Book Now",
+    "popularLabel": "Popular",
     "classicTours": {
       "city": {
         "title": "CITY TOUR",
@@ -818,7 +818,6 @@
         "description": "A shorter winter journey through Khuvsgul Province and the remote Taiga region. Experience the unique culture of the Tsaatan reindeer herders and explore the pristine beauty of northern Mongolia's wilderness."
       }
     },
-    
     "altai": "ALTAI TAVAN BOGD TOUR",
     "altai_desc": "We invite you to discover the majestic mountains, breathtaking landscapes, and rich Kazakh culture of Altai Tavanbogd—the stunning rooftop of Mongolia.",
     "southNorthTour": {
@@ -978,7 +977,6 @@
     "facilityFreeParking": "Free parking",
     "facilityFamilyRooms": "Family rooms",
     "facilityNonSmoking": "Non-smoking rooms",
-    "facilityBar": "Bar",
     "roomTypeSectionTitle": "Room Type",
     "room1Name": "Bed in 8-Bed Dormitory Room",
     "room1Bed": "1 bunk bed",
@@ -1221,7 +1219,7 @@
     "day3": "Day 3. Khar Nuur (Black Lake)",
     "day3text": "Khar Nuur, nicknamed the \"Pearl of Khangai\", is one of the beautiful lakes in the Zavkhan region. The area offers serene landscapes and a chance to experience the remote, untouched nature of western Mongolia.",
     "day4": "Day 4. Mukhart",
-    "day4text": "Mukhart River creates a unique oasis in the Bor Khyar sand dunes of Zavkhan. This area showcases the diverse ecosystems of western Mongolia, where desert and river landscapes meet.",
+    "day4text": "A mysterious landscape where water springs from the sand in the middle of the desert.\nLocated 1,200km west of Ulaanbaatar. The river valley is lush with trees, and you can see a unique natural landscape with semicircular sand formations resembling an amphitheater. Undoubtedly one of the main attractions of Mongolia's vast steppe, the river itself creates a mysterious landscape with water flowing from the sand at the river bottom.",
     "day5": "Day 5. Tosontsengel",
     "day5text": "Tosontsengel is a sum (district) in Zavkhan province, gateway to the region's mountain passes and valleys. The area is known for its traditional herding life and access to the Khangai mountain range.",
     "day6": "Day 6. Tsenkher Hot Spring",

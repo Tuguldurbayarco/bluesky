@@ -19,7 +19,7 @@ const Gallery = async ({ params: { locale } }: { params: { locale: string } }) =
         <ScrollDownHint lightBackground />
       </div>
       <div className='visibility_area' style={{textAlign: "center"}}>
-        <h2 className="pageTitle" style={{marginTop: '8rem'}}>{t("Gallery.sectionTitle")}</h2>
+        <h2 className="pageTitle" style={{marginTop: '8rem', fontWeight: 'bold'}}>{t("Gallery.sectionTitle")}</h2>
         <p className="pageDescription" style={{marginBottom: '5rem'}}>
           {t("Gallery.pageDescription")}
         </p>

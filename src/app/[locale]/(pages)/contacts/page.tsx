@@ -36,8 +36,10 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href="tel:+97699902202" style={{textDecoration: "none"}}>+976 99902202<br /></a>
-              <a href="tel:+97680303997" style={{textDecoration: "none"}}>+976 80303997</a>
+              <a href={`tel:${t('Footer.phone2').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone2')} ({t('Footer.phoneLabelEnglish')})<br /></a>
+              <a href={`tel:${t('Footer.phone1').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone1')} ({t('Footer.phoneLabelKorea')})<br /></a>
+              <a href={`tel:${t('Footer.phone3').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone3')} ({t('Footer.phoneLabelKorea')})<br /></a>
+              <a href={`tel:${t('Footer.phone4').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone4')} (WhatsApp)</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -46,8 +48,9 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href="mailto:eternalskytour@gmail.com" style={{textDecoration: "none"}}>eternalskytour@gmail.com<br /></a>
-              <a href="mailto:eternalskytour@naver.com" style={{textDecoration: "none"}}>eternalskytour@naver.com</a>
+              <a href={`mailto:${t('Footer.email1')}`} style={{textDecoration: "none"}}>{t('Footer.email1')}<br /></a>
+              <a href={`mailto:${t('Footer.email2')}`} style={{textDecoration: "none"}}>{t('Footer.email2')}<br /></a>
+              <a href={`mailto:${t('Footer.email3')}`} style={{textDecoration: "none"}}>{t('Footer.email3')}</a>
             </div>
             <div style={{padding: "2%"}}>
               <img

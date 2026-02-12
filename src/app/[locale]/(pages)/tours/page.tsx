@@ -83,8 +83,8 @@ const Tours = ({ params: { locale } }: { params: { locale: string } }) => {
   const NormalToursContent = (
     <div>
       <div className={tabStyles.tab_intro}>
-        <p className={tabStyles.tab_intro_title}>{t('Tours.group_tours_title')}</p>
-        <p className={tabStyles.tab_intro_body}>{t('Tours.group_tours_description')}</p>
+        <p className={tabStyles.tab_intro_title}>{t('Tours.normal_tours_title')}</p>
+        <p className={tabStyles.tab_intro_body}>{t('Tours.normal_tours_description')}</p>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', marginTop: '2rem' }}>
         <SouthNorthTour

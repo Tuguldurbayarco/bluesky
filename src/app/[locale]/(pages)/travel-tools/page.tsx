@@ -31,7 +31,7 @@ const TravelTools = ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <div className='visibility_area'>
         <div className={styles.travel_tools_header} style={{textAlign: "center"}}>
-          <h2 className="pageTitle" style={{marginTop: '8rem'}}>{t("TravelTools.pageSubtitle")}</h2>
+          <h2 className="pageTitle" style={{marginTop: '8rem', fontWeight: 'bold'}}>{t("TravelTools.pageSubtitle")}</h2>
           <p className="pageDescription" style={{marginBottom: '5rem'}}>
             {t("TravelTools.pageDescription")}
           </p>

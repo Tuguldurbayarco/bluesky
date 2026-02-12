@@ -33,7 +33,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
         <div >
           <div style={{position: 'relative', marginTop: '2rem'}}>
             <img
-              src='/tours/tour-khuvsgul1/day1.png'
+              src='/tours/tour-khuvsgul1/huvsgul.jpg'
               alt='Lake Khuvsgul'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

@@ -18,7 +18,7 @@ const Events = ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <div className='visibility_area' style={{marginTop: "5%"}}>
         <div style={{justifyContent: "center", textAlign: "center", marginBottom: "4rem"}}>
-          <h2 className="pageTitle" style={{marginTop: '2rem', marginBottom: '2rem'}}>{t('Events.headerTitle')}</h2>
+          <h2 className="pageTitle" style={{marginTop: '2rem', marginBottom: '2rem', fontWeight: 'bold'}}>{t('Events.headerTitle')}</h2>
           <p className="pageDescription">
             {t('Events.headerDescription')}
           </p>

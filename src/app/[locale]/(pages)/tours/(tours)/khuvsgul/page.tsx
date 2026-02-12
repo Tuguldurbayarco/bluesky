@@ -20,7 +20,7 @@ const KhuvsgulSelection = ({params: {locale}}: {params: {locale: string}}) => {
       description: t('KhuvsgulSelection.tour1_description'),
       duration: t('KhuvsgulSelection.tour1_duration'),
       href: "/tours/khuvsgul1",
-      imageSrc: "/tours/tour-khuvsgul1/day1.png"
+      imageSrc: "/tours/tour-khuvsgul1/huvsgul.jpg"
     },
     {
       name: t('KhuvsgulSelection.tour2_name'),
