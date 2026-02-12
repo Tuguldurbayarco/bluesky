@@ -7,7 +7,7 @@ export default function QuickChat() {
   if (!whatsApp) return null;
 
   return (
-    <div className={styles.quick_chat_container}>
+    <div className={styles.quick_chat_container} data-quick-chat>
       <a
         href={whatsApp.url}
         target="_blank"

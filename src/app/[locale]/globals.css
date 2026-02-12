@@ -303,3 +303,8 @@ tbody {
     margin-right: 10%;
   }
 }
+
+/* Hide Quick WhatsApp when lightbox is open (avoids overlapping nav arrows) */
+body.lightbox-open [data-quick-chat] {
+  display: none !important;
+}

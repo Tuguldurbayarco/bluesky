@@ -40,10 +40,12 @@ const Lightbox = ({ media: mediaProp, images, selectedIndex, onClose, onPrev, on
 
     document.addEventListener("keydown", handleKeyDown);
     document.body.style.overflow = "hidden";
+    document.body.classList.add("lightbox-open");
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "auto";
+      document.body.classList.remove("lightbox-open");
     };
   }, [selectedIndex, hasPrev, hasNext, onClose, onPrev, onNext]);
 
