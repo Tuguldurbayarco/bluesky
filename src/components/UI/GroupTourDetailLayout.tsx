@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { createTranslator, defaultLocale, isValidLocale, Locale } from "@/lib/i18n";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -32,6 +32,19 @@ function getReserveHref(locale: string, tourKey: string, isStandard: boolean = f
   return `/${locale}/contacts?tour=${tourFormValue}${standardParam}#targetBlock`;
 }
 
+const BookButtonContent: React.FC<{ locale: string; tourKey: string; buttonText: string }> = ({ locale, tourKey, buttonText }) => {
+  const searchParams = useSearchParams();
+  const tab = searchParams?.get("tab");
+  const isStandard = tab === "normal";
+  const reserveHref = getReserveHref(locale, tourKey, isStandard);
+  
+  return (
+    <Link href={reserveHref} className={styles.detail_book_button}>
+      {buttonText}
+    </Link>
+  );
+};
+
 const GroupTourDetailLayout: React.FC<GroupTourDetailLayoutProps> = ({
   locale,
   tourKey,
@@ -43,10 +56,17 @@ const GroupTourDetailLayout: React.FC<GroupTourDetailLayoutProps> = ({
 }) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
-  const searchParams = useSearchParams();
-  const tab = searchParams?.get("tab");
-  const isStandard = tab === "normal";
-  const reserveHref = getReserveHref(validLocale, tourKey, isStandard);
+  const tourFormValue =
+    tourKey === "southNorthTour"
+      ? "south-north"
+      : tourKey === "eightLakesTrekking"
+        ? "eight-lakes-trekking"
+        : tourKey === "eightLakesEquestrian"
+          ? "eight-lakes-equestrian"
+          : tourKey === "altaiExpedition"
+            ? "altai-expedition"
+            : "south-north";
+  const fallbackHref = `/${validLocale}/contacts?tour=${tourFormValue}#targetBlock`;
 
   const calendarIcon = (
     <svg
@@ -105,9 +125,9 @@ const GroupTourDetailLayout: React.FC<GroupTourDetailLayoutProps> = ({
             </ul>
           </div>
         )}
-        <Link href={reserveHref} className={styles.detail_book_button}>
-          {t("Tours.book_this_tour")}
-        </Link>
+        <Suspense fallback={<Link href={fallbackHref} className={styles.detail_book_button}>{t("Tours.book_this_tour")}</Link>}>
+          <BookButtonContent locale={validLocale} tourKey={tourKey} buttonText={t("Tours.book_this_tour")} />
+        </Suspense>
       </aside>
       <main className={styles.detail_content}>
         <h1 className={styles.detail_title}>{title}</h1>

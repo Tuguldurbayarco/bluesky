@@ -1,21 +1,12 @@
-"use client";
+import React from "react";
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
-import { useSearchParams } from "next/navigation";
-import Link from 'next/link';
+import BookingLink from "@/components/UI/BookingLink";
 import '../../../../../../components/UI/button.css';
 import styles from "../../tours.module.css";
 
-const City = ({params: {locale}}: {params: {locale: string}}) => {
+const City = async ({params: {locale}}: {params: {locale: string}}) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
-  const searchParams = useSearchParams();
-  const tab = searchParams?.get("tab");
-  const isStandard = tab === "normal";
-  
-  // Function to add locale prefix to href
-  function addLocaleToHref(href: string): string {
-    return `/${validLocale}${href}`;
-  }
   
   return (
     <div className={styles.tours_and_events_margin_top} style={{ marginTop: '170px' }}>
@@ -71,9 +62,7 @@ const City = ({params: {locale}}: {params: {locale: string}}) => {
               />
             </div>
             <div style={{marginTop: "2rem", width: "100%"}}>
-              <Link href={addLocaleToHref(`/contacts?tour=city${isStandard ? '&standard=true' : ''}#targetBlock`)} className='myButton'>
-                {t('City.button')}
-              </Link>
+              <BookingLink locale={validLocale} tourValue="city" buttonText={t('City.button')} className='myButton' />
             </div>
           </div>
         </div>

@@ -1,8 +1,7 @@
-"use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { createTranslator, defaultLocale, isValidLocale, Locale } from "@/lib/i18n";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import TourDetailLink from "./TourDetailLink";
 import styles from "./tour-card.module.css";
 
 type TourCardProps = {
@@ -12,44 +11,61 @@ type TourCardProps = {
   tourHref: string;
 };
 
-const TourCard: React.FC<TourCardProps> = ({ locale, tourKey, imageSrc, tourHref }) => {
+const TourCardContent: React.FC<TourCardProps> = ({ locale, tourKey, imageSrc, tourHref }) => {
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
   const t = createTranslator(validLocale);
-  const searchParams = useSearchParams();
-  const tab = searchParams?.get("tab");
   
-  // Preserve tab=normal parameter when linking to detail page
-  const queryString = tab === "normal" ? "?tab=normal" : "";
-  const readMoreHref = `/${validLocale}${tourHref}${queryString}`;
-
   return (
     <div className={styles.tour_card}>
       <div className={styles.tour_image_container}>
-        <Link href={readMoreHref}>
+        <TourDetailLink locale={validLocale} tourHref={tourHref}>
           <img 
             src={imageSrc}
             alt={t(`Tours.classicTours.${tourKey}.title`)}
             className={styles.tour_image}
           />
-        </Link>
+        </TourDetailLink>
       </div>
       <div className={styles.tour_content}>
-        <Link href={readMoreHref} className={styles.tour_title_link}>
+        <TourDetailLink locale={validLocale} tourHref={tourHref} className={styles.tour_title_link}>
           <h3 className={styles.tour_title}>
             {t(`Tours.classicTours.${tourKey}.title`)}{" "}
             <span style={{fontSize: '0.72em', fontWeight: 'normal', color: '#c23b3b'}}>
               {t(`Tours.classicTours.${tourKey}.duration`)}
             </span>
           </h3>
-        </Link>
+        </TourDetailLink>
         <p className={styles.tour_description}>
           {t(`Tours.classicTours.${tourKey}.description`)}{" "}
-          <Link href={readMoreHref} className={styles.tour_read_more}>
+          <TourDetailLink locale={validLocale} tourHref={tourHref} className={styles.tour_read_more}>
             {t('Tours.read_more')}
-          </Link>
+          </TourDetailLink>
         </p>
       </div>
     </div>
+  );
+};
+
+const TourCard: React.FC<TourCardProps> = (props) => {
+  const validLocale = isValidLocale(props.locale || "en") ? (props.locale || "en") : defaultLocale;
+  const fallbackHref = `/${validLocale}${props.tourHref}`;
+  
+  return (
+    <Suspense fallback={
+      <div className={styles.tour_card}>
+        <div className={styles.tour_image_container}>
+          <a href={fallbackHref}>
+            <img 
+              src={props.imageSrc}
+              alt="Tour"
+              className={styles.tour_image}
+            />
+          </a>
+        </div>
+      </div>
+    }>
+      <TourCardContent {...props} />
+    </Suspense>
   );
 };
 

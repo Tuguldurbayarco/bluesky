@@ -1,8 +1,6 @@
-"use client";
 import React from "react";
 import { createTranslator, defaultLocale, isValidLocale, Locale } from "@/lib/i18n";
-import { useSearchParams } from "next/navigation";
-import Link from "next/link";
+import TourDetailLink from "./TourDetailLink";
 import styles from "./group-tour.module.css";
 
 type SouthNorthTourProps = {
@@ -17,24 +15,14 @@ const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tou
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
   const t = createTranslator(validLocale);
   const dates = dateRanges ? dateRanges : [];
-  const searchParams = useSearchParams();
-  const tab = searchParams?.get("tab");
-  
-  // Preserve tab=normal parameter when linking to detail page
-  const queryString = tab === "normal" ? "?tab=normal" : "";
-  const readMoreHref = `/${validLocale}${tourHref}${queryString}`;
 
   const imageSection = (
     <div className={styles.group_tour_left}>
-      <Link 
-        href={readMoreHref}
+      <TourDetailLink
+        locale={validLocale}
+        tourHref={tourHref}
         className={styles.group_tour_image_link}
-        style={{ 
-          backgroundImage: `url(${imageSrc})`,
-          position: 'relative',
-          display: 'block',
-          textDecoration: 'none'
-        }}
+        style={{ backgroundImage: `url(${imageSrc})` }}
       >
         <div className={styles.tours_image_container}>
           <p className={styles.tour_container_desc}>
@@ -44,7 +32,7 @@ const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tou
             </span>
           </p>
         </div>
-      </Link>
+      </TourDetailLink>
     </div>
   );
 
@@ -85,9 +73,15 @@ const SouthNorthTour: React.FC<SouthNorthTourProps> = ({ locale, dateRanges, tou
         </div>
       )}
 
-      <Link href={readMoreHref} className={styles.group_tour_reserve_button} style={{ textDecoration: "none", display: "block", textAlign: "center" }}>
-        {t(`Tours.${tourKey}.reserve_spot`)}
-      </Link>
+      <TourDetailLink
+        locale={validLocale}
+        tourHref={tourHref}
+        className={styles.group_tour_reserve_button}
+      >
+        <span style={{ textDecoration: "none", display: "block", textAlign: "center" }}>
+          {t(`Tours.${tourKey}.reserve_spot`)}
+        </span>
+      </TourDetailLink>
     </div>
   );
 
