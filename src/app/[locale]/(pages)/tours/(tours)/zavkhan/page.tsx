@@ -1,4 +1,6 @@
+"use client";
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import { useSearchParams } from "next/navigation";
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import styles from "../../tours.module.css";
@@ -6,6 +8,9 @@ import styles from "../../tours.module.css";
 const ZavkhanTour = ({ params: { locale } }: { params: { locale: string } }) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
+  const searchParams = useSearchParams();
+  const tab = searchParams?.get("tab");
+  const isStandard = tab === "normal";
 
   function addLocaleToHref(href: string): string {
     return `/${validLocale}${href}`;
@@ -52,7 +57,7 @@ const ZavkhanTour = ({ params: { locale } }: { params: { locale: string } }) => 
             </div>
           ))}
           <div style={{ marginTop: "2rem", width: "100%", padding: "0 2% 2% 2%", backgroundColor: "#f6f5ff" }}>
-            <Link href={addLocaleToHref("/contacts?tour=zavkhan#targetBlock")} className='myButton'>
+            <Link href={addLocaleToHref(`/contacts?tour=zavkhan${isStandard ? '&standard=true' : ''}#targetBlock`)} className='myButton'>
               {t('Zavkhan.button')}
             </Link>
           </div>

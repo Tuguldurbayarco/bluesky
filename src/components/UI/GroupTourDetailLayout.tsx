@@ -2,6 +2,7 @@
 
 import React from "react";
 import { createTranslator, defaultLocale, isValidLocale, Locale } from "@/lib/i18n";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import styles from "./GroupTourDetailLayout.module.css";
 import groupTourStyles from "./group-tour.module.css";
@@ -16,7 +17,7 @@ export type GroupTourDetailLayoutProps = {
   children: React.ReactNode;
 };
 
-function getReserveHref(locale: string, tourKey: string): string {
+function getReserveHref(locale: string, tourKey: string, isStandard: boolean = false): string {
   const tourFormValue =
     tourKey === "southNorthTour"
       ? "south-north"
@@ -27,7 +28,8 @@ function getReserveHref(locale: string, tourKey: string): string {
           : tourKey === "altaiExpedition"
             ? "altai-expedition"
             : "south-north";
-  return `/${locale}/contacts?tour=${tourFormValue}#targetBlock`;
+  const standardParam = isStandard ? "&standard=true" : "";
+  return `/${locale}/contacts?tour=${tourFormValue}${standardParam}#targetBlock`;
 }
 
 const GroupTourDetailLayout: React.FC<GroupTourDetailLayoutProps> = ({
@@ -41,7 +43,10 @@ const GroupTourDetailLayout: React.FC<GroupTourDetailLayoutProps> = ({
 }) => {
   const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
-  const reserveHref = getReserveHref(validLocale, tourKey);
+  const searchParams = useSearchParams();
+  const tab = searchParams?.get("tab");
+  const isStandard = tab === "normal";
+  const reserveHref = getReserveHref(validLocale, tourKey, isStandard);
 
   const calendarIcon = (
     <svg

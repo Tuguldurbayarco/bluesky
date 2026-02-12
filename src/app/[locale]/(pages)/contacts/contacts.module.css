@@ -108,6 +108,21 @@
   width: 55%;
 }
 
+.contact_info_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.contact_info_item {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
 .contact_subheader {
   font-size: 200%;
   font-weight: 500;

@@ -6,13 +6,32 @@ import Button from "./Button";
 import TextArea from "./TextArea";
 import { SEND_EMAIL_URL, FROM_EMAIL, BUSINESS_EMAIL, SITE_NAME } from "@/lib/mailConfig";
 
+// Map classic tour values to standard tour values
+const mapToStandardTour = (tourValue: string): string => {
+  const standardMap: Record<string, string> = {
+    'city': 'city-standard',
+    'gobi': 'gobi-standard',
+    'central': 'central-standard',
+    'khangai': 'khangai-standard',
+    'zavkhan': 'zavkhan-standard',
+    'khuvsgul1': 'khuvsgul1-standard',
+    'khuvsgul2': 'khuvsgul2-standard',
+  };
+  return standardMap[tourValue] || tourValue;
+};
+
 const InputForm = ({ ...props }: any) => {
   const searchParams = useSearchParams();
   const tourFromUrl = searchParams?.get("tour") ?? null;
+  const isStandard = searchParams?.get("standard") === "true";
+  
+  // Map to standard tour if standard=true parameter exists
+  const initialTourValue = tourFromUrl && isStandard ? mapToStandardTour(tourFromUrl) : (tourFromUrl || "");
+  
   const [name, setName] = useState("");
   const [last, setLast] = useState("");
   const [country, setCountry] = useState("");
-  const [tour, setTour] = useState(tourFromUrl || "");
+  const [tour, setTour] = useState(initialTourValue);
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -20,13 +39,21 @@ const InputForm = ({ ...props }: any) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isTourPreSelected, setIsTourPreSelected] = useState(!!tourFromUrl);
 
-  // Update tour when URL parameter changes
+  // Update tour when URL parameter changes (handles navigation/URL updates)
   useEffect(() => {
     if (tourFromUrl) {
-      setTour(tourFromUrl);
+      // Map to standard tour if standard=true parameter exists
+      const mappedTour = isStandard ? mapToStandardTour(tourFromUrl) : tourFromUrl;
+      setTour(mappedTour);
       setIsTourPreSelected(true);
+    } else {
+      // Only clear if we explicitly don't have a tour param (not just null from initial load)
+      if (searchParams && !searchParams.has("tour") && tour) {
+        setTour("");
+        setIsTourPreSelected(false);
+      }
     }
-  }, [tourFromUrl]);
+  }, [tourFromUrl, searchParams, tour, isStandard]);
 
   const sendForm = async (e: FormEvent) => {
     console.log("Data", name, last, country, tour, number, email, message);
@@ -221,16 +248,36 @@ const InputForm = ({ ...props }: any) => {
               style={{backgroundColor: "#fff", cursor: isTourPreSelected ? "not-allowed" : "pointer", opacity: isTourPreSelected ? 0.6 : 1}}
             >
               <option value="">{props.choice}</option>
-              <optgroup label={props.toursCategory}>
-                <option value="city">{props.tour1}</option>
-                <option value="gobi">{props.tour2}</option>
-                <option value="central">{props.tour3}</option>
-                <option value="khangai">{props.tour4}</option>
-                <option value="khuvsgul1">{props.tour5}</option>
-                <option value="khuvsgul2">{props.tour6}</option>
-                <option value="central-winter">{props.tour7}</option>
-                <option value="gobi-winter">{props.tour8}</option>
-                <option value="khuvsgul-winter">{props.tour9}</option>
+              <optgroup label={props.groupToursCategory}>
+                <option value="south-north">{props.groupTour1}</option>
+                <option value="eight-lakes-trekking">{props.groupTour2}</option>
+                <option value="eight-lakes-equestrian">{props.groupTour3}</option>
+                <option value="altai-expedition">{props.groupTour4}</option>
+              </optgroup>
+              <optgroup label={props.classicToursCategory}>
+                <option value="city">{props.classicTour1}</option>
+                <option value="gobi">{props.classicTour2}</option>
+                <option value="central">{props.classicTour3}</option>
+                <option value="khangai">{props.classicTour4}</option>
+                <option value="zavkhan">{props.classicTour5}</option>
+                <option value="khuvsgul1">{props.classicTour6}</option>
+                <option value="khuvsgul2">{props.classicTour7}</option>
+              </optgroup>
+              <optgroup label={props.standardToursCategory}>
+                <option value="city-standard">{props.standardTour1}</option>
+                <option value="gobi-standard">{props.standardTour2}</option>
+                <option value="central-standard">{props.standardTour3}</option>
+                <option value="khangai-standard">{props.standardTour4}</option>
+                <option value="zavkhan-standard">{props.standardTour5}</option>
+                <option value="khuvsgul1-standard">{props.standardTour6}</option>
+                <option value="khuvsgul2-standard">{props.standardTour7}</option>
+              </optgroup>
+              <optgroup label={props.winterToursCategory}>
+                <option value="central-winter">{props.winterTour1}</option>
+                <option value="gobi-winter">{props.winterTour2}</option>
+                <option value="khuvsgul-winter">{props.winterTour3}</option>
+                <option value="khuvsgul-taiga-6days">{props.winterTour4}</option>
+                <option value="khuvsgul-taiga-5days">{props.winterTour5}</option>
               </optgroup>
               <optgroup label={props.eventsCategory}>
                 <option value="camel">{props.event1}</option>

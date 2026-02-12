@@ -4,9 +4,9 @@ import ScrollDownHint from "@/components/UI/ScrollDownHint";
 import styles from "./about-us.module.css";
 
 const CERTIFICATE_IMAGES = [
-  { src: "/certificates/cert1.jpg", alt: "Certificate of membership - Mongolia-Korea Tourism Association" },
   { src: "/certificates/cert3.jpg", alt: "Mongolia Tourism Organization certificate - front" },
   { src: "/certificates/cert2.png", alt: "Registration extension - back" },
+  { src: "/certificates/cert1.jpg", alt: "Certificate of membership - Mongolia-Korea Tourism Association" },
 ];
 
 const AboutUs = ({params: {locale}}: {params: {locale: string}}) => {

@@ -1,10 +1,16 @@
+"use client";
 import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
+import { useSearchParams } from "next/navigation";
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import styles from "../../tours.module.css";
 
-const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
   const t = createTranslator(validLocale);
+  const searchParams = useSearchParams();
+  const tab = searchParams?.get("tab");
+  const isStandard = tab === "normal";
   
   // Function to add locale prefix to href
   function addLocaleToHref(href: string): string {
@@ -71,7 +77,7 @@ const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {  const v
               </ul>
             </div>
             <div style={{marginTop: "2rem", width: "100%"}}>
-              <Link href={addLocaleToHref("/contacts?tour=khuvsgul1#targetBlock")} className='myButton'>
+              <Link href={addLocaleToHref(`/contacts?tour=khuvsgul1${isStandard ? '&standard=true' : ''}#targetBlock`)} className='myButton'>
                 {t('Khuvsgul1.button')}
               </Link>
             </div>

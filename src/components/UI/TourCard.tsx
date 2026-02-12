@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { createTranslator, defaultLocale, isValidLocale, Locale } from "@/lib/i18n";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import styles from "./tour-card.module.css";
 
@@ -13,8 +15,12 @@ type TourCardProps = {
 const TourCard: React.FC<TourCardProps> = ({ locale, tourKey, imageSrc, tourHref }) => {
   const validLocale = isValidLocale(locale || "en") ? (locale || "en") : defaultLocale;
   const t = createTranslator(validLocale);
-
-  const readMoreHref = `/${validLocale}${tourHref}`;
+  const searchParams = useSearchParams();
+  const tab = searchParams?.get("tab");
+  
+  // Preserve tab=normal parameter when linking to detail page
+  const queryString = tab === "normal" ? "?tab=normal" : "";
+  const readMoreHref = `/${validLocale}${tourHref}${queryString}`;
 
   return (
     <div className={styles.tour_card}>

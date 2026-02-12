@@ -36,10 +36,12 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href={`tel:${t('Footer.phone2').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone2')} ({t('Footer.phoneLabelEnglish')})<br /></a>
-              <a href={`tel:${t('Footer.phone1').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone1')} ({t('Footer.phoneLabelKorea')})<br /></a>
-              <a href={`tel:${t('Footer.phone3').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone3')} ({t('Footer.phoneLabelKorea')})<br /></a>
-              <a href={`tel:${t('Footer.phone4').replace(/\s/g, '')}`} style={{textDecoration: "none"}}>{t('Footer.phone4')} (WhatsApp)</a>
+              <div className={styles.contact_info_list}>
+                <a href={`tel:${t('Footer.phone2').replace(/\s/g, '')}`} className={styles.contact_info_item}>{t('Footer.phone2')} ({t('Footer.phoneLabelEnglish')})</a>
+                <a href={`tel:${t('Footer.phone1').replace(/\s/g, '')}`} className={styles.contact_info_item}>{t('Footer.phone1')} ({t('Footer.phoneLabelKorea')})</a>
+                <a href={`tel:${t('Footer.phone3').replace(/\s/g, '')}`} className={styles.contact_info_item}>{t('Footer.phone3')} ({t('Footer.phoneLabelKorea')})</a>
+                <a href={`tel:${t('Footer.phone4').replace(/\s/g, '')}`} className={styles.contact_info_item}>{t('Footer.phone4')} (WhatsApp)</a>
+              </div>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -48,9 +50,11 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
                 height='auto'
                 className={styles.contact_paddings}
               />
-              <a href={`mailto:${t('Footer.email1')}`} style={{textDecoration: "none"}}>{t('Footer.email1')}<br /></a>
-              <a href={`mailto:${t('Footer.email2')}`} style={{textDecoration: "none"}}>{t('Footer.email2')}<br /></a>
-              <a href={`mailto:${t('Footer.email3')}`} style={{textDecoration: "none"}}>{t('Footer.email3')}</a>
+              <div className={styles.contact_info_list}>
+                <a href={`mailto:${t('Footer.email1')}`} className={styles.contact_info_item}>{t('Footer.email1')}</a>
+                <a href={`mailto:${t('Footer.email2')}`} className={styles.contact_info_item}>{t('Footer.email2')}</a>
+                <a href={`mailto:${t('Footer.email3')}`} className={styles.contact_info_item}>{t('Footer.email3')}</a>
+              </div>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -100,14 +104,34 @@ const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const va
               agreeTitle={t('Contacts.agree')}
               buttonTitle={t('Contacts.button')}
               choice={t('Contacts.choice')}
-              toursCategory={t('Contacts.toursCategory')}
+              groupToursCategory={t('Contacts.groupToursCategory')}
+              classicToursCategory={t('Contacts.classicToursCategory')}
+              standardToursCategory={t('Contacts.standardToursCategory')}
+              winterToursCategory={t('Contacts.winterToursCategory')}
               eventsCategory={t('Contacts.eventsCategory')}
-              tour1={t('Contacts.tour1')}
-              tour2={t('Contacts.tour2')}
-              tour3={t('Contacts.tour3')}
-              tour4={t('Contacts.tour4')}
-              tour5={t('Contacts.tour5')}
-              tour6={t('Contacts.tour6')}
+              groupTour1={t('Contacts.groupTour1')}
+              groupTour2={t('Contacts.groupTour2')}
+              groupTour3={t('Contacts.groupTour3')}
+              groupTour4={t('Contacts.groupTour4')}
+              classicTour1={t('Contacts.classicTour1')}
+              classicTour2={t('Contacts.classicTour2')}
+              classicTour3={t('Contacts.classicTour3')}
+              classicTour4={t('Contacts.classicTour4')}
+              classicTour5={t('Contacts.classicTour5')}
+              classicTour6={t('Contacts.classicTour6')}
+              classicTour7={t('Contacts.classicTour7')}
+              standardTour1={t('Contacts.standardTour1')}
+              standardTour2={t('Contacts.standardTour2')}
+              standardTour3={t('Contacts.standardTour3')}
+              standardTour4={t('Contacts.standardTour4')}
+              standardTour5={t('Contacts.standardTour5')}
+              standardTour6={t('Contacts.standardTour6')}
+              standardTour7={t('Contacts.standardTour7')}
+              winterTour1={t('Contacts.winterTour1')}
+              winterTour2={t('Contacts.winterTour2')}
+              winterTour3={t('Contacts.winterTour3')}
+              winterTour4={t('Contacts.winterTour4')}
+              winterTour5={t('Contacts.winterTour5')}
               event1={t('Contacts.event1')}
               event2={t('Contacts.event2')}
               event3={t('Contacts.event3')}
