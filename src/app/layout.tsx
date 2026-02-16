@@ -4,8 +4,8 @@ import NavBarServer from "@/components/NavBarServer";
 import SocialIcons from "@/components/UI/SocialIcons";
 
 export const metadata: Metadata = {
-  title: "Eternal Sky Tours",
-  description: "Eternal Sky Tours is a tour operator in Mongolia that offers tours to the most popular destinations in the country.",
+  title: "Eternal Sky Tour",
+  description: "Eternal Sky Tour is a tour operator in Mongolia that offers tours to the most popular destinations in the country.",
   icons: {
     icon: "/favicon.ico",
   },

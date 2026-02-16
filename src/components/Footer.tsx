@@ -125,7 +125,7 @@ const Footer = ({locale}: {locale: Locale}) => {
       </div>
       <div className={styles.footer_bottom_bar}>
         <div className={`visibility_area ${styles.footer_bottom}`}>
-          <p className={styles.footer_copyright}>© Eternal Sky Tours LLC. 2018-2026.</p>
+          <p className={styles.footer_copyright}>© Eternal Sky Tour LLC. 2018-2026.</p>
         </div>
       </div>
     </footer>
