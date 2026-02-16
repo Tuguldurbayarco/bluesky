@@ -769,6 +769,8 @@
     "read_more": "Read more",
     "book_now": "Book Now",
     "popularLabel": "Popular",
+    "popularProduct": "Popular",
+    "product": "Tour",
     "classicTours": {
       "city": {
         "title": "CITY TOUR",
